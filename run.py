@@ -24,7 +24,7 @@ let your imagination run wild, and let the adventure begin!
 Remember: in Wonderland, nothing is quite what it seems. Are you ready to find out what's
  behind the mirror?""")
 
-print("""     _    _ _            _                            
+print("""    _    _ _            _                            
    / \  | (_) ___ ___  (_)_ __                       
   / _ \ | | |/ __/ _ \ | | '_ \                      
  / ___ \| | | (_|  __/ | | | | |                     
@@ -36,7 +36,8 @@ print("""     _    _ _            _
 
 print()
 print()
-print("""   _   /  |
+print("""     _
+        _   / /\\
        | \  \/_/
        \_\| / __              
           \/_/__\           .--='/~\\
@@ -44,7 +45,7 @@ print("""   _   /  |
    -,-----,--\--,-----,---,\'-' {{~}}
            __/\_            '--=.\}/
           /_/ |\\
-               \/""")
+              \/""")
 
 startGame = input('Would You like to play? (Y/N): ')
 if startGame == 'N' or startGame == "n":
