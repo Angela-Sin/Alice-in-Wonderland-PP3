@@ -1,3 +1,10 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+print(""" ____ _____  _    ____ _____    ____    _    __  __ _____ 
+/ ___|_   _|/ \  |  _ \_   _|  / ___|  / \  |  \/  | ____|
+\___ \ | | / _ \ | |_) || |   | |  _  / _ \ | |\/| |  _|  
+ ___) || |/ ___ \|  _ < | |   | |_| |/ ___ \| |  | | |___ 
+|____/ |_/_/   \_\_| \_\|_|    \____/_/   \_\_|  |_|_____|""")
+startGame = input('Would You like to play? (Y/N): ')
+if startGame == 'N':
+    print("Next time")
+elif startGame == 'Y':
+    intro()
