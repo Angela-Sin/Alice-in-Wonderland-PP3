@@ -11,7 +11,18 @@ def play():
     print("2. Visit the Mad Hatter's Tea Party")
     print("3. Enter the Queen of Hearts' Castle")
     
-
+print("""Welcome to the Magical World of Wonderland!
+Enter a world where the ordinary becomes extraordinary, and every turn is a new adventure! 
+In this magical land, the curious and the brave are invited to join Alice on her whimsical 
+journey through enchanted gardens, tea parties with unusual characters, and mind-bending 
+mysteries.
+Get ready to meet talking animals, mischievous Cheshire Cats, and a Queen who isn't afraid 
+to shout, "Off with their heads!" As you navigate this fantastical world, your decisions 
+will shape the story, revealing secrets and challenges around every corner.
+Are you brave enough to follow the White Rabbit down the rabbit hole? Embrace the madness,
+let your imagination run wild, and let the adventure begin!
+Remember: in Wonderland, nothing is quite what it seems. Are you ready to find out what's
+ behind the mirror?""")
 
 print("""     _    _ _            _                            
    / \  | (_) ___ ___  (_)_ __                       
