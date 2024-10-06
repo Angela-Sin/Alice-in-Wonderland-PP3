@@ -14,25 +14,6 @@ def intro():
     print("2.")
     print("3.")
     
-firstChoice = input("which path you prefere? (1/2/3): ")
-if firstChoice == '1':
-    print()
-    choice1()
-elif firstChoice == '2':
-    print()
-    choice2()
-elif firstChoice == '3':
-    print()
-    choice3()
-
-def choice1():
-    print()
-
-def choice2():
-    print()
-
-def choice3():
-    print()
 
 
 print(""" ____ _____  _    ____ _____    ____    _    __  __ _____ 
