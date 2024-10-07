@@ -1,11 +1,18 @@
+import sys
+import time
+
+a = 1
 
 #Play function
 def play():
+    print()
+    print()
     print("""You are Alice. You've fallen down a rabbit hole into the strange and magical
     world of Wonderland!" Your goal is to find your way home, but first, you must explore
-    this curious place and face its many challenges.
-    
-    Wish you Good Luck Alice!""")
+    this curious place and face its many challenges.""")
+    time.sleep(a)
+    ("Wish you Good Luck Alice!")
+    time.sleep(a)
     print()
     print()
     print("1. Follow the White Rabbit")
@@ -51,8 +58,10 @@ print("""    _    _ _            _
 print()
 print()
 name = input("Please enter your name: ")
+time.sleep(a)
 print()
 print("Hello, " + name + "! Happy to see you!")
+time.sleep(a)
 print()
 print()
 
@@ -69,7 +78,6 @@ Are you brave enough to follow the White Rabbit down the rabbit hole? Embrace th
 let your imagination run wild, and let the adventure begin!
 Remember: in Wonderland, nothing is quite what it seems. Are you ready to find out what's
  behind the mirror?""")
-
 print()
 print()
 print("""             /\\
