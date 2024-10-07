@@ -25,8 +25,8 @@ def play():
 
 #Rabbit house
 def rabbit_house():
-    print("""\nYou follow the White Rabbit to his home, which is in a small hole. You land
-     softly in a dimly lit tunnel filled with curious objects.""")
+    print("""\nYou follow the White Rabbit to his home. You entered
+     to a dimly lit tunnel filled with curious objects.""")
 
 #Mad Hatter's tea party
 def tea_party():
@@ -37,6 +37,24 @@ def tea_party():
 def queen_castle():
     print("""\nYou enter the Queen of Hearts' castle. The air is tense, and the Queen herself
      is approaching! There is a large courtyard where the Queen of Hearts plays croquet with live flamingos and hedgehogs.""")    
+
+
+print("""    _    _ _            _                            
+   / \  | (_) ___ ___  (_)_ __                       
+  / _ \ | | |/ __/ _ \ | | '_ \                      
+ / ___ \| | | (_|  __/ | | | | |                     
+/_/   \_\_|_|\___\___| |_|_| |_| _                 _ 
+\ \      / /__  _ __   __| | ___| | __ _ _ __   __| |
+ \ \ /\ / / _ \| '_ \ / _` |/ _ \ |/ _` | '_ \ / _` |
+  \ V  V / (_) | | | | (_| |  __/ | (_| | | | | (_| |
+   \_/\_/ \___/|_| |_|\__,_|\___|_|\__,_|_| |_|\__,_|""")
+print()
+print()
+name = input("Please enter your name: ")
+print()
+print("Hello, " + name + "! Happy to see you!")
+print()
+print()
 
 #Welcome text    
 print("""Welcome to the Magical World of Wonderland!
@@ -52,26 +70,16 @@ let your imagination run wild, and let the adventure begin!
 Remember: in Wonderland, nothing is quite what it seems. Are you ready to find out what's
  behind the mirror?""")
 
-print("""    _    _ _            _                            
-   / \  | (_) ___ ___  (_)_ __                       
-  / _ \ | | |/ __/ _ \ | | '_ \                      
- / ___ \| | | (_|  __/ | | | | |                     
-/_/   \_\_|_|\___\___| |_|_| |_| _                 _ 
-\ \      / /__  _ __   __| | ___| | __ _ _ __   __| |
- \ \ /\ / / _ \| '_ \ / _` |/ _ \ |/ _` | '_ \ / _` |
-  \ V  V / (_) | | | | (_| |  __/ | (_| | | | | (_| |
-   \_/\_/ \___/|_| |_|\__,_|\___|_|\__,_|_| |_|\__,_|""")
-
 print()
 print()
-print("""     _
+print("""             /\\
         _   / /\\
        | \  \/_/
        \_\| / __              
           \/_/__\           .--='/~\\
    ____,__/__,_____,______)/   /{~}}}
    -,-----,--\--,-----,---,\'-' {{~}}
-           __/\_            '--=.\}/
+           __/\            '--=.\}/
           /_/ |\\
               \/""")
 
