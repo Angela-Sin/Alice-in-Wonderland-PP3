@@ -28,6 +28,7 @@ def play_game():
         print("Invalid choice. Please choose again.")
         play_game()
 
+#Play >>> Drink Me
 def drink_me():
     print("""You found the tiny bottle with the sign "Drink Me".You uncork the bottle and inhale the
     strange liquid. Feeling bold, you take a sip.
@@ -54,6 +55,7 @@ def drink_me():
         print("Invalid choice. Please choose again.")
         drink_me()
 
+#Play >>> Drink Me >>> Take Key
 def take_key():
     print("""You decide to pick up the tiny key. Its golden glow beckons you,
     and though you’re not sure what it unlocks, you sense that it’s important.
@@ -97,6 +99,47 @@ def take_key():
         print("Invalid choice. Please choose again.")
         take_key()
 
+#Play >>> Drink Me >>> Take Key >>> Explore Garden
+#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden
+#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden
+def explore_garden():
+    print("""You step further into the garden, your curiosity drawing you deeper into this strange,
+     beautiful world. The vibrant colors and strange shapes of the plants around you make everything
+    seem surreal. Flowers with faces whisper to each other, and huge mushrooms tower over you like trees.
+
+    As you walk down the winding path, you notice something strange - the deeper you go, the more the
+    garden seems to shift and change. The sky above shimmers between bright daylight and dark twilight,
+    as if time is out of whack. The air hums with a strange energy, and the plants seem to move slightly
+    when you're not looking.
+
+    A rustling sound suddenly catches your attention. Peering ahead, you notice something flickering
+    between the huge leaves. It's fast, too fast for you to see clearly, but you catch a flash of white.
+    Could it be the White Rabbit? Or something else entirely?
+
+    As you move cautiously forward, you come upon a strange sight: a large table set for tea in the center
+    of the garden, completely out of place among the wild greenery. The table is covered with mismatched
+    cups and saucers, some overturned, others stacked precariously high. There are empty chairs around it,
+    though one at the far end has its back to her.
+
+                  _
+                  _(_)_                          wWWWw   _
+      @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_
+     @@()@@ wWWWw  (_)\    (___)   _(_)_  @@()@@   Y  (_)@(_)
+      @@@@  (___)     `|/    Y    (_)@(_)  @@@@   \|/   (_)\\
+       /      Y       \|    \|/    /(_)    \|      |/      |
+    \ |     \ |/       | / \ | /  \|/       |/    \|      \|/
+    \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|// 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    Just as you are about to investigate, a voice calls out from behind you. "You're late, you know!"
+
+    You turn to see a familiar face - the Cheshire Cat. He is lounging lazily on the branch of a nearby tree,
+    his wide grin glittering in the changing light.
+
+    "Well, well, what a curious traveler we have here," the Cat purrs, his eyes twinkling mischievously.""")
+
+
+# Play >>> Drink Me >>> Leave the Key (End of the Game)
 def leave_key():
     print("""You stare at the small, glimmering key in the crack of the tunnel floor,
     but for reasons you can’t quite explain, you decide to leave it behind.
@@ -118,7 +161,7 @@ def leave_key():
     """)
 
 
-
+#Play >>> Explore Tunnel
 def explore_tunnel():
     print("""A few steps in, and the door behind you slams shut. The tunnel narrows,
     and you feel the walls pressing in slightly. Your heartbeat quickens as you search
@@ -140,9 +183,113 @@ def explore_tunnel():
     else:
         print("Invalid choice. Please choose again.")
         explore_tunnel()
+
+
+#Play >> Explore Tunnel >> Call For Help
+def call_for_help():
+    print("""Feeling a mixture of frustration and determination, you decide to call for help again.
+    Your voice echoes through the dim tunnel, bouncing off the walls as you shout, “Help! Is anyone there?”
+
+    For a moment, everything is silent. Just when you’re starting to lose hope, you hear the familiar patter
+    of little feet approaching you. The White Rabbit appears, his eyes wide with worry.
+
+    “Oh my god! Oh my god! What have you gotten yourself into?” he exclaims, slightly out of breath. “You really
+    shouldn’t be wandering around here. Follow me, I’ll show you the way home!”
+
+    Reassured, you quickly follow the Rabbit as he hops nimbly through the twisting paths of the tunnel.
+    He looks back at you, a mixture of urgency and excitement on his face.
+
+    “Stay close! "This tunnel can be quite tricky if you don't know your way around," he calls, leading 
+    you through narrow passages and around sharp corners. The ticking of the invisible clock seems to grow
+    quieter as they move deeper into the tunnel, and the air feels lighter.
+
+    After a few minutes of hurried travel, they reach a door that glows faintly at the end of a long, winding
+    corridor. The White Rabbit stops, pushing it open with a flourish.
+
+    "There! You're almost home!" he says, his voice full of encouragement.
+
+    Beyond the door is a vibrant garden, similar to the one you saw earlier, but this one is bursting with color
+    and life. Flowers bloom in every hue, and the air is filled with sweet scents. In the distance, you see a familiar
+    path leading back to the entrance to your world.
+
+    "Just follow this path, and you'll be back where you belong," the White Rabbit assures you. "But remember,
+    Wonderland has a way of calling you back.
     
+    What will you do next?
+    
+    1: Thank the White Rabbit and head home?
+    2: Explore the garden a bit more?""")
 
+    choice = input("> ") #choice function
+    if choice == "1":
+        go_home()
+    elif choice == "2":
+        explore_garden()
+    else:
+        print("Invalid choice. Please choose again.")
+        call_for_help()
 
+#Play >>> Explore Tunnel >> Call for Help >> Go Home (End of the Game)
+def go_home():
+    print("""You turn to the White Rabbit, gratitude shining in your eyes.
+    “Thank you so much for your help!” you exclaim. “I wouldn’t have found 
+    my way without you!”
+
+    The White Rabbit nods, adjusting his tiny vest. “Oh, nothing! Just doing my job,” he replies,
+    looking back at the tunnel with a hint of worry. “But be careful out there. Wonderland can be
+    quite unpredictable!”
+
+    With one last wave, you walk through the door and onto the busy path that leads back to her world.
+    The sun shines brightly overhead, illuminating the colorful flowers that seem to dance in the
+    gentle breeze. You feel the warmth of the sunlight on her face, a calming reminder of home.
+
+    As you walk, you pause for a moment to appreciate the beauty of the garden. Each flower is a riot
+    of color, and a sweet scent fills the air. You notice butterflies fluttering about, their delicate
+    wings sparkling like jewels in the sun. For a moment, you want to linger, to explore this magical
+    place a little longer.
+
+                      __ \/ __
+     /\^/`\          /o \{}/ o\   
+    | \/   |         \   ()   /     
+    | |    |          `> /\ <`   ,,,     
+    \ \    /  @@@@    (o/\/\o)  {{{}}                 _ _
+     '\\//'  @@()@@  _ )    (    ~Y~       @@@@     _{ ' }_
+       ||     @@@@ _(_)_   wWWWw .oOOo.   @@()@@   { `.!.` }
+       ||     ,/  (_)@(_)  (___) OO()OO    @@@@  _ ',_/Y\_,'
+       ||  ,\ | /)  (_)\     Y   'OOOO',,,(\|/ _(_)_ {_,_}
+   |\  ||  |\\|// vVVVv`|/@@@@    _ \/{{}}}\| (_)@(_)  |  ,,,
+   | | ||  | |;,,,(___) |@@()@@ _(_)_| ~Y~ wWWWw(_)\ (\| {{{}}
+   | | || / / {{}}} Y  \| @@@@ (_)#(_) \|  (___)   |  \| /~Y~
+    \ \||/ /\\|~Y~ \|/  | \ \/  /(_) |/ |/   Y    \|/  |//\|/
+     `\\//`,.\|/|//.|/\\|/\\|,\|/ //\|/\|.\\\| // \|\\ |/,\|/
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    But her heart pulls you forward. You know you need to return to your world, to the familiar comfort
+    of your home.
+
+    As you walk along the path, you hear the soft sound of running water nearby. Curiosity piqued, you
+    wander a little off the main path to see a small stream running through the garden, its waters
+    sparkling like diamonds. It flows peacefully, meandering through the flowers and leading to the distant horizon.
+
+    Suddenly, you realize you can’t stay.
+    With one last look around, you return to the main path and continue on your way. Soon you reach the
+    edge of the garden, where the flowers give way to a familiar landscape. The soft rolling hills, the 
+    bright green grass, and the distant sound of her family calling her name fill you with joy.
+
+    As you step through the door back into her world, you feel a sense of completion. She looks back one
+    last time at Wonderland, the magical place that took you on an incredible adventure.
+
+    “I will never forget you,” you whisper to the garden.
+
+    With a deep breath, you step forward into your reality.
+
+    Back in your garden, you hear the sounds of your family enjoying a lovely picnic. The aroma of freshly
+    baked treats wafts through the air and laughter echoes around you.
+
+    You smile, knowing that even though your adventure in Wonderland has come to an end, the memories will
+    forever remain in your heart. And who knows? Perhaps one day you will return.""")
+
+#Welcome
 print("""    _    _ _            _                            
    / \  | (_) ___ ___  (_)_ __                       
   / _ \ | | |/ __/ _ \ | | '_ \                      
@@ -177,7 +324,7 @@ Remember: in Wonderland, nothing is quite what it seems. Are you ready to find o
 behind the mirror?""")
 print()
 print()
-print("""             /\\
+print("""    /\\
         _   / /\\
        | \  \/_/
        \_\| / __              
