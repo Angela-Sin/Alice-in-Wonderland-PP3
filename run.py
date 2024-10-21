@@ -11,7 +11,17 @@ def play_game():
     hidden in the roots of a large tree. Curiosity prompts you to open it, and you find
     yourself in a dimly lit tunnel. The walls of the tunnel are lined with shelves
     filled with strange objects:
-    clocks that tick backwards, bottles with the words "Drink Me" written on them,
+    clocks that tick backwards, bottles with the words "Drink Me" 
+     _
+    {_}
+    |(|
+    |=|
+   /   \\
+   |.--|
+   ||  |
+   ||  |    
+   |'--|  
+   '-=-' written on them,
     and mirrors that seem to reflect worlds other than your own. 
     
     What you would like to do?
@@ -41,6 +51,12 @@ def drink_me():
     In your new, tiny size, you can now see hidden details in the tunnel's floors and walls - cracks and crevices
     you couldn't see before. In one of these cracks, you notice a small, shimmering key lying just out of reach.
     
+      ooo,    .---.
+     o`  o   /    |\________________
+     o`   'oooo()  | ________   _   _)
+    `oo   o` \    |/        | | | |
+      `ooo'   `---'         "-" |_|
+
     What you would like to do?
 
     1: Take the Key 
@@ -60,6 +76,11 @@ def take_key():
     print("""You decide to pick up the tiny key. Its golden glow beckons you,
     and though you’re not sure what it unlocks, you sense that it’s important.
     Holding it tightly in your tiny hand, you continue down the tunnel that stretches endlessly before you.
+
+              ____
+             |  , =,( _________
+             | ='  (VvvVvV--'
+             |____(
 
     After what feels like an eternity of walking, you come to a small door built into the wall.
     At your current size, the door looks just the right height for you. You try the key, and it
@@ -92,12 +113,128 @@ def take_key():
     if choice == "1":
         explore_garden()
     elif choice == "2":
-        call_for_help()
+        look_for_rabbit()
     elif choice == "3":
         rest_in_garden()
     else:
         print("Invalid choice. Please choose again.")
         take_key()
+
+#Play >>> Drink Me >> Take Key >>> Look For Rabbit >>> End of the Game
+def look_for_rabbit():
+    print("""You wander through the magic garden, enchanted by the vibrant colors and strange,
+    talking flowers. The garden seems alive with energy, every step revealing new wonders.
+    As you move through the towering mushrooms and glowing blossoms, she catches a glimpse
+    of white fur darting between the tall plants.
+
+    Excited, you hurry forward and soon find yourself face-to-face with the White Rabbit.
+    He’s standing by a large mushroom, anxiously checking his pocket watch, as always. 
+    The moment he sees you, his eyes widen, though not with surprise this time. Instead,
+    there’s a look of relief.
+
+    "Oh, there you are! I've been looking for you everywhere," the Rabbit says in his
+    hurried voice. "This garden can be quite a tricky place, but lucky for you, I know the way out."
+
+    You smile, feeling a wave of relief herself. "Thank you! I’ve been trying to find a way
+    home for what feels like forever."
+
+    The Rabbit, always in a rush, nods quickly. “Yes, yes, no time to waste. Follow me!”
+
+    He hops ahead, and You follow closely as they weave through the garden. The landscape
+    around you shifts strangely, as if the plants are moving out of their way, and the path
+    constantly changes beneath your feet. But the Rabbit seems to know exactly where to go,
+    never hesitating as he turns sharp corners and ducks under arching flowers.
+
+    After what feels like just a few minutes of walking, you reach the edge of the garden,
+    where a large gate stands. Beyond it, you can see the familiar sight of your world:
+    a calm meadow leading back to your home.
+
+    The Rabbit stops at the gate and gestures toward it. “There’s your way home,” he says. 
+    “Once you pass through, you’ll be back in your world. But remember, Wonderland has a way
+    of calling you back, so don’t be surprised if you return someday.”
+
+    You look at the gate, your heart filled with both gratitude and a strange sadness.
+    Wonderland has been strange, confusing, and often challenging, but it’s also been 
+    magical. Still, she knows it’s time to go.
+
+    “Thank you, Rabbit,” you say warmly. “For everything.”
+
+    The White Rabbit gives her a quick nod, checking his watch once more. “Oh dear,
+    I’m late again. Best of luck, Alice! Until we meet again!”
+
+    With a final wave, you step through the gate. As she does, the garden fades behind you,
+    replaced by the familiar warmth of her world. The sky is bright, the grass soft beneath 
+    your feet, and in the distance, you can hear the comforting sounds of home.
+
+    You smile, knowing you are safe and sound, but with the memory of Wonderland forever in your heart.""")
+
+
+#Play >>> Drink Me >> Take Key >>> Rest in the garden
+def rest_in_garden():
+    print("""You decide to sit and rest for a while on the soft grass of the clearing.
+    The garden seems alive, and you sense that by rushing forward you may miss something
+    important. As you settle in, the whispers fade into the background, leaving only the
+    gentle rustling of leaves and the soft hum of the air around you.
+
+    The longer you sit, the more the garden seems to open up. The flowers nearby shift their
+    positions slightly, as if turning towards you, and their glow intensifies, casting an ethereal
+    light over the area. The spiral tree in the center with three doors seems almost to breathe,
+    its bark shimmering in soft waves.
+
+    As you watch, small details become clear:
+
+    * * The red door (with the clock symbol) seems to pulse faintly, almost as if in sync with 
+    the ticking sound she heard earlier in the tunnel. * *
+
+    * * The blue door (with the heart symbol) radiates a faint warmth, and she hears the distant
+    echo of laughter, though she cannot tell whether it is joyful or sinister. * *
+    
+    * *Faint shimmers float around the green door (with the crown symbol), like a magical trail,
+    and for a moment you notice something glittering in the air near it, like the edge of a golden crown. * *
+
+    As you look at the doors, the whispers begin to return, but this time they feel different.
+    It is as if the garden is trying to communicate with you - not in words, but in feelings.
+    The red door evokes a sense of urgency, as if time is of the essence. The blue door evokes
+    a sense of curiosity mixed with caution as if it holds deep and complex emotions. 
+    The green door hints at power, authority, and something grandiose, but also unknown.
+
+    The garden seems to be giving you a choice, but not in a hurry - it is waiting for you to decide.
+    
+    What will Alice do next?
+    
+    1: Open the red door?         .-.-.     Symbol
+                             ((  (__I__)  ))
+                               .'_....._'.
+                              / / .12 . \ \\
+                             | | '  |  ' | |
+                             | | 9  /  3 | |
+                              \ \ '.6.' / /
+                               '.`-...-'.'
+                                /'-- --'\          
+   
+     2: Open the blue door  ,-"-,-"-.        Symbol
+                           (         )
+                            ".     ."
+                              "._." 
+    
+    3: Open the green door     <>           Symbol   
+                             .::::.             
+                         @\\/W\/\/W\//@         
+                          \\/^\/\/^\//     
+                           \_O_<>_O_/""")
+
+    choice = input("> ") #choice function
+    if choice == "1":
+        red_door()
+    elif choice == "2":
+        blue_door()
+    elif choice == "3":
+        green_door()
+    else:
+        print("Invalid choice. Please choose again.")
+        rest_in_garden()
+    
+    
 
 #Play >>> Drink Me >>> Take Key >>> Explore Garden
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden
