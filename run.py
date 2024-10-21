@@ -598,6 +598,100 @@ def go_home():
     You smile, knowing that even though your adventure in Wonderland has come to an end, the memories will
     forever remain in your heart. And who knows? Perhaps one day you will return.""")
 
+def blue_door():
+    print("""You, drawn by curiosity, approach the blue door with the heart symbol etched above it.
+    You hesitate for just a moment, then take a deep breath and open the door. A soft glow spills out,
+    and without another thought, You step through.
+
+    As soon as You pass the threshold, the world around changes. You find yourself in a large, beautiful room
+    with high ceilings, draped in rich blue and purple silks. The floor is a black-and-white checkerboard, and
+    the air is filled with the scent of roses. In the distance, You can hear the soft tinkling of music, as if a
+    grand ball is taking place somewhere nearby.
+
+    At the center of the room, a massive, ornate throne stands, with a heart-shaped crest at the top. And sitting on 
+    the throne is a figure that You immediately recognize — the Queen of Hearts.
+
+    The Queen’s sharp eyes fixed on You the moment she entered the room. "Ah, there you are," the Queen says with a
+    mix of amusement and suspicion. "I wondered when you would find your way here. You’ve come through my door, so 
+    you must want something. Speak up, please!"
+
+    You take a cautious step forward. “I… I didn’t mean to intrude. I just followed the path and found this door.”
+
+    The Queen of Hearts raises an eyebrow, clearly unimpressed. "Didn’t mean to intrude? In Wonderland, everything
+    has meaning, whether you know it or not. Now, what do you seek, here? Adventure? Answers? Or perhaps you’re here
+    to challenge me?"
+
+    Your heart races. You remember the stories of the Queen’s temper, but also know that this might be your chance to
+    learn something important — or perhaps even find a way home.
+    
+    What will You do next?
+    
+    1: Ask the Queen for help finding her way home?
+    2: Challenge the Queen?
+    3: Explore the room quietly, to look for an exit?""")
+
+    choice = input("> ") #choice function
+    if choice == "1":
+        ask_queen()
+    elif choice == "2":
+        challenge_queen()
+    elif choice == "3":
+        find_way()
+    else:
+        print("Invalid choice. Please choose again.")
+        rest_in_garden()
+    
+def ask_queen():
+    print("""You, feeling both nervous and hopeful, decide to speak to the Queen of Hearts directly.
+     You know the Queen is a powerful figure in Wonderland, but you hope that by being polite,
+      you might get the help you need to find her way home.
+
+“Your Majesty,” You begin, bowing slightly, “I didn’t mean to disturb you, but I’ve been lost
+ in Wonderland for quite some time now. I only wish to return to my world. Could you, perhaps,
+  help me find my way home?”
+
+The Queen of Hearts narrows her eyes for a moment, studying You. Her expression is unreadable,
+ but after a long silence, the Queen’s lips curl into a small smile.
+
+“Hmm… A bold request,” the Queen muses, tapping her fingers on the arm of her throne.
+ “Most who come to Wonderland rarely wish to leave. But I suppose you are not most, are you?”
+
+The Queen rises from her throne with a flourish of her red and gold robes. She steps down gracefully,
+ her eyes still locked on You. “Very well. You’ve amused me, and I do so appreciate those with manners.
+  I will help you — but only because it pleases me to do so.”
+
+You feel a wave of relief, though you remain cautious, knowing the Queen’s temper could turn at any moment.
+
+The Queen waves her hand, and suddenly, a small, ornate mirror appears floating in the air beside her.
+ The frame is shaped like a heart and the glass shimmers with a strange light.
+
+“This mirror,” the Queen says, “is a portal. It will show you the way back to your world. But remember,
+ once you leave Wonderland, you may not be able to return as easily.”
+
+You step closer to the mirror, her heart pounding with anticipation. “Thank you, Your Majesty,”
+ you say sincerely. “I’m ready to go home.”
+
+The Queen smirks. “Very well. Step through, and you shall find yourself where you belong.”
+
+You take a deep breath, then reach out and touch the surface of the mirror. As soon as your fingers
+ make contact, the glass ripples like water. You feel a strange pull, and before you know it,
+  you being gently drawn into the mirror.
+
+The world around you swirls in a kaleidoscope of colors and lights, and for a brief moment,
+ you feel weightless. Then, with a soft thud, you land on her feet.
+
+When Alice opens your eyes, you find yourself standing in a familiar meadow. The sky is bright,
+ the air is warm, and in the distance, you can see home. You are back in your world.
+
+You take a deep breath, filled with relief and wonder. Though your time in Wonderland had been
+ full of strange and dangerous adventures, you were grateful for the experience. And though you
+  are home now, you know that the magic of Wonderland will stay with you always.
+
+With one last look at the horizon, You head home, your heart lighter and mind filled with
+ memories of the incredible journey.
+""")
+
+
 #Welcome
 print("""    _    _ _            _                            
    / \  | (_) ___ ___  (_)_ __                       
