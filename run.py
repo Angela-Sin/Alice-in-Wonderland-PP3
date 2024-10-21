@@ -15,8 +15,9 @@ def play_game():
     and mirrors that seem to reflect worlds other than your own. 
     
     What you would like to do?
-    Try a drink (1) 
-    Explore the tunnel (2)?""")
+
+    1:Try a drink? 
+    2:Explore the tunnel?""")
 
     choice = input("> ") #choice function
     if choice == "1":
@@ -40,8 +41,9 @@ def drink_me():
     you couldn't see before. In one of these cracks, you notice a small, shimmering key lying just out of reach.
     
     What you would like to do?
-    Take the Key (1)
-    Leave the Key (2).""")
+
+    1: Take the Key 
+    2: Leave the Key""")
 
     choice = input("> ") #choice function
     if choice == "1":
@@ -76,7 +78,24 @@ def take_key():
     and distant, colorful creatures flutter across the sky.
 
     You realize that you have escaped the tunnel, but the strange world you have entered is far from home.
-    It seems both enchanting and dangerous, full of secrets waiting to be explored.""")
+    It seems both enchanting and dangerous, full of secrets waiting to be explored.
+    
+    What will you do next?
+    
+    1: Explore the garden further?
+    2: Look for the White Rabbit?
+    3: Rest for a moment and observe?""")
+
+    choice = input("> ") #choice function
+    if choice == "1":
+        explore_garden()
+    elif choice == "2":
+        call_for_help()
+    elif choice == "3":
+        rest_in_garden()
+    else:
+        print("Invalid choice. Please choose again.")
+        take_key()
 
 def leave_key():
     print("""You stare at the small, glimmering key in the crack of the tunnel floor,
@@ -96,21 +115,9 @@ def leave_key():
 
     Over time, the tunnel becomes your entire world — a strange, shifting place with no escape.
     The objects that once seemed curious now feel like permanent companions, and the shadows that dance on the walls never leave you alone.
-    
-    What will you do next?
-    
-    1: Explore the garden further?
-    2: Look for the White Rabbit?
-    3: Rest for a moment and observe?""")
+    """)
 
-    choice = input("> ") #choice function
-    if choice == "1":
-        take_key()
-    elif choice == "2":
-        leave_key()
-    else:
-        print("Invalid choice. Please choose again.")
-        take_key()
+
 
 def explore_tunnel():
     print("""A few steps in, and the door behind you slams shut. The tunnel narrows,
@@ -121,8 +128,9 @@ def explore_tunnel():
     in a room where the air is thick with the unsettling feeling that you are not alone. Shadows move in
     the dim light, and somewhere deep within the tunnel, you hear the faint ticking of a clock that you cannot see.
 
-    Do you explore the tunnel further, searching for hidden mechanisms in the objects around you (1)?
-    Or do you call for help (2)?""")
+    What will you do next?
+    1: Explore the tunnel further, searching for hidden mechanisms in the objects around you?
+    2: Or do you call for help?""")
 
     choice = input("> ") #choice function
     if choice == "1":
