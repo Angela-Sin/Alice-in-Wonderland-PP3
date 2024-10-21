@@ -170,6 +170,8 @@ def look_for_rabbit():
 
 
 #Play >>> Drink Me >> Take Key >>> Rest in the garden
+#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Rest in the garden
+#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Rest in the garden
 def rest_in_garden():
     print("""You decide to sit and rest for a while on the soft grass of the clearing.
     The garden seems alive, and you sense that by rushing forward you may miss something
@@ -200,7 +202,7 @@ def rest_in_garden():
 
     The garden seems to be giving you a choice, but not in a hurry - it is waiting for you to decide.
     
-    What will Alice do next?
+    What will You do next?
     
     1: Open the red door?         .-.-.     Symbol
                              ((  (__I__)  ))
@@ -273,7 +275,174 @@ def explore_garden():
     You turn to see a familiar face - the Cheshire Cat. He is lounging lazily on the branch of a nearby tree,
     his wide grin glittering in the changing light.
 
-    "Well, well, what a curious traveler we have here," the Cat purrs, his eyes twinkling mischievously.""")
+    "Well, well, what a curious traveler we have here," the Cat purrs, his eyes twinkling mischievously.
+    
+    What You will do next?
+    
+    1: Talk to the Cheshire Cat
+    2: Look for a way out of the garden""")
+
+
+    choice = input("> ") #choice function
+    if choice == "1":
+        talk_to_cat()
+    elif choice == "2":
+        avoid_table()
+    else:
+        print("Invalid choice. Please choose again.")
+        explore_garden()
+
+
+#Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Talk to Cat
+#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Talk to Cat
+#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Talk to Cat
+def talk_to_cat():
+    print(""""Lost again, are we?" the Cheshire Cat purrs, his grin widening.
+    "You do have a habit of getting yourself into the most curious of predicaments, don't you?"
+
+    You, frustrated but trying to stay calm, look up at him. “Yes, I am lost,” you admit.
+    “I’ve been wandering this strange place for too long. Can you show me the way home?”
+
+    The Cheshire Cat tilts his head, his grin never fading. “Home? Hmm, now that’s a tricky
+    thing to define here in Wonderland, isn’t it? What exactly is home? But... if you insist
+    on leaving this delightful place, I might be persuaded to help.”
+
+    You watch him carefully, knowing the Cheshire Cat loves to toy with words and play tricks.
+    “I just want to go back to where I came from,” you say firmly. “My world. Can you show me the way?”
+
+    The Cheshire Cat’s eyes twinkle with amusement. “Well, if that’s what you truly want, I can
+    certainly point you in the right direction. But you must be careful. Wonderland has a way of
+    holding onto its visitors, especially those with a curious mind like yours.”
+
+    With a slow stretch, the Cheshire Cat points his paw down one of the twisting paths behind him.
+    “Follow that way, and you’ll come to a crossroads. Take the left path, and you’ll find a gate.
+    Once you pass through it, you’ll be back in your world.”
+
+    He begins to fade away again, starting with his tail and ending with that ever-present grin.
+    “But remember,” his voice lingers as he disappears completely, “the path you take may not always
+    be the one you expect.”
+
+    You watch the Cheshire Cat vanish, a sense of both relief and uncertainty washing over you.
+    Though his directions were vague, she had a way to go now.
+    
+    What You will do next?
+    
+    1: Follow the path Cat shows You?
+    2: You tired and want to take a rest?
+    3: Call Rabbit to find way home?""")
+
+    choice = input("> ") #choice function
+    if choice == "1":
+        follow_cat()
+    elif choice == "2":
+        rest_in_garden()
+    elif choice == "3":
+        go_home()
+    else:
+        print("Invalid choice. Please choose again.")
+        talk_to_cat()
+
+
+#Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Follow cat >>> End the game
+#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Follow cat >>> End the game
+#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Follow cay >>> End The game
+def follow_cat():
+    print("""You decide to trust the Cheshire Cat’s directions, even with the lingering sense
+    of mystery. You take a deep breath and head down the winding path he pointed out, your heart
+    beating a little faster with every step. The flowers and plants around you seem to sway as
+    if watching you, but you keep moving forward, determined to find a way home.
+
+    After walking for a while, you come to a crossroads, just as the Cheshire Cat had said. The left
+    path looks slightly darker, shaded by towering trees, but there’s a faint glow in the distance
+    as if something important lies at the end. Without hesitation, you turn left, your steps quicker
+    now as you feel you getting closer to the goal.
+
+    As you follow the path, the air grows warmer, and you can hear the sound of wind rustling through
+    the trees. In the distance, you spot a large gate, golden and ornate, standing tall against the
+    backdrop of the ever-shifting Wonderland sky. The gate seems to shimmer, almost calling to you.
+
+    Yours heart leaps — this must be the way home.
+
+    You approach the gate, and as you reach out to touch it, the latch clicks open, almost on its own.
+    Beyond the gate, you see a familiar sight: the rolling green hills of your world, the soft, comforting
+    colors of the landscape you had been so eager to return to. The air smells fresher, and the sky is the
+    perfect shade of blue.
+
+    You step through the gate, leaving the curious world of Wonderland behind. As you cross the threshold,
+    you feel a strange, light sensation, as if the weight of Wonderland’s madness is lifting from your shoulders.
+    The gate swings shut behind you with a soft click, and when you turn to look back, there’s nothing but the
+    peaceful meadow of your home.
+
+    With a sigh of relief, you know you are finally back.
+
+    The familiar sounds of your world surround you: birds singing, the gentle breeze blowing through the grass,
+    and the distant voices of your family calling your name. You smile, feeling both exhausted and exhilarated.
+    The adventures of Wonderland are behind you now, but you know that the memories will stay with you forever.
+
+    As you begin walking back toward your home, you wonder if you ever return to Wonderland. The Cheshire Cat’s
+    words echo in your mind — “Wonderland has a way of holding onto its visitors.” Perhaps one day, when the time
+    is right, you’ll find herself back there again.
+
+    But for now, your home.""")
+
+
+#Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Avoid Table
+#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Avoid Table
+#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Avoid Table
+def avoid_table():
+    print("""You turn away from the tea table and the Cheshire Cat, deciding to follow
+    one of the many twisting paths ahead. The garden seems to be full of possibilities,
+    and your curiosity pulls you forward. You choose the nearest path, a narrow trail lined
+    with glowing, luminescent flowers that seem to sway with you every step.
+
+    The path twists and turns, the garden growing wilder and stranger with every turn. The leaves
+    overhead grow so thick that they almost block out the sky, creating a canopy that bathes the
+    trail in dappled shadows. As you venture further, you hear faint whispers carried on the breeze.
+    The voices seem to be coming from everywhere and nowhere all at once, but you can't quite make 
+    out what they're saying.
+
+    Soon, the path opens into a small, circular clearing. In the middle of the clearing stands a tall, 
+    spiraling tree with bark that shimmers in different colors as the light touches it. Its branches seem 
+    to reach out like arms, and at the base of the tree, there are three distinct doors carved into its trunk, 
+    each a different color: one red, one blue, and one green. Above each door, a symbol is etched: a clock,
+    a heart, and a crown.
+
+    The whispers grow louder now as if the tree itself is speaking to you. The doors beckon, each promising
+    a different path ahead.
+
+    What will You do next?
+    
+    1: Open the red door?         .-.-.     Symbol
+                             ((  (__I__)  ))
+                               .'_....._'.
+                              / / .12 . \ \\
+                             | | '  |  ' | |
+                             | | 9  /  3 | |
+                              \ \ '.6.' / /
+                               '.`-...-'.'
+                                /'-- --'\          
+   
+     2: Open the blue door  ,-"-,-"-.        Symbol
+                           (         )
+                            ".     ."
+                              "._." 
+    
+    3: Open the green door     <>           Symbol   
+                             .::::.             
+                         @\\/W\/\/W\//@         
+                          \\/^\/\/^\//     
+                           \_O_<>_O_/""")
+
+    choice = input("> ") #choice function
+    if choice == "1":
+        red_door()
+    elif choice == "2":
+        blue_door()
+    elif choice == "3":
+        green_door()
+    else:
+        print("Invalid choice. Please choose again.")
+        avoid_table()
 
 
 # Play >>> Drink Me >>> Leave the Key (End of the Game)
@@ -366,7 +535,10 @@ def call_for_help():
         print("Invalid choice. Please choose again.")
         call_for_help()
 
-#Play >>> Explore Tunnel >> Call for Help >> Go Home (End of the Game)
+#Play >>> Explore Tunnel >> Call for Help >> Call for Rabbit (End of the Game) 
+#Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Call for Rabbit >>> End the game
+#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Call for Rabbit >>> End the game
+#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Call for Rabbit >>> End The game
 def go_home():
     print("""You turn to the White Rabbit, gratitude shining in your eyes.
     “Thank you so much for your help!” you exclaim. “I wouldn’t have found 
