@@ -242,8 +242,8 @@ def rest_in_garden():
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden
 def explore_garden():
-    print("""You step further into the garden, your curiosity drawing you deeper into this strange,
-     beautiful world. The vibrant colors and strange shapes of the plants around you make everything
+    print("""You reached into the garden, your curiosity drawing you deeper into this strange,
+    beautiful world. The vibrant colors and strange shapes of the plants around you make everything
     seem surreal. Flowers with faces whisper to each other, and huge mushrooms tower over you like trees.
 
     As you walk down the winding path, you notice something strange - the deeper you go, the more the
@@ -636,61 +636,126 @@ def blue_door():
     elif choice == "2":
         challenge_queen()
     elif choice == "3":
-        find_way()
+        explore_garden()
     else:
         print("Invalid choice. Please choose again.")
         rest_in_garden()
     
 def ask_queen():
     print("""You, feeling both nervous and hopeful, decide to speak to the Queen of Hearts directly.
-     You know the Queen is a powerful figure in Wonderland, but you hope that by being polite,
-      you might get the help you need to find her way home.
+    You know the Queen is a powerful figure in Wonderland, but you hope that by being polite,
+    you might get the help you need to find her way home.
 
-“Your Majesty,” You begin, bowing slightly, “I didn’t mean to disturb you, but I’ve been lost
- in Wonderland for quite some time now. I only wish to return to my world. Could you, perhaps,
-  help me find my way home?”
+    “Your Majesty,” You begin, bowing slightly, “I didn’t mean to disturb you, but I’ve been lost
+    in Wonderland for quite some time now. I only wish to return to my world. Could you, perhaps,
+    help me find my way home?”
 
-The Queen of Hearts narrows her eyes for a moment, studying You. Her expression is unreadable,
- but after a long silence, the Queen’s lips curl into a small smile.
+    The Queen of Hearts narrows her eyes for a moment, studying You. Her expression is unreadable,
+    but after a long silence, the Queen’s lips curl into a small smile.
 
-“Hmm… A bold request,” the Queen muses, tapping her fingers on the arm of her throne.
- “Most who come to Wonderland rarely wish to leave. But I suppose you are not most, are you?”
+    “Hmm… A bold request,” the Queen muses, tapping her fingers on the arm of her throne.
+    “Most who come to Wonderland rarely wish to leave. But I suppose you are not most, are you?”
 
-The Queen rises from her throne with a flourish of her red and gold robes. She steps down gracefully,
- her eyes still locked on You. “Very well. You’ve amused me, and I do so appreciate those with manners.
-  I will help you — but only because it pleases me to do so.”
+    The Queen rises from her throne with a flourish of her red and gold robes. She steps down gracefully,
+    her eyes still locked on You. “Very well. You’ve amused me, and I do so appreciate those with manners.
+    I will help you — but only because it pleases me to do so.”
 
-You feel a wave of relief, though you remain cautious, knowing the Queen’s temper could turn at any moment.
+    You feel a wave of relief, though you remain cautious, knowing the Queen’s temper could turn at any moment.
 
-The Queen waves her hand, and suddenly, a small, ornate mirror appears floating in the air beside her.
- The frame is shaped like a heart and the glass shimmers with a strange light.
+    The Queen waves her hand, and suddenly, a small, ornate mirror appears floating in the air beside her.
+    The frame is shaped like a heart and the glass shimmers with a strange light.
 
-“This mirror,” the Queen says, “is a portal. It will show you the way back to your world. But remember,
- once you leave Wonderland, you may not be able to return as easily.”
+    “This mirror,” the Queen says, “is a portal. It will show you the way back to your world. But remember,
+    once you leave Wonderland, you may not be able to return as easily.”
 
-You step closer to the mirror, her heart pounding with anticipation. “Thank you, Your Majesty,”
- you say sincerely. “I’m ready to go home.”
+    You step closer to the mirror, her heart pounding with anticipation. “Thank you, Your Majesty,”
+    you say sincerely. “I’m ready to go home.”
 
-The Queen smirks. “Very well. Step through, and you shall find yourself where you belong.”
+    The Queen smirks. “Very well. Step through, and you shall find yourself where you belong.”
 
-You take a deep breath, then reach out and touch the surface of the mirror. As soon as your fingers
- make contact, the glass ripples like water. You feel a strange pull, and before you know it,
-  you being gently drawn into the mirror.
+    You take a deep breath, then reach out and touch the surface of the mirror. As soon as your fingers
+    make contact, the glass ripples like water. You feel a strange pull, and before you know it,
+    you being gently drawn into the mirror.
 
-The world around you swirls in a kaleidoscope of colors and lights, and for a brief moment,
- you feel weightless. Then, with a soft thud, you land on her feet.
+   The world around you swirls in a kaleidoscope of colors and lights, and for a brief moment,
+   you feel weightless. Then, with a soft thud, you land on her feet.
 
-When Alice opens your eyes, you find yourself standing in a familiar meadow. The sky is bright,
- the air is warm, and in the distance, you can see home. You are back in your world.
+   When Alice opens your eyes, you find yourself standing in a familiar meadow. The sky is bright,
+   the air is warm, and in the distance, you can see home. You are back in your world.
 
-You take a deep breath, filled with relief and wonder. Though your time in Wonderland had been
- full of strange and dangerous adventures, you were grateful for the experience. And though you
-  are home now, you know that the magic of Wonderland will stay with you always.
+   You take a deep breath, filled with relief and wonder. Though your time in Wonderland had been
+   full of strange and dangerous adventures, you were grateful for the experience. And though you
+   are home now, you know that the magic of Wonderland will stay with you always.
 
-With one last look at the horizon, You head home, your heart lighter and mind filled with
- memories of the incredible journey.
-""")
+   With one last look at the horizon, You head home, your heart lighter and mind filled with
+   memories of the incredible journey.
+   """)
 
+def challenge_queen():
+    print("""You, feeling bold and defiant, straighten your back and look the Queen of Hearts
+    in the eyes. You know the Queen can be dangerous, but you are no longer the same timid
+    person who first stumbled into Wonderland. Your adventures have made you stronger,
+    and if you have to stand up for yourself to get home, you are ready to do it.
+
+    “Your Majesty,” You begin, your voice steady, “I didn’t come here to beg for help. I’ve
+    faced many challenges in Wonderland, and I’m not afraid of one more. If you want me to
+    earn my way home, then I challenge you.”
+
+    The Queen of Hearts raises an eyebrow, clearly surprised by your boldness. For a moment,
+    there’s silence in the grand throne room. Then, a slow smile spreads across the Queen’s face.
+
+    “A challenge, you say?” the Queen purrs, amused. “How delightful. I do love a good contest,
+    especially when I’m confident I’ll win. But be warned, child — no one has ever beaten me in
+    a challenge before.”
+
+    You hold your ground, determined. “I’ll take that risk.”
+
+    The Queen claps her hands and the room around them shifts. The walls seem to melt away,
+    replaced by a vast arena with towering hedges and flickering lanterns. In the center stands
+    a tall chessboard, its squares gleaming under the lights.
+
+    “We shall play a game,” the Queen declares. “A game of wits and strategy. If you win, I will
+    grant you passage home. If you lose… well, I’m sure you can guess the consequences.”
+
+    The game begins and you quickly realize that the Queen is as clever as she is ruthless.
+    The pieces move almost on their own, following subtle commands from the players. The Queen
+    plays with precision, her knights and queens sweeping across the board with fierce intent.
+
+    But you, having learned to think quickly and cleverly in Wonderland, anticipate the Queen’s 
+    moves. She makes bold plays of her own, guiding her pieces with a combination of logic and 
+    intuition. The Queen’s frustration grows with each passing move, her confident smirk slowly fading.
+
+    Finally, after a tense series of moves, you see an opening. With a triumphant smile, she moves
+    her final piece into place and declares, “Checkmate.”
+
+    The Queen of Hearts freezes, staring at the board in disbelief. For the first time, someone
+    has bested her. Her face flushes with anger, but instead of lashing out, she lets out a slow,
+    controlled breath.
+
+    “Well, well,” the Queen says, her voice tight but controlled. “It seems you’ve won. I suppose
+    I must honor my word.”
+
+    The chessboard vanishes, and the grand arena melts away, leaving them back in the throne room.
+    The Queen waves her hand, and once again, the magical mirror appears, shimmering in the air beside her.
+
+    “This mirror will take you home,” the Queen says, though her tone is far less amused than before.
+    “I suggest you take it before I change my mind.”
+
+    Your heart racing from the intensity of the game steps toward the mirror. You look back at the
+    Queen one last time, offering a polite but firm nod. “Thank you, Your Majesty.”
+
+    The Queen simply waves her off, her eyes smoldering but silent. Without wasting another second,
+    You touch the surface of the mirror and feel the familiar pull.
+
+    In an instant, you are back in your world, standing in the same meadow where your adventure began.
+    The sky is blue, the air fresh, and the sounds of Wonderland fade into distant memories. You home at last.
+
+    You look around, your heart light and full of pride. You had stood up to the Queen of Hearts and won.
+    Wonderland may have been strange, but it taught you that you were stronger and braver than you ever knew.
+
+    With a smile, You turn and begin to walk back home, knowing that you carry the lessons of Wonderland
+    with you forever.""")
+ 
 
 #Welcome
 print("""    _    _ _            _                            
