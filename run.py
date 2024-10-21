@@ -3,6 +3,14 @@ import time
 
 a = 1
 
+def type(text):
+  words = text
+  for char in words:
+    time.sleep(0.2)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+
+
 #Play function
 def play_game():
     print()
@@ -778,7 +786,7 @@ print()
 print()
 
 #Welcome text    
-print("""Welcome to the Magical World of Wonderland!
+type("""Welcome to the Magical World of Wonderland!
 Enter a world where the ordinary becomes extraordinary, and every turn is a new adventure! 
 In this magical land, the curious and the brave are invited to join Alice on her whimsical 
 journey through enchanted gardens, tea parties with unusual characters, and mind-bending 
