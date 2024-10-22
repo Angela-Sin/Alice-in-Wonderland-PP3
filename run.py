@@ -3,8 +3,6 @@ import time
 
 a = 1
 
-
-
 def type(text):
   words = text
   for char in words:
@@ -16,7 +14,7 @@ def type(text):
 #Play function
 def play_game():
     print()
-    type("""\033[0;31;47m Red You follow the White Rabbit down a winding
+    type(""" You follow the White Rabbit down a winding
 path that leads to a small door hidden in the roots
 of a large tree. Curiosity prompts you to open it,
 and you find yourself in a dimly lit tunnel. The walls
@@ -28,7 +26,7 @@ that seem to reflect worlds other than your own.
     What you would like to do?
 
     1:Try a drink? 
-    2:Explore the tunnel? \n""")
+    2:Explore the tunnel?""")
 
     choice = input(" >>>  ") #choice function
     if choice == "1":
@@ -211,7 +209,7 @@ Wonderland forever in your heart.""")
 
     print()
     print()
-    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+    print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -219,7 +217,7 @@ made Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away.""")
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
     if startGame == 'N' or startGame == "n":
@@ -477,7 +475,7 @@ find herself back there again.
 
     print()
     print()
-    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+    print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -485,7 +483,7 @@ made Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away. """)
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
     if startGame == 'N' or startGame == "n":
@@ -584,7 +582,7 @@ and the shadows that dance on the walls never leave you alone.
 
     print()
     print()
-    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+    print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -592,7 +590,7 @@ made Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away.""")
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
     if startGame == 'N' or startGame == "n":
@@ -758,7 +756,7 @@ will return.""")
    
     print()
     print()
-    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+    print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -766,7 +764,7 @@ made Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away.""")
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
     if startGame == 'N' or startGame == "n":
@@ -909,7 +907,7 @@ journey.""")
 
     print()
     print()
-    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+    print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -917,7 +915,7 @@ made Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away.""")
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
     if startGame == 'N' or startGame == "n":
@@ -1020,7 +1018,7 @@ forever.""")
 
     print()
     print()
-    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+    print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -1028,7 +1026,7 @@ made Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away.""")
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
     if startGame == 'N' or startGame == "n":
@@ -1217,14 +1215,14 @@ keeps her lost.""")
 
     print()
     print()
-    print("""\033[0;34;47m  Your decision to explore the 
+    print("""Your decision to explore the 
 dark forest has led you into a beautiful yet haunting 
 reality, where you remain forever in the enchanting embrace 
 of Wonderland.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away.""")
     print()
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
@@ -1305,7 +1303,7 @@ anything is possible.""")
 
     print()
     print()
-    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+    print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -1313,7 +1311,7 @@ made Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away.""")
     print()
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
@@ -1394,7 +1392,7 @@ away, ready for you to return whenever you wish.""")
  
     print()
     print()
-    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+    print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -1402,7 +1400,7 @@ made Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.\n """)
+is never too far away.""")
     print()
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
@@ -1466,7 +1464,7 @@ Remember: in Wonderland, nothing is quite what it seems.
 Are you ready to find out what's behind the mirror?""")
 print()
 print()
-print("""\033[1;31;40m
+print("""
              /\\
         _   / /\\
        | \\\\/_/
@@ -1476,7 +1474,7 @@ print("""\033[1;31;40m
    -,-----,--\\--,-----,---,\'-'  {{~}}
            __/\\            '--=.\\}/
           /_/ |\\
-             \\/  \n""")
+             \\/  """)
 
 #Start game function
 startGame = input('Would You like to play? (Y/N):  ')
