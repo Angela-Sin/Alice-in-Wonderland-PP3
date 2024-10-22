@@ -1,7 +1,12 @@
 import sys
 import time
+import colorama 
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
 
 a = 1
+
+
 
 def type(text):
   words = text
@@ -39,6 +44,12 @@ that seem to reflect worlds other than your own.
 
 #Play >>> Drink Me
 def drink_me():
+    print(Fore.YELLOW + """
+      ooo,    .---.
+     o`  o   /    |\\________________
+     o`   'oooo()  | ________   _   _)
+    `oo   o` \\    |/        | | | |
+      `ooo'   `---'         "-" |_|""")
     print()
     type("""You found the tiny bottle with the sign
 "Drink Me".You uncork the bottle and inhale the
@@ -58,17 +69,14 @@ In your new, tiny size, you can now see hidden details
 in the tunnel's floors and walls - cracks and crevices
 you couldn't see before. In one of these cracks, you
 notice a small, shimmering key lying just out of reach.
-    
-      ooo,    .---.
-     o`  o   /    |\\________________
-     o`   'oooo()  | ________   _   _)
-    `oo   o` \\    |/        | | | |
-      `ooo'   `---'         "-" |_|
+   
+      
 
     What you would like to do?
 
     1: Take the Key 
     2: Leave the Key""")
+
 
     choice = input(" >>>  ") #choice function
     if choice == "1":
@@ -82,16 +90,18 @@ notice a small, shimmering key lying just out of reach.
 #Play >>> Drink Me >>> Take Key
 def take_key():
     print()
+    print(Fore.YELLOW + """
+              ____
+             |  , =, _________
+             | ='  (VvvVvV--'
+             |____|""")
+    print()
     type("""You decide to pick up the tiny key. Its golden
 glow beckons you, and though you’re not sure what it unlocks,
 you sense that it’s important. Holding it tightly in your
 tiny hand, you continue down the tunnel that stretches 
-endlessly before you.
-
-              ____
-             |  , =,( _________
-             | ='  (VvvVvV--'
-             |____(
+endlessly before you. 
+            
 
 After what feels like an eternity of walking, you come
 to a small door built into the wall. At your current size,
@@ -125,13 +135,13 @@ world you have entered is far from home. It seems both enchanting
 and dangerous, full of secrets waiting
 to be explored.
     
-    What will you do next?
+      What will you do next?
     
-    1: Explore the garden further?
-    2: Look for the White Rabbit?
-    3: Rest for a moment and observe?""")
+     1: Explore the garden further?
+     2: Look for the White Rabbit?
+     3: Rest for a moment and observe?""")
 
-    choice = input(" >>>  ") #choice function
+    choice = input(" >>> ") #choice function
     if choice == "1":
         explore_garden()
     elif choice == "2":
@@ -930,12 +940,13 @@ def green_door():
  
 
 #Welcome
-print("""           ____     ____         ~~~~~~~~~~~~~~~~~~~~~
-                  /'    |   |    \\       *                    *
+print(Back.MAGENTA + """
+                    ____     ____        ~~~~~~~~~~~~~~~~~~~~~
+                  /'    |   |    \\      *                    *
                 /    /  |   | \\   \\     * Alice's Adventure  *
               /    / |  |'''|  \\   \\    *  In Wonderland!    *
              (   /   |         |\\   \\   *                    *
-             | /   / /^\\    /^\\  \\  _|  ~~~~~~~~~~~~~~~~~~~~         
+             | /   / /^\\    /^\\  \\  _|   ~~~~~~~~~~~~~~~~~~~~         
               ~   | |   |  |   | | ~        
                   | |__O|__|O__| |
                 /~~      \\/     ~~\\
@@ -979,7 +990,7 @@ Remember: in Wonderland, nothing is quite what it seems.
 Are you ready to find out what's behind the mirror?""")
 print()
 print()
-print(""" 
+print(Fore.RED + """
              /\\
         _   / /\\
        | \\\\/_/
