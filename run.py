@@ -19,18 +19,8 @@ def play_game():
     and you find yourself in a dimly lit tunnel. The walls
     of the tunnel are lined with shelves filled with
     strange objects: clocks that tick backwards, bottles 
-    with the words "Drink Me" 
-     _
-    {_}
-    |(|
-    |=|
-   /   \\
-   |.--|
-   ||  |
-   ||  |    
-   |'--|  
-   '-=-' written on them, and mirrors that seem
-   to reflect worlds other than your own. 
+    with the words "Drink Me" written on them, and mirrors 
+    that seem to reflect worlds other than your own. 
     
     What you would like to do?
 
@@ -891,15 +881,15 @@ def challenge_queen():
 
 #Welcome
 print("""
-    _      _            _                
-   / \  | (_) ___ ___  (_)_ __                       
-  / _ \ | | |/ __/ _ \ | | '_ \\                     
- / ___ \| | | (_|  __/ | | | | |                     
-/_/   \_\_|_|\___\___| |_|_| |_| _                 _ 
-\ \      / /__  _ __   __| | ___| | __ _ _ __   __| |
- \ \ /\ / / _ \| '_ \ / _` |/ _ \ |/ _` | '_ \ / _` |
-  \ V  V / (_) | | | | (_| |  __/ | (_| | | | | (_| |
-   \_/\_/ \___/|_| |_|\__,_|\___|_|\__,_|_| |_|\__,_|""")
+    _      _ _               _                
+   / \\   | (_)  ___  ___   (_)_ __                       
+  / _ \\  | | | / __ / _ \\ | | '_ \\                     
+ / ___ \\ | | || (_ |  __/  | | | | |                     
+/_/   \\_\\_|_|\\___\\___|  |_|_| |_|   _                    _ 
+\\ \\     / /  __    _ __   __| |  __ _| |   __ _ _ __    __| |
+ \\ \\ /\\ /  / _ \\| '_ \\/ _` | / _ \\ |  / _` | '_ \\ / _` |
+  \\  V   V  / (_)| | | | ||(_| | |  __/ | (_| | | | | ||(_|  |
+   \\_/\\_/ \\___/  |_| |_|\\__,_|\\___|_| \\__,_|_| |_|\\__,_|""")
 
 print()
 print()
@@ -913,35 +903,39 @@ print()
 
 #Welcome text    
 type("""Welcome to the Magical World of Wonderland!
-Enter a world where the ordinary becomes extraordinary, and every turn is a new adventure! 
-In this magical land, the curious and the brave are invited to join Alice on her whimsical 
-journey through enchanted gardens, tea parties with unusual characters, and mind-bending 
-mysteries.
-Get ready to meet talking animals, mischievous Cheshire Cats, and a Queen who isn't afraid 
-to shout, "Off with their heads!" As you navigate this fantastical world, your decisions 
-will shape the story, revealing secrets and challenges around every corner.
-Are you brave enough to follow the White Rabbit down the rabbit hole? Embrace the madness,
-let your imagination run wild, and let the adventure begin!
-Remember: in Wonderland, nothing is quite what it seems. Are you ready to find out what's
-behind the mirror?""")
+Enter a world where the ordinary becomes extraordinary, 
+and every turn is a new adventure! In this magical land, 
+the curious and the brave are invited to join Alice on her
+whimsical journey through enchanted gardens, tea parties with 
+unusual characters, and mind-bending mysteries.
+Get ready to meet talking animals, mischievous Cheshire Cats, 
+and a Queen who isn't afraid to shout, "Off with their heads!"
+ As you navigate this fantastical world, your decisions 
+will shape the story, revealing secrets and challenges around 
+every corner. Are you brave enough to follow the White Rabbit 
+down the rabbit hole? Embrace the madness,
+let your imagination run wild, and let the adventure begin! 
+Remember: in Wonderland, nothing is quite what it seems. 
+Are you ready to find out what's behind the mirror?""")
 print()
 print()
-print("""    /\\
+print("""     /\\
         _   / /\\
-       | \  \/_/
-       \_\| / __              
-          \/_/__\           .--='/~\\
-   ____,__/__,_____,______)/   /{~}}}
-   -,-----,--\--,-----,---,\'-' {{~}}
-           __/\            '--=.\}/
+       | \\\\/_/
+       \\\\| / __             
+         \\/_/__\\          .--='/~\\
+   ____,__/__,_____,______)/    /{~}}}
+   -,-----,--\\--,-----,---,\'-'  {{~}}
+           __/\\            '--=.\\}/
           /_/ |\\
-              \/""")
+             \\/""")
 
 #Start game function
 startGame = input('Would You like to play? (Y/N): ')
 if startGame == 'N' or startGame == "n":
     print("""That's totally okay!
     Adventure games can be a real journey. If you change your mind,
-    just let me know and we can dive back into the whimsical world of Wonderland!""")
+    just let me know and we can dive back into 
+    the whimsical world of Wonderland!""")
 elif startGame == 'Y' or startGame == "y":
     play_game()
