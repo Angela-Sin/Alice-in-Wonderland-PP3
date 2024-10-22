@@ -1328,8 +1328,92 @@ the whimsical world of Wonderland!""")
 
 def green_door():
     print()
-    type("""""")
+    type("""With a spark of curiosity, You push open the 
+vibrant green door and step inside. The door leads you 
+into a lush, vibrant garden that feels alive with magic. 
+The air is filled with the sweet scent of blooming flowers, 
+and the gentle sound of rustling leaves creates a soothing melody.
+
+As you wander further into the garden, you notice the enchanting 
+scenery—flowers of every color sway gracefully, and butterflies 
+flit about, painting the air with their colorful wings. In 
+the distance, you spot a familiar figure: it's the White Rabbit, 
+looking just as hurried as ever:
+
+"Ah, Alice!" the White Rabbit exclaims, his eyes wide with relief. 
+"I was hoping to find you here! You seem to have quite a knack for 
+getting lost."
+
+You giggle, feeling a sense of warmth in seeing your friend again. 
+"I’m glad to see you! I thought I’d never find you. I need help 
+getting home."
+
+The Rabbit adjusts his tiny waistcoat and peers around, his long 
+ears twitching. "Follow me! There’s a secret path that leads 
+right to your home, but you must be quick! The garden is enchanted, 
+and time moves differently here."
+
+Without another word, you follow the White Rabbit as he hops along a 
+winding path through the garden. They pass by shimmering flowers and 
+glowing streams, each step bringing you closer to the exit. The Rabbit 
+glances back frequently, urging her to keep up.
+
+“Just around this corner,” he says breathlessly, pointing to a 
+cluster of trees that seem to shimmer in the sunlight. “There’s 
+a doorway that will take you back.”
+
+They reach a small archway covered in delicate vines, which 
+leads to another door—this one painted a soft shade of blue. 
+The Rabbit stops, catching his breath, and looks at you with 
+a smile.
+
+“Through this door is the way back home,” he assures you. 
+“But remember, Alice, your adventures in Wonderland will 
+always be here if you choose to return. Just keep your heart 
+open to the magic around you.”
+
+You nod, your heart racing with excitement and gratitude. 
+“Thank you, Mr. Rabbit! I’ll always cherish my time here.”
+
+With one last wave, you push open the blue door. You feel a 
+rush of warmth and light engulf you as you step through.
+
+Suddenly, you find yourself back in your familiar garden, 
+the sun shining brightly overhead. The sounds of birds chirping 
+and leaves rustling fill your ears, grounding you in the reality 
+of your own world.
+
+“I’m home!” you exclaim, your heart swelling with joy. The 
+adventure in Wonderland has come to a close, but the memories 
+of your whimsical journey and the friends you made will stay 
+with you forever.
+
+As you wander through her garden, she can’t help but smile, 
+knowing that the magic of Wonderland is just a heartbeat 
+away, ready for you to return whenever you wish.""")
  
+  print()
+    print()
+    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
+    print()
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
 
 #Welcome
 print("""
