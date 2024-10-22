@@ -447,17 +447,6 @@ find herself back there again.
 
 ~~~~~~~~~~~~~~~~But for now, your home!~~~~~~~~~~~~~~~~~~~~""")
 
-    choice = input(" >>>  ") #choice function
-    if choice == "1":
-        explore_garden()
-    elif choice == "2":
-        look_for_rabbit()
-    elif choice == "3":
-        rest_in_garden()
-    else:
-        print("Invalid choice. Please choose again.")
-        take_key()
-
 
 #Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Avoid Table
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Avoid Table
@@ -694,8 +683,16 @@ You smile, knowing that even though your adventure in
 Wonderland has come to an end, the memories will forever 
 remain in your heart. And who knows? Perhaps one day you 
 will return.""")
-    print("""
-                  Thank You for visit! """)
+    print()
+    print("""\033[1;34;40m Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
     print() 
     startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
     if startGame == 'N' or startGame == "n":
@@ -985,7 +982,7 @@ Remember: in Wonderland, nothing is quite what it seems.
 Are you ready to find out what's behind the mirror?""")
 print()
 print()
-print("""
+print("""\033[1;31;40m
              /\\
         _   / /\\
        | \\\\/_/
@@ -995,7 +992,7 @@ print("""
    -,-----,--\\--,-----,---,\'-'  {{~}}
            __/\\            '--=.\\}/
           /_/ |\\
-             \\/""")
+             \\/  \n""")
 
 #Start game function
 startGame = input('Would You like to play? (Y/N):  ')
