@@ -247,26 +247,9 @@ def rest_in_garden():
     
     What will You do next?
     
-    1: Open the red door?         .-.-.     Symbol
-                             ((  (__I__)  ))
-                               .'_....._'.
-                              / / .12 . \ \\
-                             | | '  |  ' | |
-                             | | 9  /  3 | |
-                              \ \ '.6.' / /
-                               '.`-...-'.'
-                                /'-- --'\\          
-   
-     2: Open the blue door  ,-"-,-"-.        Symbol
-                           (         )
-                            ".     ."
-                              "._." 
-    
-    3: Open the green door     <>           Symbol   
-                             .::::.             
-                         @\\/W\/\/W\//@         
-                          \\/^\/\/^\//     
-                           \_O_<>_O_/""")
+    1: Open the red door?          
+    2: Open the blue door  
+    3: Open the green door""")
 
     choice = input("> ") #choice function
     if choice == "1":
@@ -494,26 +477,9 @@ def avoid_table():
 
     What will You do next?
     
-    1: Open the red door?         .-.-.     Symbol
-                             ((  (__I__)  ))
-                               .'_....._'.
-                              / / .12 . \ \\
-                             | | '  |  ' | |
-                             | | 9  /  3 | |
-                              \ \ '.6.' / /
-                               '.`-...-'.'
-                                /'-- --'\\         
-   
-     2: Open the blue door  ,-"-,-"-.        Symbol
-                           (         )
-                            ".     ."
-                              "._." 
-    
-    3: Open the green door     <>           Symbol   
-                             .::::.             
-                         @\\/W\/\/W\//@         
-                          \\/^\/\/^\//     
-                           \_O_<>_O_/""")
+    1: Open the red door?
+    2: Open the blue door?
+    3: Open the green door?""")
 
     choice = input("> ") #choice function
     if choice == "1":
@@ -940,7 +906,8 @@ def challenge_queen():
  
 
 #Welcome
-print("""  _            _                            
+print("""
+    _      _            _                
    / \  | (_) ___ ___  (_)_ __                       
   / _ \ | | |/ __/ _ \ | | '_ \\                     
  / ___ \| | | (_|  __/ | | | | |                     
@@ -949,6 +916,7 @@ print("""  _            _
  \ \ /\ / / _ \| '_ \ / _` |/ _ \ |/ _` | '_ \ / _` |
   \ V  V / (_) | | | | (_| |  __/ | (_| | | | | (_| |
    \_/\_/ \___/|_| |_|\__,_|\___|_|\__,_|_| |_|\__,_|""")
+
 print()
 print()
 name = input("Please enter your name: ")
