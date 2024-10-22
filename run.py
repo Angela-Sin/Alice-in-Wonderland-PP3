@@ -1,5 +1,7 @@
 import sys
 import time
+import colorama
+from colorama import Fore, Back, Style
 
 a = 1
 
@@ -1414,7 +1416,7 @@ the whimsical world of Wonderland!""")
         play_game()
 
 #Welcome
-print("""
+print(f"""{Fore.LIGHTBLUE_EX}
                     ____     ____        ~~~~~~~~~~~~~~~~~~~~~
                   /'    |   |    \\      *                    *
                 /    /  |   | \\   \\     * Alice's Adventure  *
@@ -1436,7 +1438,7 @@ print("""
  :     -                          .                  : : |______________-__|
   :              ,                 ,                :   /'~----___________|
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-""")
+{Fore.RESET}\n""")
 
 print()
 player_name = input("Please enter your name >>> ")
