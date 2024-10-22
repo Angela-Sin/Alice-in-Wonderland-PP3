@@ -16,7 +16,7 @@ def type(text):
 #Play function
 def play_game():
     print()
-    type("""You follow the White Rabbit down a winding
+    type("""\033[0;31;47m Red You follow the White Rabbit down a winding
 path that leads to a small door hidden in the roots
 of a large tree. Curiosity prompts you to open it,
 and you find yourself in a dimly lit tunnel. The walls
@@ -28,7 +28,7 @@ that seem to reflect worlds other than your own.
     What you would like to do?
 
     1:Try a drink? 
-    2:Explore the tunnel?""")
+    2:Explore the tunnel? \n""")
 
     choice = input(" >>>  ") #choice function
     if choice == "1":
@@ -36,8 +36,14 @@ that seem to reflect worlds other than your own.
     elif choice == "2":
         explore_tunnel()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         play_game()
+
+def invalid_choice():
+    print("\nInvalid choice! Please enter a number you see below.") 
+    print() 
+    print("Let's try that again!")
+
 
 #Play >>> Drink Me
 def drink_me():
@@ -81,7 +87,7 @@ notice a small, shimmering key lying just out of reach.
     elif choice == "2":
         leave_key()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         drink_me()
 
 #Play >>> Drink Me >>> Take Key
@@ -144,7 +150,7 @@ to be explored.
     elif choice == "3":
         rest_in_garden()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         take_key()
 
 #Play >>> Drink Me >> Take Key >>> Look For Rabbit >>> End of the Game
@@ -202,6 +208,28 @@ hear the comforting sounds of home.
 
 You smile, knowing you are safe and sound, but with the memory of
 Wonderland forever in your heart.""")
+
+    print()
+    print()
+    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
 
 
 
@@ -261,7 +289,7 @@ waiting for you to decide.
     elif choice == "3":
         green_door()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         rest_in_garden()
     
     
@@ -326,7 +354,7 @@ twinkling mischievously.
     elif choice == "2":
         avoid_table()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         explore_garden()
 
 
@@ -385,7 +413,7 @@ she had a way to go now.
     elif choice == "3":
         go_home()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         talk_to_cat()
 
 
@@ -447,6 +475,28 @@ find herself back there again.
 
 ~~~~~~~~~~~~~~~~But for now, your home!~~~~~~~~~~~~~~~~~~~~""")
 
+    print()
+    print()
+    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
+
 
 #Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Avoid Table
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Avoid Table
@@ -495,7 +545,7 @@ each promising a different path ahead.
     elif choice == "3":
         green_door()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         avoid_table()
 
 
@@ -532,6 +582,28 @@ curious now feel like permanent companions,
 and the shadows that dance on the walls never leave you alone.
 """)
 
+    print()
+    print()
+    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
+
 
 #Play >>> Explore Tunnel
 def explore_tunnel():
@@ -558,7 +630,7 @@ you hear the faint ticking of a clock that you cannot see.
     elif choice == "2":
         call_for_help()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         explore_tunnel()
 
 
@@ -616,7 +688,7 @@ a way of calling you back.
     elif choice == "2":
         explore_garden()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         call_for_help()
 
 #Play >>> Explore Tunnel >> Call for Help >> Call for Rabbit (End of the Game) 
@@ -683,8 +755,10 @@ You smile, knowing that even though your adventure in
 Wonderland has come to an end, the memories will forever 
 remain in your heart. And who knows? Perhaps one day you 
 will return.""")
+   
     print()
-    print("""\033[1;34;40m Thank you for joining Alice on her magical
+    print()
+    print("""\033[0;34;47m  Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
 brought the adventure to life, and we hope you had as 
 much fun exploring as Alice did. Every step you took 
@@ -759,7 +833,7 @@ learn something important — or perhaps even find a way home.
     elif choice == "3":
         explore_garden()
     else:
-        print("Invalid choice. Please choose again.")
+        invalid_choice()
         rest_in_garden()
     
 def ask_queen():
@@ -832,6 +906,28 @@ Wonderland will stay with you always.
 With one last look at the horizon, You head home, 
 your heart lighter and mind filled with memories of the incredible 
 journey.""")
+
+    print()
+    print()
+    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
 
 def challenge_queen():
     print()
@@ -922,6 +1018,28 @@ With a smile, You turn and begin to walk back home,
 knowing that you carry the lessons of Wonderland with you 
 forever.""")
 
+    print()
+    print()
+    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
+
 def red_door():
     print()
     type("""""")
@@ -1004,3 +1122,4 @@ just let me know and we can dive back into
 the whimsical world of Wonderland!""")
 elif startGame == 'Y' or startGame == "y":
     play_game()
+    
