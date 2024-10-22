@@ -1042,7 +1042,289 @@ the whimsical world of Wonderland!""")
 
 def red_door():
     print()
-    type("""""")
+    type("""You take a deep breath, filled with curiosity and
+excitement, and push the red door open. As you step through, 
+you feel a rush of cool air and a sense of wonder. The door 
+closes softly behind you, and you find yourself in a vibrant, 
+surreal landscape unlike anything you have ever seen.
+
+The ground is covered in lush, colorful grass that seems to 
+shimmer under a radiant sun. Giant mushrooms tower above you, 
+their caps decorated with whimsical patterns. In the distance, 
+You hear the sound of laughter and see a group of peculiar characters 
+gathered around a large, crooked table, set for tea.
+
+As you survey your surroundings, you notice:
+
+A paved path leads to the tea party where the Mad Hatter and March 
+Hare are celebrating with a peculiar assortment of teapots and pastries.
+A dark forest to your left, where strange, glowing creatures flit 
+among the trees, inviting you to explore.
+A sparkling stream nearby, with a clear surface that reflects the 
+colorful skies above.
+
+    What You will do next?
+    
+    1: Join Mad Hatters Party?
+    2: Go to Dark Forest?""")
+     
+    choice = input(" >>> ") #choice function
+    if choice == "1":
+        mad_hatter()
+    elif choice == "2":
+        dark_forest()
+    else:
+        invalid_choice()
+        red_door()
+
+def mad_hatter():
+    print()
+    type("""You, feeling a mix of excitement and nervousness,
+ approach the Mad Hatter's tea party. The table is set with 
+ an array of colorful teapots, mismatched cups, and delectable 
+ pastries that seem to beckon you to join.
+
+"Welcome, welcome!" the Mad Hatter exclaims, his eyes wide with 
+enthusiasm. "Would you like some tea? We have every flavor 
+imaginable, even ones you can't taste!"
+
+You take a seat at the table, her curiosity piqued by the 
+whimsical setup. The March Hare grins at you while nibbling 
+on a scone, and the Dormouse stirs lazily in a teapot.
+
+After a moment of enjoying the strange assortment of foods, 
+You speak up. "Excuse me, Mr. Hatter, but I need your help. 
+I’m trying to find my way home. Can you help me?"
+
+The Mad Hatter pauses, his expression shifting to one of 
+understanding. "Ah, home! A curious place indeed. But it 
+seems you must first have a proper tea party with us!"
+
+You nod eagerly, and they dive into a delightful and chaotic 
+tea party filled with nonsensical conversations, laughter, 
+and delightful treats. Time flies by as they share stories 
+and riddles, and You momentarily forget your worries.
+
+As the tea party comes to an end, You feel grateful for the 
+laughter and joy but remember your goal. You turn to the 
+Mad Hatter, who is tidying up the table.
+
+"Thank you for the wonderful tea party! But now, could you 
+please help me find my way home?" you ask earnestly.
+
+The Mad Hatter grins, adjusting his large hat. "Of course, 
+my dear! The way home is often hidden, but I can show you 
+a path. Just follow the White Rabbit. He knows the way better 
+than anyone else in Wonderland."
+
+The March Hare adds with a wink, "Just look for him at the next 
+intersection. He’ll be the one with the watch, of course—always 
+running late!"
+
+Your heart lifts at the thought of finally getting home. "Thank 
+you so much! I’ll look for the White Rabbit!"
+
+With a wave of her hand and a final farewell to her new friends, 
+you set off from the tea party, following the winding path that 
+the Mad Hatter pointed out. The landscape around you is filled 
+with vibrant colors and peculiar sounds, but you stay focused on 
+her mission.
+
+As you walk, you begin to notice familiar landmarks—the large 
+mushroom, the crooked tree, and finally, a little figure hopping 
+in the distance. It’s the White Rabbit, glancing at his pocket 
+watch with a worried expression.
+
+     What You will do next?
+     
+     1: Call For the rabbit?
+     2: Explore dark forest?""")
+
+    choice = input(" >>> ") #choice function
+    if choice == "1":
+        explore_garden()
+    elif choice == "2":
+        dark_forest_way_home()
+    else:
+        invalid_choice()
+        mad_hatter()
+
+def dark_forest():
+    print()
+    type("""You, curious and adventurous, decide to delve 
+deeper into the dark forest rather than seek the White Rabbit. 
+The trees loom tall above You, their twisted branches casting 
+eerie shadows on the ground. The further You wander, the 
+thicker the underbrush becomes, and the sounds of the outside 
+world begin to fade away.
+
+As you walk, the path becomes less defined, and you start to 
+feel a sense of unease creeping in. The forest seems alive with 
+whispers, rustling leaves, and distant echoes that make your 
+heart race.
+
+After what feels like hours of wandering, you realize you have 
+strayed far from where you entered the forest. The tall trees 
+block out the sunlight, and the air grows heavy with an 
+unsettling silence.
+
+“Oh no,” you mutter to yourself, “I should have followed 
+the Rabbit.” you look around, hoping to find a familiar 
+landmark, but everything seems to look the same: gnarled roots, 
+towering trunks, and dense thickets of brambles.
+
+Just then, she spots a flickering light in the distance, a 
+soft glow that seems inviting. Feeling a glimmer of hope, 
+You move towards it, thinking it might lead you back to safety.
+
+As you approach the light, you discover it comes from a cluster 
+of glowing mushrooms surrounded by swirling fog. They emit a 
+soft, enchanting glow that dances in the dimness of the forest. 
+Intrigued, You kneel to inspect them, wondering if they might 
+be the key to finding her way back.
+
+Suddenly, the fog thickens around you, and she feels a 
+strange pull as if the forest is trying to envelop you. 
+The enchanting glow becomes hypnotic, and you feel her 
+resolve start to waver.
+
+“What if I stay here for a while?” she muses, mesmerized 
+by the mushrooms' light. “It could be fun to explore this 
+magical place
+
+As the fog wraps around her, your sense of time begins to 
+dissolve. Hours blend into minutes and the concept of home 
+slips from your mind. You wander deeper into the forest, 
+captivated by its mysteries. You encounter strange creatures, 
+hear melodies from hidden places, and dance with shadows.
+
+But as days turn into weeks, You start to realize that you 
+are not just exploring; you are lost. The forest has a life 
+of its own, and its enchanting beauty has trapped her in a 
+never-ending cycle of wonder.
+
+Eventually, you sit beneath a great, ancient tree, feeling 
+the weight of your decision. The reality of being lost sinks 
+in, but you have grown fond of this magical world.
+
+“This forest is my home now,” you whisper, a bittersweet 
+smile gracing your lips. “I may never see my old life again, 
+but this place is filled with wonders.”
+
+And so, you become a part of the dark forest, a curious spirit 
+wandering among the trees, forever enchanted by the magic that 
+keeps her lost.""")
+
+    print()
+    print()
+    print("""\033[0;34;47m  Your decision to explore the 
+dark forest has led you into a beautiful yet haunting 
+reality, where you remain forever in the enchanting embrace 
+of Wonderland.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
+    print()
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
+
+def dark_forest_way_home():
+    print()
+    type("""After saying goodbye to the Mad Hatter and the 
+March Hare, You decide to venture into the dark forest you 
+had seen earlier. The trees are tall and twisted, their leaves 
+forming a thick canopy that filters the sunlight into soft, 
+dappled shadows on the ground.
+
+As you walk deeper into the forest, you hear the gentle rustle 
+of leaves and the distant sound of trickling water. The air is 
+cool and fresh, and you feel a mix of excitement and apprehension. 
+Suddenly, you spot a familiar figure darting between the trees—it's 
+the White Rabbit, looking just as flustered as ever.
+
+“Excuse me! Mr. Rabbit!” you call out, your voice echoing through 
+the forest.
+
+The White Rabbit stops abruptly, his big ears twitching. He turns 
+to face her, a look of relief washing over his face. “Oh, thank 
+goodness! I thought I had lost you forever! I’ve been looking 
+for you everywhere!”
+
+You catch her breath, feeling a surge of hope. “I’m so glad to 
+see you! I need your help to find my way home.”
+
+The White Rabbit nods eagerly. “Of course! Follow me, and stay close. 
+The way home can be tricky, but I know the path.”
+
+As you make your way through the forest, the Rabbit leads you past 
+twisted trees and sparkling streams. Along the way, he points out 
+various landmarks, including peculiar flowers that giggle when 
+touched and rocks that seem to hum a cheerful tune.
+
+“This way!” the Rabbit exclaims, hopping ahead with surprising 
+agility. You follow closely, her heart racing with anticipation.
+
+After a short journey filled with laughter and surprises, they 
+reach the edge of the dark forest. Ahead of them lies a beautiful 
+meadow bathed in golden sunlight. At the far end of the meadow, you 
+can see a shimmering portal that looks almost like a mirror.
+
+The White Rabbit pauses and turns to you, his expression is serious. 
+“Beyond that portal lies your home. Just step through, and you will 
+find yourself back where you belong.”
+
+You gaze at the portal, her heart swelling with gratitude. “Thank you 
+so much, Mr. Rabbit! I couldn’t have done this without you.”
+
+“Just remember,” the Rabbit says with a wink, “you can always return 
+to Wonderland if you follow your heart. Now go on!”
+
+With a final wave, you step toward the shimmering portal. You feel a 
+gentle tug as if the portal itself is welcoming you back. Taking a 
+deep breath, she steps through the mirror-like entrance.
+
+Suddenly, You find yourself standing in her garden, the familiar 
+sights and sounds of home enveloping you. The sun is shining brightly, 
+and the flowers sway gently in the breeze.
+
+“I’m home!” you exclaim, feeling a rush of joy wash over you. The adventure 
+in Wonderland has come to an end, but the memories will stay with you forever.
+
+As you walk through your garden, you can’t help but smile, knowing that you 
+have discovered the magic of curiosity and friendship in a world where 
+anything is possible.""")
+
+    print()
+    print()
+    print("""\033[0;34;47m  Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
+
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.\n """)
+    print()
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
 
 def green_door():
     print()
