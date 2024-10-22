@@ -28,7 +28,7 @@ that seem to reflect worlds other than your own.
     1:Try a drink? 
     2:Explore the tunnel?""")
 
-    choice = input("> ") #choice function
+    choice = input(" >>>  ") #choice function
     if choice == "1":
         drink_me()
     elif choice == "2":
@@ -70,7 +70,7 @@ notice a small, shimmering key lying just out of reach.
     1: Take the Key 
     2: Leave the Key""")
 
-    choice = input("> ") #choice function
+    choice = input(" >>>  ") #choice function
     if choice == "1":
         take_key()
     elif choice == "2":
@@ -131,7 +131,7 @@ to be explored.
     2: Look for the White Rabbit?
     3: Rest for a moment and observe?""")
 
-    choice = input("> ") #choice function
+    choice = input(" >>>  ") #choice function
     if choice == "1":
         explore_garden()
     elif choice == "2":
@@ -205,7 +205,7 @@ Wonderland forever in your heart.""")
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Rest in the garden
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Rest in the garden
 def rest_in_garden():
-    print
+    print()
     type("""You decide to sit and rest for a while on the soft grass
 of the clearing. The garden seems alive, and you sense that by 
 rushing forward you may miss something important. As you settle in, 
@@ -248,7 +248,7 @@ waiting for you to decide.
     2: Open the blue door  
     3: Open the green door""")
 
-    choice = input("> ") #choice function
+    choice = input("  >>> ") #choice function
     if choice == "1":
         red_door()
     elif choice == "2":
@@ -315,7 +315,7 @@ twinkling mischievously.
     2: Look for a way out of the garden""")
 
 
-    choice = input("> ") #choice function
+    choice = input(" >>>  ") #choice function
     if choice == "1":
         talk_to_cat()
     elif choice == "2":
@@ -372,7 +372,7 @@ she had a way to go now.
     2: You tired and want to take a rest?
     3: Call Rabbit to find way home?""")
 
-    choice = input("> ") #choice function
+    choice = input(" >>> ") #choice function
     if choice == "1":
         follow_cat()
     elif choice == "2":
@@ -442,7 +442,7 @@ find herself back there again.
 
 ~~~~~~~~~~~~~~~~But for now, your home!~~~~~~~~~~~~~~~~~~~~""")
 
-    choice = input("> ") #choice function
+    choice = input(" >>>  ") #choice function
     if choice == "1":
         explore_garden()
     elif choice == "2":
@@ -493,7 +493,7 @@ each promising a different path ahead.
     2: Open the blue door?
     3: Open the green door?""")
 
-    choice = input("> ") #choice function
+    choice = input(" >>>  ") #choice function
     if choice == "1":
         red_door()
     elif choice == "2":
@@ -558,7 +558,7 @@ you hear the faint ticking of a clock that you cannot see.
     in the objects around you?
     2: Or do you call for help?""")
 
-    choice = input("> ") #choice function
+    choice = input(" >>>  ") #choice function
     if choice == "1":
         drink_me()
     elif choice == "2":
@@ -616,7 +616,7 @@ a way of calling you back.
     1: Thank the White Rabbit and head home?
     2: Explore the garden a bit more?""")
 
-    choice = input("> ") #choice function
+    choice = input(">>>  ") #choice function
     if choice == "1":
         go_home()
     elif choice == "2":
@@ -692,7 +692,7 @@ will return.""")
     print("""
                   Thank You for visit! """)
     print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N): ')
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
     if startGame == 'N' or startGame == "n":
         print()
         print("""That's totally okay!
@@ -704,7 +704,7 @@ the whimsical world of Wonderland!""")
 
 
 def blue_door():
-    print
+    print()
     type("""You, drawn by curiosity, approach the blue 
 door with the heart symbol etched above it. You hesitate 
 for just a moment, then take a deep breath and open the 
@@ -749,7 +749,7 @@ learn something important — or perhaps even find a way home.
     2: Challenge the Queen?
     3: Explore the room quietly, to look for an exit?""")
 
-    choice = input("> ") #choice function
+    choice = input(" >>> ") #choice function
     if choice == "1":
         ask_queen()
     elif choice == "2":
@@ -761,7 +761,7 @@ learn something important — or perhaps even find a way home.
         rest_in_garden()
     
 def ask_queen():
-    print
+    print()
     type("""You, feeling both nervous and hopeful, decide to 
 speak to the Queen of Hearts directly. You know the Queen 
 is a powerful figure in Wonderland, but you hope that by 
@@ -953,8 +953,6 @@ print("""           ____     ____         ~~~~~~~~~~~~~~~~~~~~~
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """)
 
-
-print()
 print()
 player_name = input("Please enter your name >>> ")
 print()
@@ -994,7 +992,7 @@ print("""
              \\/""")
 
 #Start game function
-startGame = input('Would You like to play? (Y/N): ')
+startGame = input('Would You like to play? (Y/N):  ')
 if startGame == 'N' or startGame == "n":
     print()
     print("""That's totally okay!
