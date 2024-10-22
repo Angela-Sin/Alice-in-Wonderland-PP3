@@ -1392,7 +1392,7 @@ As you wander through her garden, she can’t help but smile,
 knowing that the magic of Wonderland is just a heartbeat 
 away, ready for you to return whenever you wish.""")
  
-  print()
+    print()
     print()
     print("""\033[0;34;47m  Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
