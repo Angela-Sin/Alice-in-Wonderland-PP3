@@ -832,7 +832,7 @@ learn something important — or perhaps even find a way home.
         explore_garden()
     else:
         invalid_choice()
-        rest_in_garden()
+        blue_door()
     
 def ask_queen():
     print()
