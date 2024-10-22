@@ -199,6 +199,8 @@ You smile, knowing you are safe and sound, but with the memory of
 Wonderland forever in your heart.""")
 
 
+
+
 #Play >>> Drink Me >> Take Key >>> Rest in the garden
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Rest in the garden
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Rest in the garden
@@ -440,6 +442,17 @@ find herself back there again.
 
 ~~~~~~~~~~~~~~~~But for now, your home!~~~~~~~~~~~~~~~~~~~~""")
 
+    choice = input("> ") #choice function
+    if choice == "1":
+        explore_garden()
+    elif choice == "2":
+        look_for_rabbit()
+    elif choice == "3":
+        rest_in_garden()
+    else:
+        print("Invalid choice. Please choose again.")
+        take_key()
+
 
 #Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Avoid Table
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Avoid Table
@@ -676,6 +689,19 @@ You smile, knowing that even though your adventure in
 Wonderland has come to an end, the memories will forever 
 remain in your heart. And who knows? Perhaps one day you 
 will return.""")
+    print("""
+                  Thank You for visit! """)
+    print() 
+    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N): ')
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
+
 
 def blue_door():
     print
@@ -924,8 +950,7 @@ print("""           ____     ____         ~~~~~~~~~~~~~~~~~~~~~
 :                     ,                           ;    .  |---\\--------------|
  :     -                          .                  : : |______________-__|
   :              ,                 ,                :   /'~----___________|
-__  \\\\        ^                          ,, ;; ;; ;._-~
-  ~~~-----____________________________________----~~~
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """)
 
 
