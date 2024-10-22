@@ -13,9 +13,7 @@ def type(text):
 
 #Play function
 def play_game():
-    print()
-    print()
-    print("""You follow the White Rabbit down a winding
+    type("""You follow the White Rabbit down a winding
     path that leads to a small door hidden in the roots
     of a large tree. Curiosity prompts you to open it,
     and you find yourself in a dimly lit tunnel. The walls
@@ -50,7 +48,7 @@ def play_game():
 
 #Play >>> Drink Me
 def drink_me():
-    print("""You found the tiny bottle with the sign
+    type("""You found the tiny bottle with the sign
     "Drink Me".You uncork the bottle and inhale the
     strange liquid. Feeling bold, you take a sip.
     Immediately, a warm sensation spreads through your
@@ -91,7 +89,7 @@ def drink_me():
 
 #Play >>> Drink Me >>> Take Key
 def take_key():
-    print("""You decide to pick up the tiny key. Its golden
+    type("""You decide to pick up the tiny key. Its golden
     glow beckons you, and though you’re not sure what it unlocks,
     you sense that it’s important. Holding it tightly in your
     tiny hand, you continue down the tunnel that stretches 
@@ -153,7 +151,7 @@ def take_key():
 
 #Play >>> Drink Me >> Take Key >>> Look For Rabbit >>> End of the Game
 def look_for_rabbit():
-    print("""You wander through the magic garden, enchanted
+    type("""You wander through the magic garden, enchanted
     by the vibrant colors and strange, talking flowers.
     The garden seems alive with energy, every step revealing new wonders.
     As you move through the towering mushrooms and glowing blossoms,
@@ -211,7 +209,7 @@ def look_for_rabbit():
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Rest in the garden
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Rest in the garden
 def rest_in_garden():
-    print("""You decide to sit and rest for a while on the soft grass
+    type("""You decide to sit and rest for a while on the soft grass
     of the clearing. The garden seems alive, and you sense that by 
     rushing forward you may miss something important. As you settle in, 
     the whispers fade into the background, leaving only the gentle rustling
@@ -257,7 +255,7 @@ def rest_in_garden():
                              | | 9  /  3 | |
                               \ \ '.6.' / /
                                '.`-...-'.'
-                                /'-- --'\          
+                                /'-- --'\\          
    
      2: Open the blue door  ,-"-,-"-.        Symbol
                            (         )
@@ -287,7 +285,7 @@ def rest_in_garden():
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden
 def explore_garden():
-    print("""You reached into the garden, your curiosity drawing you deeper
+    type("""You reached into the garden, your curiosity drawing you deeper
     into this strange, beautiful world. The vibrant colors and strange shapes
     of the plants around you make everything seem surreal. Flowers with faces
     whisper to each other, and huge mushrooms tower over you like trees.
@@ -350,7 +348,7 @@ def explore_garden():
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Talk to Cat
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Talk to Cat
 def talk_to_cat():
-    print(""""Lost again, are we?" the Cheshire Cat purrs, his grin widening.
+    type(""""Lost again, are we?" the Cheshire Cat purrs, his grin widening.
     "You do have a habit of getting yourself into the most curious of 
     predicaments, don't you?"
 
@@ -408,7 +406,7 @@ def talk_to_cat():
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Follow cat >>> End the game
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Follow cay >>> End The game
 def follow_cat():
-    print("""You decide to trust the Cheshire Cat’s directions, 
+    type("""You decide to trust the Cheshire Cat’s directions, 
     even with the lingering sense of mystery. You take a deep breath 
     and head down the winding path he pointed out, your heart beating 
     a little faster with every step. The flowers and plants around 
@@ -466,7 +464,7 @@ def follow_cat():
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Avoid Table
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Avoid Table
 def avoid_table():
-    print("""You turn away from the tea table and the Cheshire 
+    type("""You turn away from the tea table and the Cheshire 
     Cat, deciding to follow one of the many twisting paths ahead. 
     The garden seems to be full of possibilities, and your 
     curiosity pulls you forward. You choose the nearest path, a 
@@ -504,7 +502,7 @@ def avoid_table():
                              | | 9  /  3 | |
                               \ \ '.6.' / /
                                '.`-...-'.'
-                                /'-- --'\          
+                                /'-- --'\\         
    
      2: Open the blue door  ,-"-,-"-.        Symbol
                            (         )
@@ -531,7 +529,7 @@ def avoid_table():
 
 # Play >>> Drink Me >>> Leave the Key (End of the Game)
 def leave_key():
-    print("""You stare at the small, glimmering key in the crack 
+    type("""You stare at the small, glimmering key in the crack 
     of the tunnel floor, but for reasons you can’t quite explain, 
     you decide to leave it behind. Perhaps it’s your curiosity 
     leading you onward, or maybe you simply don’t realize the key’s 
@@ -564,7 +562,7 @@ def leave_key():
 
 #Play >>> Explore Tunnel
 def explore_tunnel():
-    print("""A few steps in, and the door behind you slams shut. 
+    type("""A few steps in, and the door behind you slams shut. 
     The tunnel narrows, and you feel the walls pressing in slightly. 
     Your heartbeat quickens as you search for another exit, but the 
     tunnel stretches forward, twisting in impossible ways.
@@ -592,7 +590,7 @@ def explore_tunnel():
 
 #Play >> Explore Tunnel >> Call For Help
 def call_for_help():
-    print("""Feeling a mixture of frustration and determination, 
+    type("""Feeling a mixture of frustration and determination, 
     you decide to call for help again. Your voice echoes through 
     the dim tunnel, bouncing off the walls as you shout, “Help! 
     Is anyone there?”
@@ -651,7 +649,7 @@ def call_for_help():
 #Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Call for Rabbit >>> End the game
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Call for Rabbit >>> End The game
 def go_home():
-    print("""You turn to the White Rabbit, gratitude shining in 
+    type("""You turn to the White Rabbit, gratitude shining in 
     your eyes. “Thank you so much for your help!” you exclaim. 
     “I wouldn’t have found my way without you!”
 
@@ -674,7 +672,7 @@ def go_home():
     to explore this magical place a little longer.
 
                       __ \/ __
-     /\^/`\          /o \{}/ o\   
+     /\^/`\          /o \{}/ o\\   
     | \/   |         \   ()   /     
     | |    |          `> /\ <`   ,,,     
     \ \    /  @@@@    (o/\/\o)  {{{}}                 _ _
@@ -727,7 +725,7 @@ def go_home():
     will return.""")
 
 def blue_door():
-    print("""You, drawn by curiosity, approach the blue 
+    type("""You, drawn by curiosity, approach the blue 
     door with the heart symbol etched above it. You hesitate 
     for just a moment, then take a deep breath and open the 
     door. A soft glow spills out, and without another thought, 
@@ -783,7 +781,7 @@ def blue_door():
         rest_in_garden()
     
 def ask_queen():
-    print("""You, feeling both nervous and hopeful, decide to 
+    type("""You, feeling both nervous and hopeful, decide to 
     speak to the Queen of Hearts directly. You know the Queen 
     is a powerful figure in Wonderland, but you hope that by 
     being polite, you might get the help you need to find her 
@@ -834,27 +832,26 @@ def ask_queen():
     strange pull, and before you know it, you being gently 
     drawn into the mirror.
 
-   The world around you swirls in a kaleidoscope of colors and 
-   lights, and for a brief moment, you feel weightless. 
-   Then, with a soft thud, you land on her feet.
+    The world around you swirls in a kaleidoscope of colors and 
+    lights, and for a brief moment, you feel weightless. 
+    Then, with a soft thud, you land on her feet.
 
-   When Alice opens your eyes, you find yourself standing 
-   in a familiar meadow. The sky is bright, the air is warm, 
-   and in the distance, you can see home. You are back in your world.
+    When Alice opens your eyes, you find yourself standing 
+    in a familiar meadow. The sky is bright, the air is warm, 
+    and in the distance, you can see home. You are back in your world.
 
-   You take a deep breath, filled with relief and wonder. 
-   Though your time in Wonderland had been full of strange and 
-   dangerous adventures, you were grateful for the experience. 
-   And though you are home now, you know that the magic of 
-   Wonderland will stay with you always.
+    You take a deep breath, filled with relief and wonder. 
+    Though your time in Wonderland had been full of strange and 
+    dangerous adventures, you were grateful for the experience. 
+    And though you are home now, you know that the magic of 
+    Wonderland will stay with you always.
 
-   With one last look at the horizon, You head home, 
-   your heart lighter and mind filled with memories of the incredible 
-   journey.
-   """)
+    With one last look at the horizon, You head home, 
+    your heart lighter and mind filled with memories of the incredible 
+    journey.""")
 
 def challenge_queen():
-    print("""You, feeling bold and defiant, straighten your back 
+    type("""You, feeling bold and defiant, straighten your back 
     and look the Queen of Hearts in the eyes. You know the Queen 
     can be dangerous, but you are no longer the same timid
     person who first stumbled into Wonderland. Your adventures 
@@ -943,9 +940,9 @@ def challenge_queen():
  
 
 #Welcome
-print("""    _    _ _            _                            
+print("""  _            _                            
    / \  | (_) ___ ___  (_)_ __                       
-  / _ \ | | |/ __/ _ \ | | '_ \                      
+  / _ \ | | |/ __/ _ \ | | '_ \\                     
  / ___ \| | | (_|  __/ | | | | |                     
 /_/   \_\_|_|\___\___| |_|_| |_| _                 _ 
 \ \      / /__  _ __   __| | ___| | __ _ _ __   __| |
