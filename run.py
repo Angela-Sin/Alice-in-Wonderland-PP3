@@ -1,8 +1,5 @@
 import sys
 import time
-import colorama 
-from colorama import Fore, Back, Style
-colorama.init(autoreset=True)
 
 a = 1
 
@@ -44,12 +41,6 @@ that seem to reflect worlds other than your own.
 
 #Play >>> Drink Me
 def drink_me():
-    print(Fore.YELLOW + """
-      ooo,    .---.
-     o`  o   /    |\\________________
-     o`   'oooo()  | ________   _   _)
-    `oo   o` \\    |/        | | | |
-      `ooo'   `---'         "-" |_|""")
     print()
     type("""You found the tiny bottle with the sign
 "Drink Me".You uncork the bottle and inhale the
@@ -69,6 +60,12 @@ In your new, tiny size, you can now see hidden details
 in the tunnel's floors and walls - cracks and crevices
 you couldn't see before. In one of these cracks, you
 notice a small, shimmering key lying just out of reach.
+
+      ooo,    .---.
+     o`  o   /    |\\________________
+     o`   'oooo()  | ________   _   _)
+    `oo   o` \\    |/        | | | |
+      `ooo'   `---'         "-" |_|
    
       
 
@@ -90,18 +87,16 @@ notice a small, shimmering key lying just out of reach.
 #Play >>> Drink Me >>> Take Key
 def take_key():
     print()
-    print(Fore.YELLOW + """
-              ____
-             |  , =, _________
-             | ='  (VvvVvV--'
-             |____|""")
-    print()
     type("""You decide to pick up the tiny key. Its golden
 glow beckons you, and though you’re not sure what it unlocks,
 you sense that it’s important. Holding it tightly in your
 tiny hand, you continue down the tunnel that stretches 
 endlessly before you. 
             
+              ____
+             |  , =, _________
+             | ='  (VvvVvV--'
+             |____|
 
 After what feels like an eternity of walking, you come
 to a small door built into the wall. At your current size,
@@ -940,7 +935,7 @@ def green_door():
  
 
 #Welcome
-print(Back.MAGENTA + """
+print("""
                     ____     ____        ~~~~~~~~~~~~~~~~~~~~~
                   /'    |   |    \\      *                    *
                 /    /  |   | \\   \\     * Alice's Adventure  *
@@ -990,7 +985,7 @@ Remember: in Wonderland, nothing is quite what it seems.
 Are you ready to find out what's behind the mirror?""")
 print()
 print()
-print(Fore.RED + """
+print("""
              /\\
         _   / /\\
        | \\\\/_/
