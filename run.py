@@ -1142,7 +1142,7 @@ watch with a worried expression.
 
     choice = input(" >>> ") #choice function
     if choice == "1":
-        explore_garden()
+        look_for_rabbit()
     elif choice == "2":
         dark_forest_way_home()
     else:
@@ -1466,17 +1466,17 @@ Remember: in Wonderland, nothing is quite what it seems.
 Are you ready to find out what's behind the mirror?""")
 print()
 print()
-print("""
+print(f"""{Style.BRIGHT}{Fore.RED}
              /\\
         _   / /\\
        | \\\\/_/
        \\\\| / __             
          \\/_/__\\          .--='/~\\
-   ____,__/__,_____,______)/    {~}}}
-   -,-----,--\\--,-----,---,\'-'  {{~}}
-           __/\\            '--=.\\}/
+   ____,__/__,_____,______)/    (~)))
+   -,-----,--\\--,-----,---,\'-'  ((~))
+           __/\\            '--=.\\)/
           /_/ |\\
-             \\/  """)
+             \\/  \n""")
 
 #Start game function
 startGame = input('Would You like to play? (Y/N):  ')
