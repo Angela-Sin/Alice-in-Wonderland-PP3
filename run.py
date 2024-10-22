@@ -60,7 +60,7 @@ def drink_me():
       ooo,    .---.
      o`  o   /    |\\________________
      o`   'oooo()  | ________   _   _)
-    `oo   o` \    |/        | | | |
+    `oo   o` \\    |/        | | | |
       `ooo'   `---'         "-" |_|
 
     What you would like to do?
@@ -893,10 +893,9 @@ print("""
 
 print()
 print()
-name = input("Please enter your name: ")
-time.sleep(a)
+player_name = input("Please enter your name >>> ")
 print()
-print("Hello, " + name + "! Happy to see you!")
+print(f"Hello {player_name.upper()}, Happy to see you!!! ")
 time.sleep(a)
 print()
 print()
@@ -933,9 +932,10 @@ print("""     /\\
 #Start game function
 startGame = input('Would You like to play? (Y/N): ')
 if startGame == 'N' or startGame == "n":
+    print()
     print("""That's totally okay!
-    Adventure games can be a real journey. If you change your mind,
-    just let me know and we can dive back into 
-    the whimsical world of Wonderland!""")
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
 elif startGame == 'Y' or startGame == "y":
     play_game()
