@@ -35,18 +35,19 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 | Source                                                                                                               | Location       | Notes                        |
 | -------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------- |
-| [Git](https://git-scm.com/)                                                                                          | Acros website  | for version control |
+| [Git](https://git-scm.com/)                                                                                          | Acros website  | for version control          |
 | [GitHub](https://github.com/)                                                                                        | Acros website  | to store the project files.  |
 | [GitPod](https://www.gitpod.io/)                                                                                     | Acros website  | as the IDE for development.  |
+| [Heroku](https://dashboard.heroku.com/apps)                                                                          | Acros website  | as the IDE for development.  |
 | [Readme](https://github.com/Angela-Sin/Retro-Game)                                                                   | Acros website  | As an example, created originally by me for hackathon |
 | [YouTube](https://www.youtube.com/)                                                                                  | Acros website  | Tutorial for troubleshooting |
 | [W3Schools](https://www.w3schools.com/)                                                                              | Across website | Various help pages           |
-| [CSS Validator](https://jigsaw.w3.org/css-validator/)                                                                | Across website | CSS Validator           |
-| [JavaScript Validator](https://jshint.com/)                                                                          | Across website | JavaScript Validator           |
-| [Python Validator](https://pep8ci.herokuapp.com/)                                                                    | Across website | Python Validator          |
-| [Chat GBT](https://chatgpt.com/)                                                                                     | Across website | For Text Generation             |
-| [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)                                                  | Across website | Speed testing for Mobile and Desctope           |
-| [amiresponsive](https://ui.dev/amiresponsive)                                                                        | Across website | was used to take the screenshot with different devices presented at the top of this document.        |
+| [CSS Validator](https://jigsaw.w3.org/css-validator/)                                                                | Across website | CSS Validator                |
+| [JavaScript Validator](https://jshint.com/)                                                                          | Across website | JavaScript Validator         |
+| [Python Validator](https://pep8ci.herokuapp.com/)                                                                    | Across website | Python Validator             |
+| [Chat GBT](https://chatgpt.com/)                                                                                     | Across website | For Text Generation          |
+| [Asciiart](https://asciiart.website/)                                                                                | Across website | As ASCII library             |
+| [ASCII](https://www.asciiart.eu/)                                                                                    | Across website | To create pictures for a game|
 
 
 
