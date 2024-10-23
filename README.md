@@ -26,7 +26,38 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 
 
+# Flow Chart
 
 
 ![image](https://github.com/user-attachments/assets/93782981-defd-45bd-a015-617edc8acdbb)
+
+## Resources Used
+
+| Source                                                                                                               | Location       | Notes                        |
+| -------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------- |
+| [Git](https://git-scm.com/)                                                                                          | Acros website  | for version control |
+| [GitHub](https://github.com/)                                                                                        | Acros website  | to store the project files.  |
+| [GitPod](https://www.gitpod.io/)                                                                                     | Acros website  | as the IDE for development.  |
+| [Readme](https://github.com/Angela-Sin/Retro-Game)                                                                   | Acros website  | As an example, created originally by me for hackathon |
+| [YouTube](https://www.youtube.com/)                                                                                  | Acros website  | Tutorial for troubleshooting |
+| [W3Schools](https://www.w3schools.com/)                                                                              | Across website | Various help pages           |
+| [CSS Validator](https://jigsaw.w3.org/css-validator/)                                                                | Across website | CSS Validator           |
+| [JavaScript Validator](https://jshint.com/)                                                                          | Across website | JavaScript Validator           |
+| [Python Validator](https://pep8ci.herokuapp.com/)                                                                    | Across website | Python Validator          |
+| [Chat GBT](https://chatgpt.com/)                                                                                     | Across website | For Text Generation             |
+| [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)                                                  | Across website | Speed testing for Mobile and Desctope           |
+| [amiresponsive](https://ui.dev/amiresponsive)                                                                        | Across website | was used to take the screenshot with different devices presented at the top of this document.        |
+
+
+
+
+
+
+# Credits
+
+- Special mention is also deserved by my mentor Medale Oluwafemi for helping me understand the requirements and guiding me through the realization of this project!
+- As a tutoring team for help and support during the project.
+- Code Institute's 'Love Sandwiches' project.
+- Code Institute mock terminal template to run the app.
+- Stack Overflow.
 
