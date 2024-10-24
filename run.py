@@ -12,7 +12,17 @@ def type(text):
     sys.stdout.write(char)
     sys.stdout.flush()
 
+def exit_game():
+    print("""Thank you for joining Alice on her magical
+journey through Wonderland! Your curiosity and choices 
+brought the adventure to life, and we hope you had as 
+much fun exploring as Alice did. Every step you took 
+made Wonderland a little more wondrous.
 
+Until we meet again, may your imagination always guide 
+you to new adventures! Goodbye for now, and remember—Wonderland 
+is never too far away.""")
+    sys.exit()
 
 def prompt_replay():
     
@@ -26,6 +36,7 @@ Adventure games can be a real journey. If you change your mind,
 just let me know and we can dive back into 
 the whimsical world of Wonderland!""")
             time.sleep(a)
+            exit_game()
             
             break
         elif startGame == "y":
@@ -235,21 +246,6 @@ hear the comforting sounds of home.
 
 You smile, knowing you are safe and sound, but with the memory of
 Wonderland forever in your heart.""")
-    time.sleep(a)
-    print()
-    print()
-    print("""Thank you for joining Alice on her magical
-journey through Wonderland! Your curiosity and choices 
-brought the adventure to life, and we hope you had as 
-much fun exploring as Alice did. Every step you took 
-made Wonderland a little more wondrous.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.""")
-    time.sleep(a)
-    
-
     print() 
     prompt_replay()   
 
