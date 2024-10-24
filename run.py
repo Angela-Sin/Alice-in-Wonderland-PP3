@@ -13,6 +13,33 @@ def type(text):
     sys.stdout.flush()
 
 
+
+def prompt_replay():
+    
+    while True:
+        startGame = input('Would you like to dive right back into the whimsical world of Wonderland? (Y/N): ').strip().lower()
+        
+        if startGame == 'n':
+            print()
+            print("""That's totally okay!
+Adventure games can be a real journey. If you change your mind,
+just let me know and we can dive back into 
+the whimsical world of Wonderland!""")
+            time.sleep(a)
+            
+            break
+        elif startGame == "y":
+            play_game()
+            break
+        else:
+            print("Please enter a valid option: Y/y or N/n.")
+            time.sleep(a)
+
+def invalid_choice():
+    print("\nInvalid choice! Please enter a number you see below.") 
+    print() 
+    print("Let's try that again!\n")
+
 #Play function
 def play_game():
     print()
@@ -29,20 +56,19 @@ that seem to reflect worlds other than your own.
 
     1:Try a drink? 
     2:Explore the tunnel?""")
+    while True:
+        choice = input(" >>>  ") #choice function
+        if choice == "1":
+            drink_me()
+            break
+        elif choice == "2":
+            explore_tunnel()
+            break
+        else:
+            invalid_choice()
+        
 
-    choice = input(" >>>  ") #choice function
-    if choice == "1":
-        drink_me()
-    elif choice == "2":
-        explore_tunnel()
-    else:
-        invalid_choice()
-        play_game()
 
-def invalid_choice():
-    print("\nInvalid choice! Please enter a number you see below.") 
-    print() 
-    print("Let's try that again!")
 
 
 #Play >>> Drink Me
@@ -80,15 +106,15 @@ notice a small, shimmering key lying just out of reach.
     1: Take the Key 
     2: Leave the Key""")
 
-
-    choice = input(" >>>  ") #choice function
-    if choice == "1":
-        take_key()
-    elif choice == "2":
-        leave_key()
-    else:
-        invalid_choice()
-        drink_me()
+    while True:
+        choice = input(" >>>  ") #choice function
+        if choice == "1":
+            take_key()
+        elif choice == "2":
+            leave_key()
+        else:
+            invalid_choice()
+        
 
 #Play >>> Drink Me >>> Take Key
 def take_key():
@@ -142,16 +168,17 @@ to be explored.
      2: Look for the White Rabbit?
      3: Rest for a moment and observe?""")
 
-    choice = input(" >>> ") #choice function
-    if choice == "1":
-        explore_garden()
-    elif choice == "2":
-        look_for_rabbit()
-    elif choice == "3":
-        rest_in_garden()
-    else:
-        invalid_choice()
-        take_key()
+    while True:
+        choice = input(" >>> ") #choice function
+        if choice == "1":
+            explore_garden()
+        elif choice == "2":
+            look_for_rabbit()
+        elif choice == "3":
+            rest_in_garden()
+        else:
+            invalid_choice()
+            
 
 #Play >>> Drink Me >> Take Key >>> Look For Rabbit >>> End of the Game
 def look_for_rabbit():
@@ -208,7 +235,7 @@ hear the comforting sounds of home.
 
 You smile, knowing you are safe and sound, but with the memory of
 Wonderland forever in your heart.""")
-
+    time.sleep(a)
     print()
     print()
     print("""Thank you for joining Alice on her magical
@@ -220,16 +247,11 @@ made Wonderland a little more wondrous.
 Until we meet again, may your imagination always guide 
 you to new adventures! Goodbye for now, and remember—Wonderland 
 is never too far away.""")
+    time.sleep(a)
+    
+
     print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay()   
 
 
 
@@ -281,16 +303,17 @@ waiting for you to decide.
     2: Open the blue door  
     3: Open the green door""")
 
-    choice = input("  >>> ") #choice function
-    if choice == "1":
-        red_door()
-    elif choice == "2":
-        blue_door()
-    elif choice == "3":
-        green_door()
-    else:
-        invalid_choice()
-        rest_in_garden()
+    while True:
+        choice = input("  >>> ") #choice function
+        if choice == "1":
+            red_door()
+        elif choice == "2":
+            blue_door()
+        elif choice == "3":
+            green_door()
+        else:
+            invalid_choice()
+        
     
     
 
@@ -347,15 +370,15 @@ twinkling mischievously.
     1: Talk to the Cheshire Cat
     2: Look for a way out of the garden""")
 
-
-    choice = input(" >>>  ") #choice function
-    if choice == "1":
-        talk_to_cat()
-    elif choice == "2":
-        avoid_table()
-    else:
-        invalid_choice()
-        explore_garden()
+    while True:
+        choice = input(" >>>  ") #choice function
+        if choice == "1":
+            talk_to_cat()
+        elif choice == "2":
+            avoid_table()
+        else:
+            invalid_choice()
+        
 
 
 #Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Talk to Cat
@@ -405,16 +428,17 @@ she had a way to go now.
     2: You tired and want to take a rest?
     3: Call Rabbit to find way home?""")
 
-    choice = input(" >>> ") #choice function
-    if choice == "1":
-        follow_cat()
-    elif choice == "2":
-        rest_in_garden()
-    elif choice == "3":
-        go_home()
-    else:
-        invalid_choice()
-        talk_to_cat()
+    while True:
+        choice = input(" >>> ") #choice function
+        if choice == "1":
+            follow_cat()
+        elif choice == "2":
+            rest_in_garden()
+        elif choice == "3":
+            go_home()
+        else:
+            invalid_choice()
+        
 
 
 #Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Follow cat >>> End the game
@@ -487,15 +511,7 @@ Until we meet again, may your imagination always guide
 you to new adventures! Goodbye for now, and remember—Wonderland 
 is never too far away. """)
     print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay() 
 
 
 #Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Avoid Table
@@ -537,16 +553,17 @@ each promising a different path ahead.
     2: Open the blue door?
     3: Open the green door?""")
 
-    choice = input(" >>>  ") #choice function
-    if choice == "1":
-        red_door()
-    elif choice == "2":
-        blue_door()
-    elif choice == "3":
-        green_door()
-    else:
-        invalid_choice()
-        avoid_table()
+    while True:
+        choice = input(" >>>  ") #choice function
+        if choice == "1":
+            red_door()
+        elif choice == "2":
+             blue_door()
+        elif choice == "3":
+            green_door()
+        else:
+            invalid_choice()
+        
 
 
 # Play >>> Drink Me >>> Leave the Key (End of the Game)
@@ -594,15 +611,7 @@ Until we meet again, may your imagination always guide
 you to new adventures! Goodbye for now, and remember—Wonderland 
 is never too far away.""")
     print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay() 
 
 
 #Play >>> Explore Tunnel
@@ -624,14 +633,15 @@ you hear the faint ticking of a clock that you cannot see.
     in the objects around you?
     2: Or do you call for help?""")
 
-    choice = input(" >>>  ") #choice function
-    if choice == "1":
-        drink_me()
-    elif choice == "2":
-        call_for_help()
-    else:
-        invalid_choice()
-        explore_tunnel()
+    while True:
+        choice = input(" >>>  ") #choice function
+        if choice == "1":
+            drink_me()
+        elif choice == "2":
+            call_for_help()
+        else:
+            invalid_choice()
+        
 
 
 #Play >> Explore Tunnel >> Call For Help
@@ -682,14 +692,15 @@ a way of calling you back.
     1: Thank the White Rabbit and head home?
     2: Explore the garden a bit more?""")
 
-    choice = input(">>>  ") #choice function
-    if choice == "1":
-        go_home()
-    elif choice == "2":
-        explore_garden()
-    else:
-        invalid_choice()
-        call_for_help()
+    while True:
+        choice = input(">>>  ") #choice function
+        if choice == "1":
+            go_home()
+        elif choice == "2":
+            explore_garden()
+        else:
+            invalid_choice()
+        
 
 #Play >>> Explore Tunnel >> Call for Help >> Call for Rabbit (End of the Game) 
 #Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Call for Rabbit >>> End the game
@@ -768,15 +779,7 @@ Until we meet again, may your imagination always guide
 you to new adventures! Goodbye for now, and remember—Wonderland 
 is never too far away.""")
     print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay() 
 
 
 def blue_door():
@@ -825,16 +828,17 @@ learn something important — or perhaps even find a way home.
     2: Challenge the Queen?
     3: Explore the room quietly, to look for an exit?""")
 
-    choice = input(" >>> ") #choice function
-    if choice == "1":
-        ask_queen()
-    elif choice == "2":
-        challenge_queen()
-    elif choice == "3":
-        explore_garden()
-    else:
-        invalid_choice()
-        blue_door()
+    while True:
+        choice = input(" >>> ") #choice function
+        if choice == "1":
+            ask_queen()
+        elif choice == "2":
+            challenge_queen()
+        elif choice == "3":
+            explore_garden()
+        else:
+            invalid_choice()
+        
     
 def ask_queen():
     print()
@@ -919,15 +923,7 @@ Until we meet again, may your imagination always guide
 you to new adventures! Goodbye for now, and remember—Wonderland 
 is never too far away.""")
     print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay() 
 
 def challenge_queen():
     print()
@@ -1030,15 +1026,7 @@ Until we meet again, may your imagination always guide
 you to new adventures! Goodbye for now, and remember—Wonderland 
 is never too far away.""")
     print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay() 
 
 def red_door():
     print()
@@ -1067,15 +1055,16 @@ colorful skies above.
     
     1: Join Mad Hatters Party?
     2: Go to Dark Forest?""")
-     
-    choice = input(" >>> ") #choice function
-    if choice == "1":
-        mad_hatter()
-    elif choice == "2":
-        dark_forest()
-    else:
-        invalid_choice()
-        red_door()
+
+    while True: 
+        choice = input(" >>> ") #choice function
+        if choice == "1":
+            mad_hatter()
+        elif choice == "2":
+            dark_forest()
+        else:
+            invalid_choice()
+        
 
 def mad_hatter():
     print()
@@ -1140,14 +1129,15 @@ watch with a worried expression.
      1: Call For the rabbit?
      2: Explore dark forest?""")
 
-    choice = input(" >>> ") #choice function
-    if choice == "1":
-        look_for_rabbit()
-    elif choice == "2":
-        dark_forest_way_home()
-    else:
-        invalid_choice()
-        mad_hatter()
+    while True:
+        choice = input(" >>> ") #choice function
+        if choice == "1":
+            look_for_rabbit()
+        elif choice == "2":
+            dark_forest_way_home()
+        else:
+            invalid_choice()
+        
 
 def dark_forest():
     print()
@@ -1226,16 +1216,7 @@ Until we meet again, may your imagination always guide
 you to new adventures! Goodbye for now, and remember—Wonderland 
 is never too far away.""")
     print()
-    print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay() 
 
 def dark_forest_way_home():
     print()
@@ -1315,16 +1296,7 @@ Until we meet again, may your imagination always guide
 you to new adventures! Goodbye for now, and remember—Wonderland 
 is never too far away.""")
     print()
-    print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay() 
 
 def green_door():
     print()
@@ -1405,15 +1377,7 @@ you to new adventures! Goodbye for now, and remember—Wonderland
 is never too far away.""")
     print()
     print() 
-    startGame = input('Maybe dive right back into the whimsical worrld of Wonderland. (Y/N):  ')
-    if startGame == 'N' or startGame == "n":
-        print()
-        print("""That's totally okay!
-Adventure games can be a real journey. If you change your mind,
-just let me know and we can dive back into 
-the whimsical world of Wonderland!""")
-    elif startGame == 'Y' or startGame == "y":
-        play_game()
+    prompt_replay() 
 
 #Welcome
 print(f"""{Fore.LIGHTBLUE_EX}
@@ -1476,16 +1440,21 @@ print(f"""{Style.BRIGHT}{Fore.RED}
    -,-----,--\\--,-----,---,\'-'  ((~))
            __/\\            '--=.\\)/
           /_/ |\\
-             \\/  \n""")
+             \\/  {Fore.RESET}\n""")
 
 #Start game function
-startGame = input('Would You like to play? (Y/N):  ')
-if startGame == 'N' or startGame == "n":
-    print()
-    print("""That's totally okay!
+while True:
+    startGame = input('Would You like to play? (Y/N):  ').strip().lower()
+    if startGame == 'N' or startGame == "n":
+        print()
+        print("""That's totally okay!
 Adventure games can be a real journey. If you change your mind,
 just let me know and we can dive back into 
 the whimsical world of Wonderland!""")
-elif startGame == 'Y' or startGame == "y":
-    play_game()
+        break
+    elif startGame == 'Y' or startGame == "y":
+        play_game()
+        break
+    else:
+        print("\nInvalid choice! Please enter 'Y' for Yes or 'N' for No.\n") 
     
