@@ -3,7 +3,7 @@ import time
 import colorama
 from colorama import Fore, Back, Style
 
-a = 1
+a = 2
 
 def type(text):
   words = text
@@ -17,9 +17,11 @@ def type(text):
 def prompt_replay():
     
     while True:
+        print()
         startGame = input('Would you like to dive right back into the whimsical world of Wonderland? (Y/N): ').strip().lower()
         
         if startGame == 'n':
+            print()
             print()
             print("""Thank you for joining Alice on her magical
 journey through Wonderland! Your curiosity and choices 
@@ -37,13 +39,10 @@ is never too far away.""")
             play_game()
             break
         else:
-            print("Please enter a valid option: Y/y or N/n.")
+            print()
+            print(f"{Fore.RED}Please enter a valid option: Y/y or N/n.{Fore.RESET}\n")
             time.sleep(a)
 
-def invalid_choice():
-    print("\nInvalid choice! Please enter a number you see below.") 
-    print() 
-    print("Let's try that again!\n")
 
 #Play function
 def play_game():
@@ -70,7 +69,7 @@ that seem to reflect worlds other than your own.
             explore_tunnel()
             break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
 
@@ -115,10 +114,12 @@ notice a small, shimmering key lying just out of reach.
         choice = input(" >>>  ") #choice function
         if choice == "1":
             take_key()
+            break
         elif choice == "2":
             leave_key()
+            break
         else:
-            invalid_choice()
+           print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
 #Play >>> Drink Me >>> Take Key
@@ -177,12 +178,15 @@ to be explored.
         choice = input(" >>> ") #choice function
         if choice == "1":
             explore_garden()
+            break
         elif choice == "2":
             look_for_rabbit()
+            break
         elif choice == "3":
             rest_in_garden()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")  
             
 
 #Play >>> Drink Me >> Take Key >>> Look For Rabbit >>> End of the Game
@@ -297,12 +301,15 @@ waiting for you to decide.
         choice = input("  >>> ") #choice function
         if choice == "1":
             red_door()
+            break
         elif choice == "2":
             blue_door()
+            break
         elif choice == "3":
             green_door()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")   
         
     
     
@@ -341,9 +348,9 @@ back to her.
      @@()@@ wWWWw  (_)\\   (___)   _(_)_  @@()@@   Y  (_)@(_)
       @@@@  (___)     `|/    Y    (_)@(_)  @@@@  \\|/   (_)\\
        /      Y      \\|   \\|/    /(_)   \\|      |/      |
-   \\ |    \\ |/       | /\\ | / \\|/       |/   \\|     \\|/
-    \\|//   \\|///   \\|// \\|///\\|///   \\|//  \\|//   \\|// 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     \\ |    \\ |/       | /\\ | / \\|/       |/   \\|     \\|/
+      \\|//   \\|///   \\|// \\|///\\|///   \\|//  \\|//   \\|// 
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Just as you are about to investigate, a voice calls out from behind you.
 "You're late, you know!"
@@ -364,10 +371,12 @@ twinkling mischievously.
         choice = input(" >>>  ") #choice function
         if choice == "1":
             talk_to_cat()
+            break
         elif choice == "2":
             avoid_table()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
 
@@ -422,12 +431,15 @@ she had a way to go now.
         choice = input(" >>> ") #choice function
         if choice == "1":
             follow_cat()
+            break
         elif choice == "2":
             rest_in_garden()
+            break
         elif choice == "3":
             go_home()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")  
         
 
 
@@ -488,18 +500,7 @@ visitors.” Perhaps one day, when the time is right, you’ll
 find herself back there again.
 
 ~~~~~~~~~~~~~~~~But for now, your home!~~~~~~~~~~~~~~~~~~~~""")
-
     print()
-    print()
-    print("""Thank you for joining Alice on her magical
-journey through Wonderland! Your curiosity and choices 
-brought the adventure to life, and we hope you had as 
-much fun exploring as Alice did. Every step you took 
-made Wonderland a little more wondrous.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away. """)
     print() 
     prompt_replay() 
 
@@ -547,12 +548,15 @@ each promising a different path ahead.
         choice = input(" >>>  ") #choice function
         if choice == "1":
             red_door()
+            break
         elif choice == "2":
              blue_door()
+             break
         elif choice == "3":
             green_door()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")   
         
 
 
@@ -590,16 +594,6 @@ and the shadows that dance on the walls never leave you alone.
 """)
 
     print()
-    print()
-    print("""Thank you for joining Alice on her magical
-journey through Wonderland! Your curiosity and choices 
-brought the adventure to life, and we hope you had as 
-much fun exploring as Alice did. Every step you took 
-made Wonderland a little more wondrous.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.""")
     print() 
     prompt_replay() 
 
@@ -619,6 +613,7 @@ Shadows move in the dim light, and somewhere deep within the tunnel,
 you hear the faint ticking of a clock that you cannot see.
 
     What will you do next?
+
     1: Explore the tunnel further, searching for hidden mechanisms 
     in the objects around you?
     2: Or do you call for help?""")
@@ -627,10 +622,12 @@ you hear the faint ticking of a clock that you cannot see.
         choice = input(" >>>  ") #choice function
         if choice == "1":
             drink_me()
+            break
         elif choice == "2":
             call_for_help()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
 
@@ -686,10 +683,12 @@ a way of calling you back.
         choice = input(">>>  ") #choice function
         if choice == "1":
             go_home()
+            break
         elif choice == "2":
             explore_garden()
+            break
         else:
-            invalid_choice()
+           print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n") 
         
 
 #Play >>> Explore Tunnel >> Call for Help >> Call for Rabbit (End of the Game) 
@@ -756,18 +755,7 @@ You smile, knowing that even though your adventure in
 Wonderland has come to an end, the memories will forever 
 remain in your heart. And who knows? Perhaps one day you 
 will return.""")
-   
     print()
-    print()
-    print("""Thank you for joining Alice on her magical
-journey through Wonderland! Your curiosity and choices 
-brought the adventure to life, and we hope you had as 
-much fun exploring as Alice did. Every step you took 
-made Wonderland a little more wondrous.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.""")
     print() 
     prompt_replay() 
 
@@ -822,12 +810,15 @@ learn something important — or perhaps even find a way home.
         choice = input(" >>> ") #choice function
         if choice == "1":
             ask_queen()
+            break
         elif choice == "2":
             challenge_queen()
+            break
         elif choice == "3":
             explore_garden()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")   
         
     
 def ask_queen():
@@ -900,18 +891,7 @@ Wonderland will stay with you always.
 With one last look at the horizon, You head home, 
 your heart lighter and mind filled with memories of the incredible 
 journey.""")
-
     print()
-    print()
-    print("""Thank you for joining Alice on her magical
-journey through Wonderland! Your curiosity and choices 
-brought the adventure to life, and we hope you had as 
-much fun exploring as Alice did. Every step you took 
-made Wonderland a little more wondrous.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.""")
     print() 
     prompt_replay() 
 
@@ -1003,19 +983,8 @@ and braver than you ever knew.
 With a smile, You turn and begin to walk back home, 
 knowing that you carry the lessons of Wonderland with you 
 forever.""")
-
     print()
     print()
-    print("""Thank you for joining Alice on her magical
-journey through Wonderland! Your curiosity and choices 
-brought the adventure to life, and we hope you had as 
-much fun exploring as Alice did. Every step you took 
-made Wonderland a little more wondrous.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.""")
-    print() 
     prompt_replay() 
 
 def red_door():
@@ -1050,10 +1019,12 @@ colorful skies above.
         choice = input(" >>> ") #choice function
         if choice == "1":
             mad_hatter()
+            break
         elif choice == "2":
             dark_forest()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n") 
         
 
 def mad_hatter():
@@ -1123,10 +1094,12 @@ watch with a worried expression.
         choice = input(" >>> ") #choice function
         if choice == "1":
             look_for_rabbit()
+            break
         elif choice == "2":
             dark_forest_way_home()
+            break
         else:
-            invalid_choice()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n") 
         
 
 def dark_forest():
@@ -1194,17 +1167,7 @@ but this place is filled with wonders.”
 And so, you become a part of the dark forest, a curious spirit 
 wandering among the trees, forever enchanted by the magic that 
 keeps her lost.""")
-
     print()
-    print()
-    print("""Your decision to explore the 
-dark forest has led you into a beautiful yet haunting 
-reality, where you remain forever in the enchanting embrace 
-of Wonderland.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.""")
     print()
     prompt_replay() 
 
@@ -1273,18 +1236,7 @@ in Wonderland has come to an end, but the memories will stay with you forever.
 As you walk through your garden, you can’t help but smile, knowing that you 
 have discovered the magic of curiosity and friendship in a world where 
 anything is possible.""")
-
     print()
-    print()
-    print("""Thank you for joining Alice on her magical
-journey through Wonderland! Your curiosity and choices 
-brought the adventure to life, and we hope you had as 
-much fun exploring as Alice did. Every step you took 
-made Wonderland a little more wondrous.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.""")
     print()
     prompt_replay() 
 
@@ -1353,24 +1305,12 @@ with you forever.
 As you wander through her garden, she can’t help but smile, 
 knowing that the magic of Wonderland is just a heartbeat 
 away, ready for you to return whenever you wish.""")
- 
-    print()
-    print()
-    print("""Thank you for joining Alice on her magical
-journey through Wonderland! Your curiosity and choices 
-brought the adventure to life, and we hope you had as 
-much fun exploring as Alice did. Every step you took 
-made Wonderland a little more wondrous.
-
-Until we meet again, may your imagination always guide 
-you to new adventures! Goodbye for now, and remember—Wonderland 
-is never too far away.""")
     print()
     print() 
     prompt_replay() 
 
 #Welcome
-print(f"""{Fore.LIGHTBLUE_EX}
+print(f"""{Style.BRIGHT}{Fore.LIGHTBLUE_EX}
                     ____     ____        ~~~~~~~~~~~~~~~~~~~~~
                   /'    |   |    \\      *                    *
                 /    /  |   | \\   \\     * Alice's Adventure  *
@@ -1447,5 +1387,5 @@ the whimsical world of Wonderland!""")
         play_game()
         break
     else:
-        print("\nInvalid choice! Please enter 'Y' for Yes or 'N' for No.\n") 
+        print(f"{Fore.RED}Invalid choice! Please enter 'Y' for Yes or 'N' for No.{Fore.RESET}\n") 
     
