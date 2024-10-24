@@ -1447,6 +1447,7 @@ while True:
 Adventure games can be a real journey. If you change your mind,
 just let me know and we can dive back into 
 the whimsical world of Wonderland!""")
+        sys.exit()
         break
     elif startGame == 'Y' or startGame == "y":
         play_game()
