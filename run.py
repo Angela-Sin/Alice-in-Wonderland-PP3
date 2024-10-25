@@ -13,12 +13,11 @@ def type(text):
     sys.stdout.flush()
 
 
-
 def prompt_replay():
     
     while True:
         print()
-        type("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        type(f"{Fore.LIGHTYELLOW_EX} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆ {Fore.RESET}\n")
         print()
         print()
         startGame = input('Would you like to dive right back into the whimsical world of Wonderland? (Y/N): ').strip().lower()
@@ -26,7 +25,7 @@ def prompt_replay():
         if startGame == 'n':
             print()
             print()
-            type("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            type(f"{Fore.LIGHTYELLOW_EX} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
             print()
             print()
             print("""Thank you for joining Alice on her magical
@@ -353,8 +352,8 @@ There are empty chairs around it, though one at the far end has its
 back to her.
 
                     _
-                  _(_)_                          wWWWw   _
-      @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_
+                  _(_)_                         wWWWw   _
+      @@@@       (_)@(_)  vVVVv     _     @@@@  (___) _(_)_
      @@()@@ wWWWw  (_)\\   (___)   _(_)_  @@()@@   Y  (_)@(_)
       @@@@  (___)     `|/   Y    (_)@(_)  @@@@  \\|/   (_)\\
        /      Y      \\|   \\|/    /(_)   \\|      |/      |
@@ -1321,13 +1320,13 @@ away, ready for you to return whenever you wish.{Fore.RESET}\n""")
 
 #Welcome
 print(f"""{Style.BRIGHT}{Fore.LIGHTBLUE_EX}
-                    ____     ____        ~~~~~~~~~~~~~~~~~~~~~
-                  /'    |   |    \\      *                    *
-                /    /  |   | \\   \\     * Alice's Adventure  *
-              /    / |  |'''|  \\   \\    *  In Wonderland!    *
-             (   /   |         |\\   \\   *                    *
-             | /   / /^\\    /^\\  \\  _|   ~~~~~~~~~~~~~~~~~~~~         
-              ~   | |   |  |   | | ~        
+                    ____     ____        {Fore.LIGHTYELLOW_EX}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
+                  {Fore.LIGHTBLUE_EX}/'    |   |    \\{Fore.RESET}      {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}                    {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}
+                {Fore.LIGHTBLUE_EX}/    /  |   | \\   \\{Fore.RESET}     {Fore.LIGHTYELLOW_EX}☆{Fore.RESET} Alice's Adventure  {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}
+              {Fore.LIGHTBLUE_EX}/    / |  |'''|  \\   \\{Fore.RESET}    {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}  In Wonderland!    {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}
+             {Fore.LIGHTBLUE_EX}(   /   |         |\\   \\{Fore.RESET}   {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}                    {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}
+             {Fore.LIGHTBLUE_EX}| /   / /^\\    /^\\  \\  _|{Fore.RESET}   {Fore.LIGHTYELLOW_EX}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
+              {Fore.LIGHTBLUE_EX}~   | |   |  |   | | ~        
                   | |__O|__|O__| |
                 /~~      \\/     ~~\\
                /   (      |      )  \\
@@ -1370,16 +1369,16 @@ Remember: in Wonderland, nothing is quite what it seems.
 Are you ready to find out what's behind the mirror?""")
 print()
 print()
-print(f"""{Style.BRIGHT}{Fore.RED}
+print(f"""{Style.BRIGHT}{Fore.LIGHTGREEN_EX}
              /\\
         _   / /\\
        | \\\\/_/
-       \\\\| / __             
-         \\/_/__\\          .--='/~\\
-   ____,__/__,_____,______)/    (~)))
-   -,-----,--\\--,-----,---,\'-'  ((~))
-           __/\\            '--=.\\)/
-          /_/ |\\
+       \\\\| / __{Fore.RESET}             
+         {Fore.LIGHTGREEN_EX}\\/_/__\\{Fore.RESET}          {Fore.LIGHTRED_EX}.--='/~\\{Fore.RESET}
+   {Fore.LIGHTGREEN_EX}____,__/__,_____,______){Fore.RESET}{Fore.LIGHTRED_EX}/    (~))){Fore.RESET}
+   {Fore.LIGHTGREEN_EX}-,-----,--\\--,-----,---,{Fore.RESET}{Fore.LIGHTRED_EX}\'-'  ((~)){Fore.RESET}
+          {Fore.LIGHTGREEN_EX} __/\\{Fore.RESET}            {Fore.LIGHTRED_EX}'--=.\\)/{Fore.RESET}
+          {Fore.LIGHTGREEN_EX}/_/ |\\
              \\/  {Fore.RESET}\n""")
 
 #Start game function
@@ -1387,7 +1386,8 @@ while True:
     startGame = input('Would You like to play? (Y/N):  ').strip().lower()
     if startGame == 'N' or startGame == "n":
         print()
-        type("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        type(f"{Fore.LIGHTYELLOW_EX} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
+        print()
         print()
         print("""That's totally okay!
 Adventure games can be a real journey. If you change your mind,
