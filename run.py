@@ -18,9 +18,15 @@ def prompt_replay():
     
     while True:
         print()
+        type("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print()
+        print()
         startGame = input('Would you like to dive right back into the whimsical world of Wonderland? (Y/N): ').strip().lower()
         
         if startGame == 'n':
+            print()
+            print()
+            type("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             print()
             print()
             print("""Thank you for joining Alice on her magical
@@ -40,26 +46,26 @@ is never too far away.""")
             break
         else:
             print()
-            print(f"{Fore.RED}Please enter a valid option: Y/y or N/n.{Fore.RESET}\n")
+            print(f"{Fore.RED}Please enter a valid option: 'Y' or 'N'.{Fore.RESET}\n")
             time.sleep(a)
 
 
 #Play function
 def play_game():
     print()
-    type(""" You follow the White Rabbit down a winding
+    type(f"""{Fore.YELLOW} You follow the White Rabbit down a winding
 path that leads to a small door hidden in the roots
 of a large tree. Curiosity prompts you to open it,
 and you find yourself in a dimly lit tunnel. The walls
 of the tunnel are lined with shelves filled with
 strange objects: clocks that tick backwards, bottles 
 with the words "Drink Me" written on them, and mirrors 
-that seem to reflect worlds other than your own. 
+that seem to reflect worlds other than your own.{Fore.RESET}
     
-    What you would like to do?
+    {Fore.BLUE}What you would like to do?{Fore.RESET}
 
     1:Try a drink? 
-    2:Explore the tunnel?""")
+    2:Explore the tunnel?\n""")
     while True:
         choice = input(" >>>  ") #choice function
         if choice == "1":
@@ -69,6 +75,7 @@ that seem to reflect worlds other than your own.
             explore_tunnel()
             break
         else:
+            print()
             print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
@@ -78,7 +85,7 @@ that seem to reflect worlds other than your own.
 #Play >>> Drink Me
 def drink_me():
     print()
-    type("""You found the tiny bottle with the sign
+    type(f"""{Fore.YELLOW}You found the tiny bottle with the sign
 "Drink Me".You uncork the bottle and inhale the
 strange liquid. Feeling bold, you take a sip.
 Immediately, a warm sensation spreads through your
@@ -101,14 +108,14 @@ notice a small, shimmering key lying just out of reach.
      o`  o   /    |\\________________
      o`   'oooo()  | ________   _   _)
     `oo   o` \\    |/        | | | |
-      `ooo'   `---'         "-" |_|
+      `ooo'   `---'         "-" |_|{Fore.RESET}
    
       
 
-    What you would like to do?
+    {Fore.BLUE}What you would like to do?{Fore.RESET}
 
     1: Take the Key 
-    2: Leave the Key""")
+    2: Leave the Key\n""")
 
     while True:
         choice = input(" >>>  ") #choice function
@@ -119,13 +126,14 @@ notice a small, shimmering key lying just out of reach.
             leave_key()
             break
         else:
-           print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
+            print()
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
 #Play >>> Drink Me >>> Take Key
 def take_key():
     print()
-    type("""You decide to pick up the tiny key. Its golden
+    type(f"""{Fore.YELLOW}You decide to pick up the tiny key. Its golden
 glow beckons you, and though you’re not sure what it unlocks,
 you sense that it’s important. Holding it tightly in your
 tiny hand, you continue down the tunnel that stretches 
@@ -166,13 +174,13 @@ and distant, colorful creatures flutter across the sky.
 You realize that you have escaped the tunnel, but the strange
 world you have entered is far from home. It seems both enchanting
 and dangerous, full of secrets waiting
-to be explored.
+to be explored.{Fore.RESET}
     
-      What will you do next?
+      {Fore.BLUE}What will you do next?{Fore.RESET}
     
      1: Explore the garden further?
      2: Look for the White Rabbit?
-     3: Rest for a moment and observe?""")
+     3: Rest for a moment and observe?\n""")
 
     while True:
         choice = input(" >>> ") #choice function
@@ -186,13 +194,14 @@ to be explored.
             rest_in_garden()
             break
         else:
+            print()
             print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")  
             
 
 #Play >>> Drink Me >> Take Key >>> Look For Rabbit >>> End of the Game
 def look_for_rabbit():
     print()
-    type("""You wander through the magic garden, enchanted
+    type(f"""{Fore.YELLOW}You wander through the magic garden, enchanted
 by the vibrant colors and strange, talking flowers.
 The garden seems alive with energy, every step revealing new wonders.
 As you move through the towering mushrooms and glowing blossoms,
@@ -243,7 +252,7 @@ bright, the grass soft beneath your feet, and in the distance, you can
 hear the comforting sounds of home.
 
 You smile, knowing you are safe and sound, but with the memory of
-Wonderland forever in your heart.""")
+Wonderland forever in your heart.{Fore.RESET}\n""")
     print() 
     prompt_replay()   
 
@@ -255,7 +264,7 @@ Wonderland forever in your heart.""")
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Rest in the garden
 def rest_in_garden():
     print()
-    type("""You decide to sit and rest for a while on the soft grass
+    type(f"""{Fore.YELLOW}You decide to sit and rest for a while on the soft grass
 of the clearing. The garden seems alive, and you sense that by 
 rushing forward you may miss something important. As you settle in, 
 the whispers fade into the background, leaving only the gentle rustling
@@ -269,18 +278,18 @@ bark shimmering in soft waves.
 
 As you watch, small details become clear:
 
-* * The red door (with the clock symbol) seems to pulse faintly, almost 
-as if in sync with the ticking sound she heard earlier in the tunnel. * *
+{Fore.RED}* * The red door (with the clock symbol) seems to pulse faintly, almost 
+as if in sync with the ticking sound she heard earlier in the tunnel. * *{Fore.RESET}
 
-* * The blue door (with the heart symbol) radiates a faint warmth, and 
+{Fore.BLUE}* * The blue door (with the heart symbol) radiates a faint warmth, and 
 she hears the distant echo of laughter, though she cannot tell whether 
-it is joyful or sinister. * *
+it is joyful or sinister. * *{Fore.RESET}
     
-* *Faint shimmers float around the green door (with the crown symbol), 
+{Fore.GREEN}* *Faint shimmers float around the green door (with the crown symbol), 
 like a magical trail, and for a moment you notice something glittering in 
-the air near it, like the edge of a golden crown. * *
+the air near it, like the edge of a golden crown. * *{Fore.RESET}
 
-As you look at the doors, the whispers begin to return, but this time 
+{Fore.YELLOW}As you look at the doors, the whispers begin to return, but this time 
 they feel different. It is as if the garden is trying to communicate with 
 you - not in words, but in feelings. The red door evokes a sense of 
 urgency, as if time is of the essence. The blue door evokes a sense of 
@@ -289,13 +298,13 @@ The green door hints at power, authority, and something grandiose,
 but also unknown.
 
 The garden seems to be giving you a choice, but not in a hurry - it is 
-waiting for you to decide.
+waiting for you to decide.{Fore.RESET}
     
-    What will You do next?
+    {Fore.BLUE}What will You do next?{Fore.RESET}
     
-    1: Open the red door?          
-    2: Open the blue door  
-    3: Open the green door""")
+    {Fore.RED}1: Open the red door?{Fore.RESET}          
+    {Fore.BLUE}2: Open the blue door? {Fore.RESET} 
+    {Fore.GREEN}3: Open the green door?{Fore.RESET}\n""")
 
     while True:
         choice = input("  >>> ") #choice function
@@ -309,6 +318,7 @@ waiting for you to decide.
             green_door()
             break
         else:
+            print()
             print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")   
         
     
@@ -319,7 +329,7 @@ waiting for you to decide.
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden
 def explore_garden():
     print()
-    type("""You reached into the garden, your curiosity drawing you deeper
+    type(f"""{Fore.YELLOW}You reached into the garden, your curiosity drawing you deeper
 into this strange, beautiful world. The vibrant colors and strange shapes
 of the plants around you make everything seem surreal. Flowers with faces
 whisper to each other, and huge mushrooms tower over you like trees.
@@ -346,7 +356,7 @@ back to her.
                   _(_)_                          wWWWw   _
       @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_
      @@()@@ wWWWw  (_)\\   (___)   _(_)_  @@()@@   Y  (_)@(_)
-      @@@@  (___)     `|/    Y    (_)@(_)  @@@@  \\|/   (_)\\
+      @@@@  (___)     `|/   Y    (_)@(_)  @@@@  \\|/   (_)\\
        /      Y      \\|   \\|/    /(_)   \\|      |/      |
      \\ |    \\ |/       | /\\ | / \\|/       |/   \\|     \\|/
       \\|//   \\|///   \\|// \\|///\\|///   \\|//  \\|//   \\|// 
@@ -360,12 +370,12 @@ on the branch of a nearby tree,
 his wide grin glittering in the changing light.
 
 "Well, well, what a curious traveler we have here," the Cat purrs, his eyes
-twinkling mischievously.
+twinkling mischievously.{Fore.RESET}
     
-    What You will do next?
+    {Fore.BLUE}What You will do next?{Fore.RESET}
     
     1: Talk to the Cheshire Cat
-    2: Look for a way out of the garden""")
+    2: Look for a way out of the garden\n""")
 
     while True:
         choice = input(" >>>  ") #choice function
@@ -385,7 +395,7 @@ twinkling mischievously.
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Talk to Cat
 def talk_to_cat():
     print()
-    type(""""Lost again, are we?" the Cheshire Cat purrs, his grin widening.
+    type(f"""{Fore.YELLOW}Lost again, are we?" the Cheshire Cat purrs, his grin widening.
 "You do have a habit of getting yourself into the most curious of 
 predicaments, don't you?"
 
@@ -419,13 +429,13 @@ you expect.”
 
 You watch the Cheshire Cat vanish, a sense of both relief and 
 uncertainty washing over you. Though his directions were vague, 
-she had a way to go now.
+she had a way to go now.{Fore.RESET}
     
-    What You will do next?
+    {Fore.BLUE}What You will do next?{Fore.RESET}
     
     1: Follow the path Cat shows You?
     2: You tired and want to take a rest?
-    3: Call Rabbit to find way home?""")
+    3: Call Rabbit to find way home?\n""")
 
     while True:
         choice = input(" >>> ") #choice function
@@ -448,7 +458,7 @@ she had a way to go now.
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Follow cay >>> End The game
 def follow_cat():
     print()
-    type("""You decide to trust the Cheshire Cat’s directions, 
+    type(f"""{Fore.YELLOW}You decide to trust the Cheshire Cat’s directions, 
 even with the lingering sense of mystery. You take a deep breath 
 and head down the winding path he pointed out, your heart beating 
 a little faster with every step. The flowers and plants around 
@@ -499,7 +509,7 @@ echo in your mind — “Wonderland has a way of holding onto its
 visitors.” Perhaps one day, when the time is right, you’ll 
 find herself back there again.
 
-~~~~~~~~~~~~~~~~But for now, your home!~~~~~~~~~~~~~~~~~~~~""")
+~~~~~~~~~~~~~~~~But for now, your home!~~~~~~~~~~~~~~~~~~~~{Fore.RESET}\n""")
     print()
     print() 
     prompt_replay() 
@@ -510,7 +520,7 @@ find herself back there again.
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Avoid Table
 def avoid_table():
     print()
-    type("""You turn away from the tea table and the Cheshire 
+    type(f"""{Fore.YELLOW}You turn away from the tea table and the Cheshire 
 Cat, deciding to follow one of the many twisting paths ahead. 
 The garden seems to be full of possibilities, and your 
 curiosity pulls you forward. You choose the nearest path, a 
@@ -536,13 +546,13 @@ a heart, and a crown.
 
 The whispers grow louder now as if the tree itself is speaking 
 to you. The doors beckon,
-each promising a different path ahead.
+each promising a different path ahead.{Fore.RESET}
 
-    What will You do next?
+    {Fore.BLUE}What will You do next?{Fore.RESET}
     
-    1: Open the red door?
-    2: Open the blue door?
-    3: Open the green door?""")
+    {Fore.RED}1: Open the red door?{Fore.RESET}
+    {Fore.BLUE}2: Open the blue door?{Fore.RESET}
+    {Fore.GREEN}3: Open the green door?{Fore.RESET}\n""")
 
     while True:
         choice = input(" >>>  ") #choice function
@@ -563,7 +573,7 @@ each promising a different path ahead.
 # Play >>> Drink Me >>> Leave the Key (End of the Game)
 def leave_key():
     print()
-    type("""You stare at the small, glimmering key in the crack 
+    type(f"""{Fore.YELLOW}You stare at the small, glimmering key in the crack 
 of the tunnel floor, but for reasons you can’t quite explain, 
 you decide to leave it behind. Perhaps it’s your curiosity 
 leading you onward, or maybe you simply don’t realize the key’s 
@@ -590,7 +600,7 @@ marking time in a world that feels like it's stopped.
 Over time, the tunnel becomes your entire world — a strange, 
 shifting place with no escape. The objects that once seemed 
 curious now feel like permanent companions, 
-and the shadows that dance on the walls never leave you alone.
+and the shadows that dance on the walls never leave you alone.{Fore.RESET}\n
 """)
 
     print()
@@ -601,7 +611,7 @@ and the shadows that dance on the walls never leave you alone.
 #Play >>> Explore Tunnel
 def explore_tunnel():
     print()
-    type("""A few steps in, and the door behind you slams shut. 
+    type(f"""{Fore.YELLOW}A few steps in, and the door behind you slams shut. 
 The tunnel narrows, and you feel the walls pressing in slightly. 
 Your heartbeat quickens as you search for another exit, but the 
 tunnel stretches forward, twisting in impossible ways.
@@ -610,13 +620,13 @@ You attempt to retrace your steps, but the door behind you has
 vanished. You realize you are trapped in a room where the air 
 is thick with the unsettling feeling that you are not alone. 
 Shadows move in the dim light, and somewhere deep within the tunnel, 
-you hear the faint ticking of a clock that you cannot see.
+you hear the faint ticking of a clock that you cannot see.{Fore.RESET}\n
 
-    What will you do next?
+    {Fore.BLUE}What will you do next?{Fore.RESET}
 
     1: Explore the tunnel further, searching for hidden mechanisms 
     in the objects around you?
-    2: Or do you call for help?""")
+    2: Or do you call for help?\n""")
 
     while True:
         choice = input(" >>>  ") #choice function
@@ -634,7 +644,7 @@ you hear the faint ticking of a clock that you cannot see.
 #Play >> Explore Tunnel >> Call For Help
 def call_for_help():
     print()
-    type("""Feeling a mixture of frustration and determination, 
+    type(f"""{Fore.YELLOW}Feeling a mixture of frustration and determination, 
 you decide to call for help again. Your voice echoes through 
 the dim tunnel, bouncing off the walls as you shout, “Help! 
 Is anyone there?”
@@ -672,12 +682,12 @@ leading back to the entrance to your world.
 
 "Just follow this path, and you'll be back where you belong," 
 the White Rabbit assures you. "But remember, Wonderland has 
-a way of calling you back.
+a way of calling you back.{Fore.RESET}
     
-    What will you do next?
+    {Fore.BLUE}What will you do next?{Fore.RESET}
     
     1: Thank the White Rabbit and head home?
-    2: Explore the garden a bit more?""")
+    2: Explore the garden a bit more?\n""")
 
     while True:
         choice = input(">>>  ") #choice function
@@ -697,7 +707,7 @@ a way of calling you back.
 #Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Call for Rabbit >>> End The game
 def go_home():
     print()
-    type("""You turn to the White Rabbit, gratitude shining in 
+    type(f"""{Fore.YELLOW}You turn to the White Rabbit, gratitude shining in 
 your eyes. “Thank you so much for your help!” you exclaim. 
 “I wouldn’t have found my way without you!”
 
@@ -754,7 +764,7 @@ treats wafts through the air and laughter echoes around you.
 You smile, knowing that even though your adventure in 
 Wonderland has come to an end, the memories will forever 
 remain in your heart. And who knows? Perhaps one day you 
-will return.""")
+will return.{Fore.RESET}\n""")
     print()
     print() 
     prompt_replay() 
@@ -762,7 +772,7 @@ will return.""")
 
 def blue_door():
     print()
-    type("""You, drawn by curiosity, approach the blue 
+    type(f"""{Fore.YELLOW}You, drawn by curiosity, approach the blue 
 door with the heart symbol etched above it. You hesitate 
 for just a moment, then take a deep breath and open the 
 door. A soft glow spills out, and without another thought, 
@@ -798,13 +808,13 @@ to challenge me?"
 
 Your heart races. You remember the stories of the 
 Queen’s temper, but also know that this might be your chance to
-learn something important — or perhaps even find a way home.
+learn something important — or perhaps even find a way home.{Fore.RESET}
     
-    What will You do next?
+    {Fore.BLUE}What will You do next?{Fore.RESET}
     
     1: Ask the Queen for help finding her way home?
     2: Challenge the Queen?
-    3: Explore the room quietly, to look for an exit?""")
+    3: Explore the room quietly, to look for an exit?\n""")
 
     while True:
         choice = input(" >>> ") #choice function
@@ -823,7 +833,7 @@ learn something important — or perhaps even find a way home.
     
 def ask_queen():
     print()
-    type("""You, feeling both nervous and hopeful, decide to 
+    type(f"""{Fore.YELLOW}You, feeling both nervous and hopeful, decide to 
 speak to the Queen of Hearts directly. You know the Queen 
 is a powerful figure in Wonderland, but you hope that by 
 being polite, you might get the help you need to find her 
@@ -890,14 +900,14 @@ Wonderland will stay with you always.
 
 With one last look at the horizon, You head home, 
 your heart lighter and mind filled with memories of the incredible 
-journey.""")
+journey.{Fore.RESET}\n""")
     print()
     print() 
     prompt_replay() 
 
 def challenge_queen():
     print()
-    type("""You, feeling bold and defiant, straighten your back 
+    type(f"""{Fore.YELLOW}You, feeling bold and defiant, straighten your back 
 and look the Queen of Hearts in the eyes. You know the Queen 
 can be dangerous, but you are no longer the same timid
 person who first stumbled into Wonderland. Your adventures 
@@ -982,14 +992,14 @@ and braver than you ever knew.
 
 With a smile, You turn and begin to walk back home, 
 knowing that you carry the lessons of Wonderland with you 
-forever.""")
+forever.{Fore.RESET}\n""")
     print()
     print()
     prompt_replay() 
 
 def red_door():
     print()
-    type("""You take a deep breath, filled with curiosity and
+    type(f"""{Fore.YELLOW}You take a deep breath, filled with curiosity and
 excitement, and push the red door open. As you step through, 
 you feel a rush of cool air and a sense of wonder. The door 
 closes softly behind you, and you find yourself in a vibrant, 
@@ -1008,12 +1018,12 @@ Hare are celebrating with a peculiar assortment of teapots and pastries.
 A dark forest to your left, where strange, glowing creatures flit 
 among the trees, inviting you to explore.
 A sparkling stream nearby, with a clear surface that reflects the 
-colorful skies above.
+colorful skies above.{Fore.RESET}
 
-    What You will do next?
+    {Fore.BLUE}What You will do next?{Fore.RESET}
     
     1: Join Mad Hatters Party?
-    2: Go to Dark Forest?""")
+    2: Go to Dark Forest?\n""")
 
     while True: 
         choice = input(" >>> ") #choice function
@@ -1029,7 +1039,7 @@ colorful skies above.
 
 def mad_hatter():
     print()
-    type("""You, feeling a mix of excitement and nervousness,
+    type(f"""{Fore.YELLOW}You, feeling a mix of excitement and nervousness,
  approach the Mad Hatter's tea party. The table is set with 
  an array of colorful teapots, mismatched cups, and delectable 
  pastries that seem to beckon you to join.
@@ -1083,12 +1093,12 @@ her mission.
 As you walk, you begin to notice familiar landmarks—the large 
 mushroom, the crooked tree, and finally, a little figure hopping 
 in the distance. It’s the White Rabbit, glancing at his pocket 
-watch with a worried expression.
+watch with a worried expression.{Fore.RESET}
 
-     What You will do next?
+    {Fore.BLUE} What You will do next?{Fore.RESET}
      
      1: Call For the rabbit?
-     2: Explore dark forest?""")
+     2: Explore dark forest?\n""")
 
     while True:
         choice = input(" >>> ") #choice function
@@ -1104,7 +1114,7 @@ watch with a worried expression.
 
 def dark_forest():
     print()
-    type("""You, curious and adventurous, decide to delve 
+    type(f"""{Fore.YELLOW}You, curious and adventurous, decide to delve 
 deeper into the dark forest rather than seek the White Rabbit. 
 The trees loom tall above You, their twisted branches casting 
 eerie shadows on the ground. The further You wander, the 
@@ -1166,14 +1176,14 @@ but this place is filled with wonders.”
 
 And so, you become a part of the dark forest, a curious spirit 
 wandering among the trees, forever enchanted by the magic that 
-keeps her lost.""")
+keeps her lost.{Fore.RESET}\n""")
     print()
     print()
     prompt_replay() 
 
 def dark_forest_way_home():
     print()
-    type("""After saying goodbye to the Mad Hatter and the 
+    type(f"""{Fore.YELLOW}After saying goodbye to the Mad Hatter and the 
 March Hare, You decide to venture into the dark forest you 
 had seen earlier. The trees are tall and twisted, their leaves 
 forming a thick canopy that filters the sunlight into soft, 
@@ -1235,14 +1245,14 @@ in Wonderland has come to an end, but the memories will stay with you forever.
 
 As you walk through your garden, you can’t help but smile, knowing that you 
 have discovered the magic of curiosity and friendship in a world where 
-anything is possible.""")
+anything is possible.{Fore.RESET}\n""")
     print()
     print()
     prompt_replay() 
 
 def green_door():
     print()
-    type("""With a spark of curiosity, You push open the 
+    type(f"""{Fore.YELLOW}With a spark of curiosity, You push open the 
 vibrant green door and step inside. The door leads you 
 into a lush, vibrant garden that feels alive with magic. 
 The air is filled with the sweet scent of blooming flowers, 
@@ -1304,7 +1314,7 @@ with you forever.
 
 As you wander through her garden, she can’t help but smile, 
 knowing that the magic of Wonderland is just a heartbeat 
-away, ready for you to return whenever you wish.""")
+away, ready for you to return whenever you wish.{Fore.RESET}\n""")
     print()
     print() 
     prompt_replay() 
@@ -1376,6 +1386,8 @@ print(f"""{Style.BRIGHT}{Fore.RED}
 while True:
     startGame = input('Would You like to play? (Y/N):  ').strip().lower()
     if startGame == 'N' or startGame == "n":
+        print()
+        type("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         print()
         print("""That's totally okay!
 Adventure games can be a real journey. If you change your mind,
