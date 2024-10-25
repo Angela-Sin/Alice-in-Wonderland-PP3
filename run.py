@@ -17,25 +17,25 @@ def prompt_replay():
     
     while True:
         print()
-        type(f"{Fore.LIGHTYELLOW_EX} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆ {Fore.RESET}\n")
+        type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆ {Fore.RESET}\n")
         print()
         print()
-        startGame = input('Would you like to dive right back into the whimsical world of Wonderland? (Y/N): ').strip().lower()
+        startGame = input('Would you like to dive back into the whimsical world of Wonderland? (Y/N): ').strip().lower()
         
         if startGame == 'n':
             print()
             print()
-            type(f"{Fore.LIGHTYELLOW_EX} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
+            type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
             print()
             print()
-            print("""Thank you for joining Alice on her magical journey through Wonderland!
+            type(f"""{Fore.MAGENTA}Thank you for joining Alice on her magical journey through Wonderland!
 Your curiosity and choices brought the adventure to life, and we hope 
 you had as much fun exploring as Alice did. Every step you took made 
 Wonderland a little more wondrous.
 
 Until we meet again, may your imagination always guide you to new 
 adventures! Goodbye for now, and remember—Wonderland is never too 
-far away.""")
+far away.\n""")
             sys.exit()
             
             break
@@ -96,13 +96,13 @@ echoing.
 In your new, tiny size, you can now see hidden details in the tunnel's 
 floors and walls - cracks and crevices you couldn't see before. In one 
 of these cracks, you notice a small, shimmering key lying just out of 
-reach.
+reach.{Fore.RESET}
 
       ooo,    .---.
      o`  o   /    |\\________________
      o`   'oooo()  | ________   _   _)
     `oo   o` \\    |/        | | | |
-      `ooo'   `---'         "-" |_|{Fore.RESET}
+      `ooo'   `---'         "-" |_|
    
       
 
@@ -192,9 +192,25 @@ def look_for_rabbit():
 and strange, talking flowers. The garden seems alive with energy, every 
 step revealing new wonders. As you move through the towering mushrooms 
 and glowing blossoms, you catch a glimpse of white fur darting between 
-the tall plants.
+the tall plants.{Fore.RESET}
 
-Excited, you hurry forward and soon find yourself face-to-face with the 
+                                        
+                  {Fore.RED} _..._                      
+                 ,' (_) `.                        
+               .'   .-.   `.                       
+              ,'_) :   : .-.\\                      
+              .;-.   `-' (   )\\             
+             (   )    _  `-'  ;             
+              `-;_   (_)   ,-'              
+                  `'------' {Fore.RESET}                
+                   {Fore.WHITE}|    |                   
+                   |    |
+                  /     |       
+                ,'      `.                       
+                 `.    .//{Fore.RESET}             {Fore.LIGHTGREEN_EX})/{Fore.RESET}
+                  {Fore.WHITE} `,-'{Fore.RESET}                {Fore.LIGHTGREEN_EX}(o))))))))<{Fore.RESET}
+
+{Fore.YELLOW}Excited, you hurry forward and soon find yourself face-to-face with the 
 White Rabbit. He’s standing by a large mushroom, anxiously checking his 
 pocket watch, as always. The moment he sees you, his eyes widen, though 
 not with surprise this time. Instead, there’s a look of relief.
@@ -436,7 +452,7 @@ you had a way to go now.{Fore.RESET}
             rest_in_garden()
             break
         elif choice == "3":
-            go_home()
+            look_for_rabbit()
             break
         else:
             print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")  
@@ -1261,12 +1277,12 @@ to return whenever you wish.{Fore.RESET}\n""")
 
 #Welcome
 print(f"""{Style.BRIGHT}{Fore.LIGHTBLUE_EX}
-                    ____     ____        {Fore.LIGHTYELLOW_EX}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
-                  {Fore.LIGHTBLUE_EX}/'    |   |    \\{Fore.RESET}      {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}                    {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}
-                {Fore.LIGHTBLUE_EX}/    /  |   | \\   \\{Fore.RESET}     {Fore.LIGHTYELLOW_EX}☆{Fore.RESET} Alice's Adventure  {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}
-              {Fore.LIGHTBLUE_EX}/    / |  |'''|  \\   \\{Fore.RESET}    {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}  In Wonderland!    {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}
-             {Fore.LIGHTBLUE_EX}(   /   |         |\\   \\{Fore.RESET}   {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}                    {Fore.LIGHTYELLOW_EX}☆{Fore.RESET}
-             {Fore.LIGHTBLUE_EX}| /   / /^\\    /^\\  \\  _|{Fore.RESET}   {Fore.LIGHTYELLOW_EX}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
+                    ____     ____        {Fore.YELLOW}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
+                  {Fore.LIGHTBLUE_EX}/'    |   |    \\{Fore.RESET}      {Fore.YELLOW}☆{Fore.RESET}                    {Fore.YELLOW}☆{Fore.RESET}
+                {Fore.LIGHTBLUE_EX}/    /  |   | \\   \\{Fore.RESET}     {Fore.YELLOW}☆{Fore.RESET} Alice's Adventure  {Fore.YELLOW}☆{Fore.RESET}
+              {Fore.LIGHTBLUE_EX}/    / |  |'''|  \\   \\{Fore.RESET}    {Fore.YELLOW}☆{Fore.RESET}  In Wonderland!    {Fore.YELLOW}☆{Fore.RESET}
+             {Fore.LIGHTBLUE_EX}(   /   |         |\\   \\{Fore.RESET}   {Fore.YELLOW}☆{Fore.RESET}                    {Fore.YELLOW}☆{Fore.RESET}
+             {Fore.LIGHTBLUE_EX}| /   / /^\\    /^\\  \\  _|{Fore.RESET}   {Fore.YELLOW}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
               {Fore.LIGHTBLUE_EX}~   | |   |  |   | | ~        
                   | |__O|__|O__| |
                 /~~      \\/     ~~\\
@@ -1327,7 +1343,7 @@ while True:
     startGame = input('Would You like to play? (Y/N):  ').strip().lower()
     if startGame == 'N' or startGame == "n":
         print()
-        type(f"{Fore.LIGHTYELLOW_EX} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
+        type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
         print()
         print()
         print("That's totally okay!")
