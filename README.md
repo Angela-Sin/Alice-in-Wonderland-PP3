@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-The Alice in Wonderland text-based adventure game is an interactive fiction game where players navigate the world of Lewis Carroll's Alice's Adventures in Wonderland through text commands. The game presents descriptive scenarios, and players type commands like "go north," "take the key," or "talk to the rabbit" to explore the story. The gameplay relies on imagination and problem-solving, staying true to Wonderland's whimsical and surreal nature. Each decision influences the narrative, making it an immersive storytelling experience. ![Link](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)
+The Alice in Wonderland text-based adventure game is an interactive fiction game where players navigate the world of Lewis Carroll's Alice's Adventures in Wonderland through text commands. The game presents descriptive scenarios, and players type commands like "go north," "take the key," or "talk to the rabbit" to explore the story. The gameplay relies on imagination and problem-solving, staying true to Wonderland's whimsical and surreal nature. Each decision influences the narrative, making it an immersive storytelling experience. [Wikipedia](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)
 
 The Alice in Wonderland text-based adventure game you're referring to is a Python-based project that runs in a mock terminal environment provided by Code Institute and is deployed using the Heroku platform. In this setup, Python creates the game's logic, manages user input, and handles the narrative's flow. Players interact with the game via a command-line interface, where they input text commands to control the protagonist, typically Alice, as she explores Wonderland.
 
@@ -68,6 +68,10 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 ![image](https://github.com/user-attachments/assets/506e1b36-f420-43b4-8194-efcc00a35b2c)
 
+- If you input anything other than '1' or '2', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again
+
+![image](https://github.com/user-attachments/assets/46349073-eba0-47ac-bd22-1b841038d026)
+
 - When the story will end, you will get a choice to play the game again or not.
 - If you choose to play again, you will start the game from the beginning of the game with an intro story and multiple choice.
 
@@ -77,7 +81,13 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 ![image](https://github.com/user-attachments/assets/a30029fa-6caa-4121-acc6-fed1ad1104a1)
 
+# Future Features
 
+- Use an API link to Google Sheets to rework and extend the storyline.
+- Make the game so multiple people are capable of playing and track their scores, compared to other players.
+- Make a game with multiple choices of the stories written by Lewis Carroll.
+- Implement a scoreboard.
+- Add separate challenges to make the game more challenging and live.
 
 
 
