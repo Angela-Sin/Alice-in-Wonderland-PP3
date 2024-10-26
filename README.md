@@ -126,9 +126,63 @@ The first example of a Flowchart I made during game creation.
 - Add separate challenges to make the game more challenging and live.
 
 
+# Deployment
 
+### Making a Local Clone
 
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste [https://github.com/YOUR-USERNAME/YOUR-REPOSITORY] in.
+7. Press Enter. Your local clone will be created.
+8. $ git clone [https://github.com/YOUR-USERNAME/YOUR-REPOSITORY]
+9. Cloning into `CI-Clone`...
+10. remote: Counting objects: 10, done.
+11. remote: Compressing objects: 100% (8/8), done.
+12. remove: Total 10 (delta 1), reused 10 (delta 1)
+13. Unpacking objects: 100% (10/10), done.
 
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not the top of the page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+-- Forking allows you to make any changes without affecting the original project. You can send the suggestions by submitting a pull request. Then the Project Owner can review the pull request before accepting the suggestions and merging them.
+-- When you have a fork to a repository, you don't have access to files locally on your device, to get access you will need to clone the forked repository.
+
+For more details on how to fork the repo, to for example suggest any changes to the project you can:[Link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
+### Heroku App Deployment
+
+The app is deployed from Heroku using the following steps:
+1. Use pip freeze > requirements.txt to add external libraries to the deployed app.
+2. Create a Heroku account.
+3. In the top right, click 'New'.
+4. Click 'Create new app'.
+5. Give your app a name and select your region from drop-down.
+6. Click 'Create new app'.
+7. Go to the 'settings' tab, you must do it before deployment.
+8. Scroll down to the 'config vars' section and key: PORT and value: 8000.
+9. Scroll down to the 'Buildpacks' section.
+10. Click 'Add buildpack'.
+11. Add Python as the first dependency and select 'Save changes'.
+12. Add node.js as a second dependency and save again (This is the settings section done).
+13. Select the 'Deploy' tab at the top.
+14. Select 'Github' from 'Deployment method'.
+15. Type the name given to your project in GitHub and click 'search'.
+16. Scroll down and select the Manual deployment method.
+17. You can also use The auto-deployment method to allow the project to update every time you push the code.
+18. You can now click to view the app is ready and running.
+
+-- The web application is displayed and deployed using the template provided by Code Institute to test the code.
+-- For this project I used the Manual deployment method to deploy the current state of the branch, every time I pushed the code from Gitpod.
 
 
 
