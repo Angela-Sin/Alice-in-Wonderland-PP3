@@ -8,7 +8,7 @@ The Alice in Wonderland text-based adventure game is an interactive fiction game
 
 The Alice in Wonderland text-based adventure game you're referring to is a Python-based project that runs in a mock terminal environment provided by Code Institute and is deployed using the Heroku platform. In this setup, Python creates the game's logic, manages user input, and handles the narrative's flow. Players interact with the game via a command-line interface, where they input text commands to control the protagonist, typically Alice, as she explores Wonderland.
 
-The game likely uses Python libraries for handling input/output and basic control flow (like if-else statements for decisions). It might include data structures (like dictionaries or lists) to manage the game's state, inventory, or rooms. It runs on Heroku, a cloud platform that allows developers to deploy, manage, and scale applications easily, ensuring that the game is accessible online without needing a local Python setup.
+The game likely uses Python libraries for handling input/output and basic control flow (like if-else statements for decisions). It might include data structures (like dictionaries or lists) to manage the game's state, inventory, or rooms. It runs on Heroku, a cloud platform that allows developers to deploy, manage, and scale applications easily, ensuring the game is accessible online without needing a local Python setup.
 
 ## Rules
 
@@ -47,9 +47,17 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 ![Image](https://github.com/user-attachments/assets/5e6c366d-5ba6-450f-a795-fb73b0e624f4)
 
+- After a valid name entry you are greeted and introduced to the outline of the game.
+- Then you find yourself deciding to play the game or not.
+
 ![image](https://github.com/user-attachments/assets/5ca9ffc2-0651-42b2-aafc-37f403334320)
 
+- If your decision is negative you will find nice greetings.
+
 ![image](https://github.com/user-attachments/assets/7b15155c-625b-4c34-a6b0-66e56fd3c8be)
+
+- If your decision is positive You'll move into the beginning of the game.
+- Here you find some story and multiple-choice input.
 
 ![image](https://github.com/user-attachments/assets/da2b85cb-4e77-4109-9de1-305647dfb3b0)
 
