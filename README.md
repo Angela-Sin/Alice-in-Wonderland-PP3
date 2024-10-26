@@ -37,9 +37,45 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 # Flow Chart
 
+The first example of a Flowchart I made during game creation.
 
-![image](https://github.com/user-attachments/assets/93782981-defd-45bd-a015-617edc8acdbb)
+![image](https://github.com/user-attachments/assets/fd277389-d1d3-4c1b-afb2-4abd5e4a8fa9)
 
+## Here is an updated example of a flowchart.
+
+### The flowchart represents a decision-based adventure game inspired by "Alice in Wonderland." Here's a brief explanation:
+
+## Start
+
+-The game begins with the player starting and entering their name.
+
+## Welcome Section
+
+- The player is welcomed and asked to make a decision (Yes/No). Based on the choice, different paths open up.
+
+## Listening to the Rabbit or Calling for Help
+
+- Early choices involve either listening to a rabbit or calling for help, leading to multiple pathways:
+- Exploring the Tunnel or proceeding to the introduction section.
+- Finding keys, drinking from bottles, or following a rabbit.
+
+## Exploring Paths
+
+- The player may encounter various locations such as a garden, a forest, or a tea party.
+- The player can interact with characters (like the Cat or the Queen) or objects (like taking or leaving keys).
+
+## Making Choices
+
+- Decisions lead to different scenarios, such as challenging the Queen or exploring new doors (Green or Blue).
+- Outcomes depend on the choice probabilities (e.g., 1/2 or 1/3), indicating multiple possible scenarios.
+
+## Ending or Looping
+
+- Players can find the way home, reach the end of the game, or loop back to make choices again.
+- The game allows replayability by giving the player the choice to Play Again or end the game.
+= Overall, it's a branching narrative structure where choices guide the outcome of the adventure.
+
+![image](https://github.com/user-attachments/assets/356dff71-e873-4596-94cf-3144077ee989)
 
 # Features
 
