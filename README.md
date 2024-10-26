@@ -17,13 +17,21 @@ The game likely uses Python libraries for handling input/output and basic contro
 - The player is asked whether they want to start the game: Y/N
   - If the player enters "N" or "n", they get a friendly message saying they can come back later >>
   -  If they choose "Y" or "y", the function is called to start the game >>
+- If the player inputs anything other than 'Y' or 'N', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again:
 - The player has initial choices in the adventure presented. The player can choose between the options provided in the game.
-- If the player inputs anything other than 1 or 2, the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again:
+- If the player inputs anything other than '1' or '2', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again:
 - After the narrative ends, the player is given the option to restart the game: Y/N
   - If they say "N" or "n", they receive a friendly message encouraging them to come back later >>
   - If they say "Y" or "y", the game loops back by calling play_game() to restart the adventure >>
+- If the player inputs anything other than 'Y' or 'N', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again:
 
+## User Goal
 
+- I want the site to be easy and intuitive to use.
+- I want to be able to decide to start the game, and not worry about captalisation or typing 'y' or 'n'.
+- I want the game to be challenging.
+- I want to play again.
+- I want it to be fun and interesting to play with a route that is not obvious on my first try.
 
 
 # Flow Chart
