@@ -53,22 +53,27 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 - Then you find yourself deciding to play the game or not.
 
-
 ![image](https://github.com/user-attachments/assets/7b15155c-625b-4c34-a6b0-66e56fd3c8be)
 
-- If your decision is negative you will find nice greetings.
-
+- If you input anything other than 'Y' or 'N', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again
 
 ![image](https://github.com/user-attachments/assets/da2b85cb-4e77-4109-9de1-305647dfb3b0)
 
-- If your decision is positive You'll move into the beginning of the game.
-- Here you find some story and multiple-choice input.
+- If your decision is negative you will find nice greetings.
   
 ![image](https://github.com/user-attachments/assets/a3fb65bb-c7d2-4cb2-9b67-d7a293da588d)
 
+- If your decision is positive You'll move into the beginning of the game.
+- Here you find some story and multiple-choice input.
+
 ![image](https://github.com/user-attachments/assets/506e1b36-f420-43b4-8194-efcc00a35b2c)
 
+- When the story will end, you will get a choice to play the game again or not.
+- If you choose to play again, you will start the game from the beginning of the game with an intro story and multiple choice.
+
 ![image](https://github.com/user-attachments/assets/75d0fe1a-d8d3-4130-b643-8583ccfe5ca1)
+
+- If you chose 'No' You will be greeted with warm greetings for goodbye.
 
 ![image](https://github.com/user-attachments/assets/a30029fa-6caa-4121-acc6-fed1ad1104a1)
 
