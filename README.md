@@ -43,6 +43,8 @@ The first example of a Flowchart I made during game creation.
 
 ## Here is an updated example of a flowchart.
 
+![image](https://github.com/user-attachments/assets/356dff71-e873-4596-94cf-3144077ee989)
+
 ### The flowchart represents a decision-based adventure game inspired by "Alice in Wonderland." Here's a brief explanation:
 
 ## Start
@@ -74,8 +76,6 @@ The first example of a Flowchart I made during game creation.
 - Players can find the way home, reach the end of the game, or loop back to make choices again.
 - The game allows replayability by giving the player the choice to Play Again or end the game.
 - Overall, it's a branching narrative structure where choices guide the outcome of the adventure.
-
-![image](https://github.com/user-attachments/assets/356dff71-e873-4596-94cf-3144077ee989)
 
 # Features
 
