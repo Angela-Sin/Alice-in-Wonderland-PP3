@@ -46,7 +46,8 @@ The first example of a Flowchart I made during game creation.
 ## Here is an updated example of a flowchart.
 
 
-![image](https://github.com/user-attachments/assets/356dff71-e873-4596-94cf-3144077ee989)
+![image](https://github.com/user-attachments/assets/d5c178c4-5519-49d6-9b19-fcf9c69d1207)
+
 
 ### The flowchart represents a decision-based adventure game inspired by "Alice in Wonderland." Here's a brief explanation:
 
