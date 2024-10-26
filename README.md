@@ -48,19 +48,22 @@ The game likely uses Python libraries for handling input/output and basic contro
 ![Image](https://github.com/user-attachments/assets/5e6c366d-5ba6-450f-a795-fb73b0e624f4)
 
 - After a valid name entry you are greeted and introduced to the outline of the game.
-- Then you find yourself deciding to play the game or not.
 
 ![image](https://github.com/user-attachments/assets/5ca9ffc2-0651-42b2-aafc-37f403334320)
 
-- If your decision is negative you will find nice greetings.
+- Then you find yourself deciding to play the game or not.
+
 
 ![image](https://github.com/user-attachments/assets/7b15155c-625b-4c34-a6b0-66e56fd3c8be)
 
-- If your decision is positive You'll move into the beginning of the game.
-- Here you find some story and multiple-choice input.
+- If your decision is negative you will find nice greetings.
+
 
 ![image](https://github.com/user-attachments/assets/da2b85cb-4e77-4109-9de1-305647dfb3b0)
 
+- If your decision is positive You'll move into the beginning of the game.
+- Here you find some story and multiple-choice input.
+  
 ![image](https://github.com/user-attachments/assets/a3fb65bb-c7d2-4cb2-9b67-d7a293da588d)
 
 ![image](https://github.com/user-attachments/assets/506e1b36-f420-43b4-8194-efcc00a35b2c)
