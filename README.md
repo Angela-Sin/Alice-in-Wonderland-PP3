@@ -27,6 +27,7 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 ## User Goal
 
+
 - I want the site to be easy and intuitive to use.
 - I want to be able to decide to start the game, and not worry about captalisation or typing 'y' or 'n'.
 - I want to be told if I have entered text incorrectly into the input areas.
@@ -37,11 +38,13 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 # Flow Chart
 
+
 The first example of a Flowchart I made during game creation.
 
 ![image](https://github.com/user-attachments/assets/fd277389-d1d3-4c1b-afb2-4abd5e4a8fa9)
 
 ## Here is an updated example of a flowchart.
+
 
 ![image](https://github.com/user-attachments/assets/356dff71-e873-4596-94cf-3144077ee989)
 
@@ -49,19 +52,23 @@ The first example of a Flowchart I made during game creation.
 
 ## Start
 
+
 -The game begins with the player starting and entering their name.
 
 ## Welcome Section
 
+
 - The player is welcomed and asked to make a decision (Yes/No). Based on the choice, different paths open up.
 
 ## Listening to the Rabbit or Calling for Help
+
 
 - Early choices involve either listening to a rabbit or calling for help, leading to multiple pathways:
 - Exploring the Tunnel or proceeding to the introduction section.
 - Finding keys, drinking from bottles, or following a rabbit.
 
 ## Exploring Paths
+
 
 - The player may encounter various locations such as a garden, a forest, or a tea party.
 - The player can interact with characters (like the Cat or the Queen) or objects (like taking or leaving keys).
@@ -73,13 +80,16 @@ The first example of a Flowchart I made during game creation.
 
 ## Ending or Looping
 
+
 - Players can find the way home, reach the end of the game, or loop back to make choices again.
 - The game allows replayability by giving the player the choice to Play Again or end the game.
 - Overall, it's a branching narrative structure where choices guide the outcome of the adventure.
 
 # Features
 
+
 ## First Screen
+
 
 ![Image](https://github.com/user-attachments/assets/5e6c366d-5ba6-450f-a795-fb73b0e624f4)
 
@@ -117,7 +127,9 @@ The first example of a Flowchart I made during game creation.
 
 ![image](https://github.com/user-attachments/assets/a30029fa-6caa-4121-acc6-fed1ad1104a1)
 
+
 # Future Features
+
 
 - Use an API link to Google Sheets to rework and extend the storyline.
 - Make the game so multiple people are capable of playing and track their scores, compared to other players.
@@ -128,7 +140,9 @@ The first example of a Flowchart I made during game creation.
 
 # Deployment
 
+
 ### Making a Local Clone
+
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. Under the repository name, click "Clone or download".
@@ -146,7 +160,9 @@ The first example of a Flowchart I made during game creation.
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+
 ### Forking the GitHub Repository
+
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
@@ -155,11 +171,14 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 3. You should now have a copy of the original repository in your GitHub account.
 
 -- Forking allows you to make any changes without affecting the original project. You can send the suggestions by submitting a pull request. Then the Project Owner can review the pull request before accepting the suggestions and merging them.
+
 -- When you have a fork to a repository, you don't have access to files locally on your device, to get access you will need to clone the forked repository.
 
 For more details on how to fork the repo, to for example suggest any changes to the project you can:[Link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 
+
 ### Heroku App Deployment
+
 
 The app is deployed from Heroku using the following steps:
 1. Use pip freeze > requirements.txt to add external libraries to the deployed app.
@@ -182,12 +201,12 @@ The app is deployed from Heroku using the following steps:
 18. You can now click to view the app is ready and running.
 
 -- The web application is displayed and deployed using the template provided by Code Institute to test the code.
+
 -- For this project I used the Manual deployment method to deploy the current state of the branch, every time I pushed the code from Gitpod.
 
 
-
-
 ## Resources Used
+
 
 | Source                                                                                                               | Location       | Notes                        |
 | -------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------- |
