@@ -92,13 +92,21 @@ The first example of a Flowchart I made during game creation.
 ## First Screen
 
 
+- On the first page, you can find an ASCII art title screen, likely for a text-based or console game version of Alice's Adventures in Wonderland.
+- In the top right corner, the title "Alice's Adventure in Wonderland!", gives a brief explanation of what players should expect from a game, and also is highlighted with stars.
+- The prompt "Please enter your name >>>" at the bottom indicates this is the starting point of the game, where the player can input their name to begin.
+- The ASCII art and interactive prompt suggest a retro, nostalgic design, fitting for classic text-based or adventure games.
+- 
 ![Image](https://github.com/user-attachments/assets/5e6c366d-5ba6-450f-a795-fb73b0e624f4)
 
-- After a valid name entry you are greeted and introduced to the outline of the game.
+- After a valid name the second step greets the player by 'Name' and invites him into the "Magical World of Wonderland."
+- The description encourages players to join Alice on a whimsical adventure filled with talking animals, mischievous characters like the Cheshire Cat, and the notorious Queen who shouts, "Off with their heads!" It emphasizes that players' choices will shape the journey, uncovering secrets and facing challenges along the way. It asks if they're ready to follow the White Rabbit and dive into the mysterious, unpredictable world of Wonderland, where "nothing is quite what it seems."
+-The invitation to "find out what's behind the mirror" sets a mysterious, exploratory tone, aligning with the theme of curiosity and discovery central to Alice in Wonderland. This text likely serves as a setup for the player's adventure, building excitement for the imaginative experience ahead.
 
 ![image](https://github.com/user-attachments/assets/5ca9ffc2-0651-42b2-aafc-37f403334320)
 
-- Then you find yourself deciding to play the game or not.
+- Here is a starting screen for a text-based adventure game, inviting the player to begin the story by entering either 'Y' (Yes) to play or 'N' (No) to decline.
+- The use of ASCII art adds a visual element, making the start of the game engaging.
 
 ![image](https://github.com/user-attachments/assets/7b15155c-625b-4c34-a6b0-66e56fd3c8be)
 
