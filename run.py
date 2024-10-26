@@ -14,14 +14,12 @@ def type(text):
 
 
 def prompt_replay():
-    
     while True:
         print()
         type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆ {Fore.RESET}\n")
         print()
         print()
         startGame = input('Would you like to dive back into the whimsical world of Wonderland? (Y/N): ').strip().lower()
-        
         if startGame == 'n':
             print()
             print()
@@ -37,7 +35,6 @@ Until we meet again, may your imagination always guide you to new
 adventures! Goodbye for now, and remember—Wonderland is never too 
 far away.\n""")
             sys.exit()
-            
             break
         elif startGame == "y":
             play_game()
@@ -701,58 +698,54 @@ def go_home():
 found my way without you!”
 
 The White Rabbit nods, adjusting his tiny vest. “Oh, nothing! 
-Just doing my job,” he replies, looking back at the tunnel 
-with a hint of worry. “But be careful out there. Wonderland 
-can be quite unpredictable!”
+Just doing my job,” he replies, looking back at the tunnel with 
+a hint of worry. “But be careful out there. Wonderland can be 
+quite unpredictable!”
 
-With one last wave, you walk through the door and onto the 
-busy path that leads back to your world. The sun shines 
-brightly overhead, illuminating the colorful flowers that 
-seem to dance in the gentle breeze. You feel the warmth 
-of the sunlight on your face, a calming reminder of home.
+With one last wave, you walk through the door and onto the busy 
+path that leads back to your world. The sun shines brightly 
+overhead, illuminating the colorful flowers that seem to dance 
+in the gentle breeze. You feel the warmth of the sunlight on 
+your face, a calming reminder of home.
 
-As you walk, you pause for a moment to appreciate the 
-beauty of the garden. Each flower is a riot of color, and 
-a sweet scent fills the air. You notice butterflies 
-fluttering about, their delicate wings sparkling like jewels 
-in the sun. For a moment, you want to linger, to explore 
-this magical place a little longer.
+As you walk, you pause for a moment to appreciate the beauty of 
+the garden. Each flower is a riot of color, and a sweet scent 
+fills the air. You notice butterflies fluttering about, their 
+delicate wings sparkling like jewels in the sun. For a moment, 
+you want to linger, to explore this magical place a little 
+longer.
 
-But your heart pulls you forward. You know you need to 
-return to your world, to the familiar comfort of your home.
+But your heart pulls you forward. You know you need to return 
+to your world, to the familiar comfort of your home.
 
-As you walk along the path, you hear the soft sound of 
-running water nearby. Curiosity piqued, you wander a little 
-off the main path to see a small stream running through 
-the garden, its waters sparkling like diamonds. It flows 
-peacefully, meandering through the flowers and leading to 
-the distant horizon.
+As you walk along the path, you hear the soft sound of running 
+water nearby. Curiosity piqued, you wander a little off the 
+main path to see a small stream running through the garden, its 
+waters sparkling like diamonds. It flows peacefully, meandering 
+through the flowers and leading to the distant horizon.
 
 Suddenly, you realize you can’t stay. With one last look 
 around, you return to the main path and continue on your way. 
-Soon you reach the edge of the garden, where the flowers 
-give way to a familiar landscape. The soft rolling hills, 
-the bright green grass, and the distant sound of your 
-family calling your name fill you with joy.
+Soon you reach the edge of the garden, where the flowers give 
+way to a familiar landscape. The soft rolling hills, the bright 
+green grass, and the distant sound of your family calling your 
+name fill you with joy.
 
-As you step through the door back into your world, you 
-feel a sense of completion. You look back one last time 
-at Wonderland, the magical place that took you on an 
-incredible adventure.
+As you step through the door back into your world, you feel a 
+sense of completion. You look back one last time at Wonderland, 
+the magical place that took you on an incredible adventure.
 
 “I will never forget you,” you whisper to the garden.
 
 With a deep breath, you step forward into your reality.
 
-Back in your garden, you hear the sounds of your family 
-enjoying a lovely picnic. The aroma of freshly baked treats 
-wafts through the air, and laughter echoes around you.
+Back in your garden, you hear the sounds of your family enjoying 
+a lovely picnic. The aroma of freshly baked treats wafts through 
+the air, and laughter echoes around you.
 
-You smile, knowing that even though your adventure in 
-Wonderland has come to an end, the memories will forever 
-remain in your heart. And who knows? Perhaps one day 
-you will return.{Fore.RESET}""")
-
+You smile, knowing that even though your adventure in Wonderland 
+has come to an end, the memories will forever remain in your 
+heart. And who knows? Perhaps one day you will return.{Fore.RESET}""")
     print()
     print() 
     prompt_replay() 
@@ -1161,55 +1154,61 @@ into soft, dappled shadows on the ground.
 
 As you walk deeper into the forest, you hear the gentle rustle of leaves 
 and the distant sound of trickling water. The air is cool and fresh, and 
-you feel a mix of excitement and apprehension. Suddenly, you spot a familiar 
-figure darting between the trees—it’s the White Rabbit, looking just as 
-flustered as ever.
+you feel a mix of excitement and apprehension. Suddenly, you spot a 
+familiar figure darting between the trees—it’s the White Rabbit, looking 
+just as flustered as ever.
 
-“Excuse me! Mr. Rabbit!” you call out, your voice echoing through the forest.
+“Excuse me! Mr. Rabbit!” you call out, your voice echoing through the 
+forest.
 
-The White Rabbit stops abruptly, his big ears twitching. He turns to face you, 
-a look of relief washing over his face. “Oh, thank goodness! I thought I had 
-lost you forever! I’ve been looking for you everywhere!”
+The White Rabbit stops abruptly, his big ears twitching. He turns to face 
+you, a look of relief washing over his face. “Oh, thank goodness! I thought 
+I had lost you forever! I’ve been looking for you everywhere!”
 
-You catch your breath, feeling a surge of hope. “I’m so glad to see you! I need 
-your help to find my way home.”
+You catch your breath, feeling a surge of hope. “I’m so glad to see you! I 
+need your help to find my way home.”
 
-The White Rabbit nods eagerly. “Of course! Follow me, and stay close. The way 
-home can be tricky, but I know the path.”
+The White Rabbit nods eagerly. “Of course! Follow me, and stay close. The 
+way home can be tricky, but I know the path.”
 
-As you make your way through the forest, the Rabbit leads you past twisted trees 
-and sparkling streams. Along the way, he points out various landmarks, including 
-peculiar flowers that giggle when touched and rocks that seem to hum a cheerful tune.
+As you make your way through the forest, the Rabbit leads you past twisted 
+trees and sparkling streams. Along the way, he points out various landmarks, 
+including peculiar flowers that giggle when touched and rocks that seem to 
+hum a cheerful tune.
 
-“This way!” the Rabbit exclaims, hopping ahead with surprising agility. You follow 
-closely, your heart racing with anticipation.
+“This way!” the Rabbit exclaims, hopping ahead with surprising agility. You 
+follow closely, your heart racing with anticipation.
 
-After a short journey filled with laughter and surprises, you reach the edge of the 
-dark forest. Ahead of you lies a beautiful meadow bathed in golden sunlight. At the 
-far end of the meadow, you can see a shimmering portal that looks almost like a mirror.
+After a short journey filled with laughter and surprises, you reach the edge 
+of the dark forest. Ahead of you lies a beautiful meadow bathed in golden 
+sunlight. At the far end of the meadow, you can see a shimmering portal that 
+looks almost like a mirror.
 
-The White Rabbit pauses and turns to you, his expression serious. “Beyond that portal 
-lies your home. Just step through, and you will find yourself back where you belong.”
+The White Rabbit pauses and turns to you, his expression serious. “Beyond 
+that portal lies your home. Just step through, and you will find yourself 
+back where you belong.”
 
-You gaze at the portal, your heart swelling with gratitude. “Thank you so much, Mr. 
-Rabbit! I couldn’t have done this without you.”
+You gaze at the portal, your heart swelling with gratitude. “Thank you so 
+much, Mr. Rabbit! I couldn’t have done this without you.”
 
-“Just remember,” the Rabbit says with a wink, “you can always return to Wonderland if 
-you follow your heart. Now go on!”
+“Just remember,” the Rabbit says with a wink, “you can always return to 
+Wonderland if you follow your heart. Now go on!”
 
-With a final wave, you step toward the shimmering portal. You feel a gentle tug as if 
-the portal itself is welcoming you back. Taking a deep breath, you step through the 
-mirror-like entrance.
+With a final wave, you step toward the shimmering portal. You feel a gentle 
+tug as if the portal itself is welcoming you back. Taking a deep breath, you 
+step through the mirror-like entrance.
 
-Suddenly, you find yourself standing in your garden, the familiar sights and sounds of 
-home enveloping you. The sun is shining brightly, and the flowers sway gently in the 
-breeze.
+Suddenly, you find yourself standing in your garden, the familiar sights and 
+sounds of home enveloping you. The sun is shining brightly, and the flowers 
+sway gently in the breeze.
 
-“I’m home!” you exclaim, feeling a rush of joy wash over you. The adventure in Wonderland 
-has come to an end, but the memories will stay with you forever.
+“I’m home!” you exclaim, feeling a rush of joy wash over you. The adventure 
+in Wonderland has come to an end, but the memories will stay with you 
+forever.
 
-As you walk through your garden, you can’t help but smile, knowing that you have discovered 
-the magic of curiosity and friendship in a world where anything is possible.{Fore.RESET}\n""")
+As you walk through your garden, you can’t help but smile, knowing that you 
+have discovered the magic of curiosity and friendship in a world where 
+anything is possible.{Fore.RESET}\n""")
     print()
     print()
     prompt_replay() 
@@ -1317,7 +1316,7 @@ whimsical journey through enchanted gardens, tea parties with
 unusual characters, and mind-bending mysteries.
 Get ready to meet talking animals, mischievous Cheshire Cats, 
 and a Queen who isn't afraid to shout, "Off with their heads!"
- As you navigate this fantastical world, your decisions 
+As you navigate this fantastical world, your decisions 
 will shape the story, revealing secrets and challenges around 
 every corner. Are you brave enough to follow the White Rabbit 
 down the rabbit hole? Embrace the madness,
