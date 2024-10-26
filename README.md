@@ -4,11 +4,11 @@
 
 ## Project Overview
 
-The Alice in Wonderland text-based adventure game is an interactive fiction game where players navigate the world of Lewis Carroll's Alice's Adventures in Wonderland through text commands. The game presents descriptive scenarios, and players type commands like "go north," "take the key," or "talk to the rabbit" to explore the story. The gameplay relies on imagination and problem-solving, staying true to Wonderland's whimsical and surreal nature. Each decision influences the narrative, making it an immersive storytelling experience.
+The Alice in Wonderland text-based adventure game is an interactive fiction game where players navigate the world of Lewis Carroll's Alice's Adventures in Wonderland through text commands. The game presents descriptive scenarios, and players type commands like "go north," "take the key," or "talk to the rabbit" to explore the story. The gameplay relies on imagination and problem-solving, staying true to Wonderland's whimsical and surreal nature. Each decision influences the narrative, making it an immersive storytelling experience. ![Link](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)
 
-The Alice in Wonderland text-based adventure game you're referring to is a Python-based project that runs in a mock terminal environment provided by Code Institute and is deployed using the Heroku platform. In this setup, Python is used to create the game's logic, manage user input, and handle the narrative's flow. Players interact with the game via a command-line interface, where they input text commands to control the protagonist, typically Alice, as she explores Wonderland.
+The Alice in Wonderland text-based adventure game you're referring to is a Python-based project that runs in a mock terminal environment provided by Code Institute and is deployed using the Heroku platform. In this setup, Python creates the game's logic, manages user input, and handles the narrative's flow. Players interact with the game via a command-line interface, where they input text commands to control the protagonist, typically Alice, as she explores Wonderland.
 
-The game likely uses Python libraries for handling input/output and basic control flow (like if-else statements for decisions) and might include data structures (like dictionaries or lists) to manage the game's state, inventory, or rooms. It runs on Heroku, a cloud platform that allows developers to deploy, manage, and scale applications easily, ensuring that the game is accessible online without needing a local Python setup.
+The game likely uses Python libraries for handling input/output and basic control flow (like if-else statements for decisions). It might include data structures (like dictionaries or lists) to manage the game's state, inventory, or rooms. It runs on Heroku, a cloud platform that allows developers to deploy, manage, and scale applications easily, ensuring that the game is accessible online without needing a local Python setup.
 
 ## Rules
 
@@ -29,8 +29,9 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 - I want the site to be easy and intuitive to use.
 - I want to be able to decide to start the game, and not worry about captalisation or typing 'y' or 'n'.
+- I want to be told if I have entered text incorrectly into the input areas.
 - I want the game to be challenging.
-- I want to play again.
+- I want to be able to have the option of playing again after the story ends.
 - I want it to be fun and interesting to play with a route that is not obvious on my first try.
 
 
@@ -38,6 +39,37 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 
 ![image](https://github.com/user-attachments/assets/93782981-defd-45bd-a015-617edc8acdbb)
+
+
+# Features
+
+## First Screen
+
+![Image](https://github.com/user-attachments/assets/5e6c366d-5ba6-450f-a795-fb73b0e624f4)
+
+![image](https://github.com/user-attachments/assets/5ca9ffc2-0651-42b2-aafc-37f403334320)
+
+![image](https://github.com/user-attachments/assets/7b15155c-625b-4c34-a6b0-66e56fd3c8be)
+
+![image](https://github.com/user-attachments/assets/da2b85cb-4e77-4109-9de1-305647dfb3b0)
+
+![image](https://github.com/user-attachments/assets/a3fb65bb-c7d2-4cb2-9b67-d7a293da588d)
+
+![image](https://github.com/user-attachments/assets/506e1b36-f420-43b4-8194-efcc00a35b2c)
+
+![image](https://github.com/user-attachments/assets/75d0fe1a-d8d3-4130-b643-8583ccfe5ca1)
+
+![image](https://github.com/user-attachments/assets/a30029fa-6caa-4121-acc6-fed1ad1104a1)
+
+
+
+
+
+
+
+
+
+
 
 ## Resources Used
 
