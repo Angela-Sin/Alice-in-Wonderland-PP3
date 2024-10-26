@@ -204,7 +204,7 @@ the tall plants.{Fore.RESET}
                    |    |
                   /     |       
                 ,'      `.                       
-                 `.    .//{Fore.RESET}             {Fore.LIGHTGREEN_EX})/{Fore.RESET}
+                 `.    .//{Fore.RESET}              {Fore.LIGHTGREEN_EX})/{Fore.RESET}
                   {Fore.WHITE} `,-'{Fore.RESET}                {Fore.LIGHTGREEN_EX}(o))))))))<{Fore.RESET}
 
 {Fore.YELLOW}Excited, you hurry forward and soon find yourself face-to-face with the 
@@ -269,8 +269,21 @@ clearing. The garden seems alive, and you sense that by rushing
 forward you may miss something important. As you settle in, the 
 whispers fade into the background, leaving only the gentle rustling 
 of leaves and the soft hum of the air around you.
+{Fore.MAGENTA}
+       ___
+      / _ \\\\  ,,
+     /=(_)=\\\\//
+     \\ =(_) (O)
+      \\_____\\\\      .--.     
+       /=(_)\\\\\\   .'_\\/_'.  
+       \\____///   '. /\\ .'   
+            ()) {Fore.RESET}    {Fore.GREEN}"||"
+                     || /\\\\    
+                  /\\ ||//\)   
+                 (/\\\\||/
+        ____________\||/________________________________{Fore.RESET}
 
-The longer you sit, the more the garden seems to open up. The 
+{Fore.YELLOW}The longer you sit, the more the garden seems to open up. The 
 flowers nearby shift their positions slightly, as if turning 
 towards you, and their glow intensifies, casting an ethereal light 
 over the area. The spiral tree in the center with three doors 
@@ -404,9 +417,20 @@ predicaments, don't you?"
 
 You, frustrated but trying to stay calm, look up at him. “Yes, I am 
 lost,” you admit. “I’ve been wandering this strange place for too 
-long. Can you show me the way home?”
-
-The Cheshire Cat tilts his head, his grin never fading. “Home? Hmm, 
+long. Can you show me the way home?”{Fore.LIGHTBLUE_EX}
+          .'\\   /`.
+         .'.-.`-'.-.`.
+    ..._:   .-. .-.   :_...
+  .'    '-.(o ) (o ).-'    `.
+ :  _    _ _`~(_)~`_ _    _  :
+:  /:   ' .-=_   _=-. `   ;\\  :
+:   :|-.._  '     `  _..-|:   :
+ :   `:| |`:-:-.-:-:'| |:'   :
+  `.   `.| | | | | | |.'   .'
+    `.   `-:_| | |_:-'   .'
+      `-._   ````    _.-'
+          ``-------''{Fore.RESET}
+{Fore.YELLOW}The Cheshire Cat tilts his head, his grin never fading. “Home? Hmm, 
 now that’s a tricky thing to define here in Wonderland, isn’t it? 
 What exactly is home? But... if you insist on leaving this 
 delightful place, I might be persuaded to help.”
