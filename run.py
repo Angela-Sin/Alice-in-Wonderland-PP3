@@ -332,7 +332,7 @@ it is waiting for you to decide.{Fore.RESET}
     
     1: Open the red door?         
     2: Open the blue door? 
-    3: Open the green door?""")
+    3: Open the green door?\n""")
 
     while True:
         choice = input("  >>> ") #choice function
@@ -582,7 +582,7 @@ The doors beckon, each promising a different path ahead.{Fore.RESET}
     
     1: Open the red door?
     2: Open the blue door?
-    3: Open the green door?""")
+    3: Open the green door?\n""")
 
     while True:
         choice = input(" >>>  ") #choice function
