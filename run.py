@@ -333,7 +333,7 @@ it is waiting for you to decide.{Fore.RESET}
     
     {Fore.RED}1: Open the red door?{Fore.RESET}          
     {Fore.BLUE}2: Open the blue door? {Fore.RESET} 
-    {Fore.GREEN}3: Open the green door?{Fore.RESET}\n""")
+    {Fore.GREEN}3: Open the green door?{Fore.RESET}""")
 
     while True:
         choice = input("  >>> ") #choice function
