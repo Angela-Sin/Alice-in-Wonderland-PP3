@@ -198,6 +198,20 @@ The app is deployed from Heroku using the following steps:
 
 -- For this project I used the Manual deployment method to deploy the current state of the branch, every time I pushed the code from Gitpod.
 
+## Bug
+- ASCII art causes a bug in one of the loops. {Fore.MAGENTA}
+       ___
+      / _ \\\\  ,,
+     /=(_)=\\\\//
+     \\ =(_) (O)
+      \\_____\\\\      .--.     
+       /=(_)\\\\\\   .'_\\/_'.  
+       \\____///   '. /\\ .'   
+            ()) {Fore.RESET}    {Fore.GREEN}"||"
+                     || /\\\\    
+                  /\\ ||//\)   
+                 (/\\\\||/
+        ____________\||/________________________________{Fore.RESET}
 
 ## Resources Used
 
