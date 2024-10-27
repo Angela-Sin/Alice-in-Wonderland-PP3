@@ -282,19 +282,7 @@ clearing. The garden seems alive, and you sense that by rushing
 forward you may miss something important. As you settle in, the 
 whispers fade into the background, leaving only the gentle rustling 
 of leaves and the soft hum of the air around you.
-{Fore.MAGENTA}
-       ___
-      / _ \\\\  ,,
-     /=(_)=\\\\//
-     \\ =(_) (O)
-      \\_____\\\\      .--.     
-       /=(_)\\\\\\   .'_\\/_'.  
-       \\____///   '. /\\ .'   
-            ()) {Fore.RESET}    {Fore.GREEN}"||"
-                     || /\\\\    
-                  /\\ ||//\)   
-                 (/\\\\||/
-        ____________\||/________________________________{Fore.RESET}
+
 
 {Fore.YELLOW}The longer you sit, the more the garden seems to open up. The 
 flowers nearby shift their positions slightly, as if turning 
