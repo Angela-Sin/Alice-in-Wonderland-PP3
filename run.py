@@ -1,7 +1,7 @@
 import sys
 import time
 import colorama
-from colorama import Fore, Back, Style
+from colorama import Fore, Back, Style # Initialize colorama for colored text
 
 a = 2
 
@@ -332,7 +332,7 @@ it is waiting for you to decide.{Fore.RESET}
     
     1: Open the red door?         
     2: Open the blue door? 
-    3: Open the green door?\n""")
+    3: Open the green door?""")
 
     while True:
         choice = input("  >>> ") #choice function
@@ -582,7 +582,7 @@ The doors beckon, each promising a different path ahead.{Fore.RESET}
     
     1: Open the red door?
     2: Open the blue door?
-    3: Open the green door?\n""")
+    3: Open the green door?""")
 
     while True:
         choice = input(" >>>  ") #choice function
