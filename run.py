@@ -6,14 +6,20 @@ from colorama import Fore, Back, Style
 a = 2
 
 def type(text):
-  words = text
-  for char in words:
-    time.sleep(0.01)
-    sys.stdout.write(char)
-    sys.stdout.flush()
+    words = text
+    """
+    Print text with a typing effect.
+    """
+    for char in words:
+      time.sleep(0.01)
+      sys.stdout.write(char)
+      sys.stdout.flush()
 
 
 def prompt_replay():
+    """
+    Function to restart the game
+    """
     while True:
         print()
         type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆ {Fore.RESET}\n")
@@ -44,9 +50,10 @@ far away.\n""")
             print(f"{Fore.RED}Please enter a valid option: 'Y' or 'N'.{Fore.RESET}\n")
             time.sleep(a)
 
-
-#Play function
 def play_game():
+    """
+    Beginning of the game.
+    """
     print()
     type(f"""{Fore.YELLOW} You follow the White Rabbit down a winding path that 
 leads to a small door hidden in the roots of a large tree. Curiosity 
@@ -73,11 +80,11 @@ your own.{Fore.RESET}
             print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
-
-
-
-#Play >>> Drink Me
 def drink_me():
+    """
+    Steps:
+    Play Game >> Drink Me
+    """
     print()
     type(f"""{Fore.YELLOW}You found the tiny bottle with the sign "Drink Me".
 You uncork the bottle and inhale the strange liquid. Feeling bold, 
@@ -121,8 +128,11 @@ reach.{Fore.RESET}
             print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
-#Play >>> Drink Me >>> Take Key
 def take_key():
+    """
+    Steps:
+    Drink Me >> Take key
+    """
     print()
     type(f"""{Fore.YELLOW}You decide to pick up the tiny key. Its golden glow beckons you, 
 and though you’re not sure what it unlocks, you sense that it’s important. 
@@ -182,8 +192,12 @@ of secrets waiting to be explored.{Fore.RESET}
             print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")  
             
 
-#Play >>> Drink Me >> Take Key >>> Look For Rabbit >>> End of the Game
 def look_for_rabbit():
+    """
+    Steps:
+    Take Key >> Look For Rabbit (End)
+    Mad Hatter tea Party >> Look For Rabbit (End)
+    """
     print()
     type(f"""{Fore.YELLOW}You wander through the magic garden, enchanted by the vibrant colors 
 and strange, talking flowers. The garden seems alive with energy, every 
@@ -257,12 +271,12 @@ Wonderland forever in your heart.{Fore.RESET}\n""")
     prompt_replay()   
 
 
-
-
-#Play >>> Drink Me >> Take Key >>> Rest in the garden
-#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Rest in the garden
-#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Rest in the garden
 def rest_in_garden():
+    """
+    Steps:
+    Take Key >>> Rest in the garden
+    Explore Garden >>> Rest in the garden
+    """
     print()
     type(f"""{Fore.YELLOW}You decide to sit and rest for a while on the soft grass of the 
 clearing. The garden seems alive, and you sense that by rushing 
@@ -337,12 +351,13 @@ it is waiting for you to decide.{Fore.RESET}
             print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")   
         
     
-    
-
-#Play >>> Drink Me >>> Take Key >>> Explore Garden
-#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden
-#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden
 def explore_garden():
+    """
+    Steps:
+    Take Key >>> Rest in the garden
+    Drink Me >>> Explore Garden
+    Call For Help >>> Explore Garden 
+    """
     print()
     type(f"""{Fore.YELLOW}You reached into the garden, your curiosity drawing you deeper into 
 this strange, beautiful world. The vibrant colors and strange shapes 
@@ -405,11 +420,11 @@ his eyes twinkling mischievously.{Fore.RESET}
             print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
-
-#Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Talk to Cat
-#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Talk to Cat
-#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Talk to Cat
 def talk_to_cat():
+    """
+    Steps:
+    Explore Garden >>> Talk to Cat
+    """
     print()
     type(f"""{Fore.YELLOW}Lost again, are we?" the Cheshire Cat purrs, his grin widening. 
 "You do have a habit of getting yourself into the most curious of 
@@ -479,11 +494,11 @@ you had a way to go now.{Fore.RESET}
             print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")  
         
 
-
-#Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Follow cat >>> End the game
-#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Follow cat >>> End the game
-#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Follow cay >>> End The game
 def follow_cat():
+    """
+    Steps:
+    Explore Garden >>> Follow cat (End)
+    """
     print()
     type(f"""{Fore.YELLOW}You decide to trust the Cheshire Cat’s directions, even with the lingering
 sense of mystery. You take a deep breath and head down the winding path he
@@ -534,11 +549,11 @@ the time is right, you’ll find yourself back there again.
     print() 
     prompt_replay() 
 
-
-#Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Avoid Table
-#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Avoid Table
-#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Avoid Table
 def avoid_table():
+    """
+    STeps:
+    Explore Garden >>> Avoid Table (End)
+    """
     print()
     type(f"""{Fore.YELLOW}You turn away from the tea table and the Cheshire Cat, deciding 
 to follow one of the many twisting paths ahead. The garden seems 
@@ -584,10 +599,12 @@ The doors beckon, each promising a different path ahead.{Fore.RESET}
         else:
             print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")   
         
-
-
-# Play >>> Drink Me >>> Leave the Key (End of the Game)
+ 
 def leave_key():
+    """
+    Steps:
+    Drink Me >>> Leave the Key (End)
+    """
     print()
     type(f"""{Fore.YELLOW}You stare at the small, glimmering key in the crack of the tunnel 
 floor, but for reasons you can’t quite explain, you decide to leave 
@@ -622,8 +639,12 @@ never leave you alone.{Fore.RESET}\n""")
     prompt_replay() 
 
 
-#Play >>> Explore Tunnel
+
 def explore_tunnel():
+    """
+    Steps:
+    Play >>> Explore Tunnel
+    """
     print()
     type(f"""{Fore.YELLOW}A few steps in, and the door behind you slams shut. The tunnel 
 narrows, and you feel the walls pressing in slightly. Your heartbeat 
@@ -654,9 +675,11 @@ clock that you cannot see.{Fore.RESET}
             print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n")  
         
 
-
-#Play >> Explore Tunnel >> Call For Help
 def call_for_help():
+    """
+    Steps:
+    Explore Tunnel >> Call For Help
+    """
     print()
     type(f"""{Fore.YELLOW}Feeling a mixture of frustration and determination, you decide to 
 call for help again. Your voice echoes through the dim tunnel, bouncing 
@@ -711,11 +734,11 @@ back."{Fore.RESET}
            print(f"\n{Fore.RED}Invalid choice! Please enter '1' or '2'{Fore.RESET}\n") 
         
 
-#Play >>> Explore Tunnel >> Call for Help >> Call for Rabbit (End of the Game) 
-#Play >>> Drink Me >>> Take Key >>> Explore Garden >>> Call for Rabbit >>> End the game
-#Play >>> Explore Tunnel >>> Drink Me >>> Explore Garden >>> Call for Rabbit >>> End the game
-#Play >>> Explore Tunnel >>> Call For Help >>> Explore Garden >>> Call for Rabbit >>> End The game
 def go_home():
+    """
+    Steps:
+    Explore Garden >>> Call for Rabbit (End)
+    """
     print()
     type(f"""{Fore.YELLOW}You turn to the White Rabbit, gratitude shining in your eyes. 
 “Thank you so much for your help!” you exclaim. “I wouldn’t have 
@@ -776,6 +799,11 @@ heart. And who knows? Perhaps one day you will return.{Fore.RESET}""")
 
 
 def blue_door():
+    """
+    Steps:
+    Rest in the Garden >> Blue Door
+    Avoid Table >> Blue Door
+    """
     print()
     type(f"""{Fore.YELLOW}You, drawn by curiosity, approach the blue door with the 
 heart symbol etched above it. You hesitate for just a moment, 
@@ -836,6 +864,10 @@ something important — or perhaps even find a way home.{Fore.RESET}
         
     
 def ask_queen():
+    """
+    Steps:
+    Blue Door >> Ask Queen
+    """
     print()
     type(f"""{Fore.YELLOW}You, feeling both nervous and hopeful, decide to speak to the 
 Queen of Hearts directly. You know the Queen is a powerful 
@@ -905,6 +937,10 @@ lighter and mind filled with memories of the incredible journey.{Fore.RESET}""")
     prompt_replay() 
 
 def challenge_queen():
+    """
+    Steps:
+    Blue Door >> Challenge Queen (End)
+    """
     print()
     type(f"""{Fore.YELLOW}You, feeling bold and defiant, straighten your back and look the 
 Queen of Hearts in the eyes. You know the Queen can be dangerous, 
@@ -994,6 +1030,11 @@ you carry the lessons of Wonderland with you forever.{Fore.RESET}""")
     prompt_replay() 
 
 def red_door():
+    """
+    Steps:
+    Rest in the Garden >> Red Door
+    Avoid Table >> Red Door
+    """
     print()
     type(f"""{Fore.YELLOW}You take a deep breath, filled with curiosity and excitement, and push 
 the red door open. As you step through, you feel a rush of cool air 
@@ -1034,6 +1075,10 @@ above.{Fore.RESET}
         
 
 def mad_hatter():
+    """
+    Steps:
+    Red Door >> Mad Hatter
+    """
     print()
     type(f"""{Fore.YELLOW}You, feeling a mix of excitement and nervousness, approach the Mad 
 Hatter's tea party. The table is set with an array of colorful 
@@ -1110,6 +1155,10 @@ watch with a worried expression.{Fore.RESET}
         
 
 def dark_forest():
+    """
+    Steps:
+    Red door >> Dark Forest (End)
+    """
     print()
     type(f"""{Fore.YELLOW}You, curious and adventurous, decide to delve deeper into the dark 
 forest rather than seek the White Rabbit. The trees loom tall above you, 
@@ -1170,6 +1219,10 @@ among the trees, forever enchanted by the magic that keeps you lost.{Fore.RESET}
     prompt_replay() 
 
 def dark_forest_way_home():
+    """
+    Steps:
+    Mad Hatter Party >> Dark forest way home (End)
+    """
     print()
     type(f"""{Fore.YELLOW}After saying goodbye to the Mad Hatter and the March Hare, you decide 
 to venture into the dark forest you had seen earlier. The trees are tall 
@@ -1238,6 +1291,11 @@ anything is possible.{Fore.RESET}\n""")
     prompt_replay() 
 
 def green_door():
+    """
+    Steps:
+    Rest in the Garden >> Green Door (End)
+    Avoid Table >> Green Door (End)
+    """
     print()
     type(f"""{Fore.YELLOW}With a spark of curiosity, you push open the vibrant green door and 
 step inside. The door leads you into a lush, vibrant garden that feels 
@@ -1298,7 +1356,7 @@ to return whenever you wish.{Fore.RESET}\n""")
     print() 
     prompt_replay() 
 
-#Welcome
+# First Page
 print(f"""{Style.BRIGHT}{Fore.LIGHTBLUE_EX}
                     ____     ____        {Fore.YELLOW}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
                   {Fore.LIGHTBLUE_EX}/'    |   |    \\{Fore.RESET}      {Fore.YELLOW}☆{Fore.RESET}                    {Fore.YELLOW}☆{Fore.RESET}
