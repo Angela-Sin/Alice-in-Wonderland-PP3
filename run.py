@@ -553,56 +553,50 @@ def avoid_table():
     STeps:
     Explore Garden >>> Avoid Table (End)
     """
-def avoid_table():
-    """
-    Steps:
-    Explore Garden >>> Avoid Table (End)
-    """
     print()
-    type(
-        f"{Fore.YELLOW}You turn away from the tea table and the Cheshire Cat, deciding "
-        "to follow one of the many twisting paths ahead. The garden seems "
-        "to be full of possibilities, and your curiosity pulls you forward. "
-        "You choose the nearest path, a narrow trail lined with glowing, "
-        "luminescent flowers that seem to sway with you every step.\n\n"
-        
-        "The path twists and turns, the garden growing wilder and stranger "
-        "with every turn. The leaves overhead grow so thick that they almost "
-        "block out the sky, creating a canopy that bathes the trail in dappled "
-        "shadows. As you venture further, you hear faint whispers carried on "
-        "the breeze. The voices seem to be coming from everywhere and nowhere "
-        "all at once, but you can't quite make out what they're saying.\n\n"
-        
-        "Soon, the path opens into a small, circular clearing. In the middle "
-        "of the clearing stands a tall, spiraling tree with bark that shimmers "
-        "in different colors as the light touches it. Its branches seem to "
-        "reach out like arms, and at the base of the tree, there are three "
-        "distinct doors carved into its trunk, each a different color: one red, "
-        "one blue, and one green. Above each door, a symbol is etched: a clock, "
-        "a heart, and a crown.\n\n"
-        
-        "The whispers grow louder now as if the tree itself is speaking to you. "
-        f"The doors beckon, each promising a different path ahead.{Fore.RESET}\n\n"
+    type(f"""{Fore.YELLOW}You turn away from the tea table and the Cheshire Cat, deciding 
+to follow one of the many twisting paths ahead. The garden seems 
+to be full of possibilities, and your curiosity pulls you forward. 
+You choose the nearest path, a narrow trail lined with glowing, 
+luminescent flowers that seem to sway with you every step.
 
-        f"{Fore.BLUE}What will you do next?{Fore.RESET}\n\n"
-        "1: Open the red door?\n"
-        "2: Open the blue door?\n"
-        "3: Open the green door?\n"
-    )
+The path twists and turns, the garden growing wilder and stranger 
+with every turn. The leaves overhead grow so thick that they almost 
+block out the sky, creating a canopy that bathes the trail in dappled 
+shadows. As you venture further, you hear faint whispers carried on 
+the breeze. The voices seem to be coming from everywhere and nowhere 
+all at once, but you can't quite make out what they're saying.
+
+Soon, the path opens into a small, circular clearing. In the middle 
+of the clearing stands a tall, spiraling tree with bark that shimmers 
+in different colors as the light touches it. Its branches seem to 
+reach out like arms, and at the base of the tree, there are three 
+distinct doors carved into its trunk, each a different color: one red, 
+one blue, and one green. Above each door, a symbol is etched: a clock, 
+a heart, and a crown.
+
+The whispers grow louder now as if the tree itself is speaking to you. 
+The doors beckon, each promising a different path ahead.{Fore.RESET}
+
+    {Fore.BLUE}What will You do next?{Fore.RESET}
+    
+    1: Open the red door?
+    2: Open the blue door?
+    3: Open the green door?\n""")
 
     while True:
-        choice = input(" >>>  ")
+        choice = input(" >>>  ") #choice function
         if choice == "1":
             red_door()
             break
         elif choice == "2":
-            blue_door()
-            break
+             blue_door()
+             break
         elif choice == "3":
             green_door()
             break
         else:
-            print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3'.{Fore.RESET}\n")  
+            print(f"\n{Fore.RED}Invalid choice! Please enter '1', '2' or '3' {Fore.RESET}\n")
         
  
 def leave_key():
