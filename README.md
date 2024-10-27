@@ -12,45 +12,6 @@ The game likely uses Python libraries for handling input/output and basic contro
 
 ## Rules
 
-- The game begins by asking the player to input their name.
-- Later players have a long, descriptive welcome message.
-- The player is asked whether they want to start the game: Y/N
-  - If the player enters "N" or "n", they get a friendly message saying they can come back later >>
-  -  If they choose "Y" or "y", the function is called to start the game >>
-- If the player inputs anything other than 'Y' or 'N', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again:
-- The player has initial choices in the adventure presented. The player can choose between the options provided in the game.
-- If the player inputs anything other than '1' or '2', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again:
-- After the narrative ends, the player is given the option to restart the game: Y/N
-  - If they say "N" or "n", they receive a friendly message encouraging them to come back later >>
-  - If they say "Y" or "y", the game loops back by calling play_game() to restart the adventure >>
-- If the player inputs anything other than 'Y' or 'N', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again:
-
-## User Goal
-
-
-- I want the site to be easy and intuitive to use.
-- I want to be able to decide to start the game, and not worry about captalisation or typing 'y' or 'n'.
-- I want to be told if I have entered text incorrectly into the input areas.
-- I want the game to be challenging.
-- I want to be able to have the option of playing again after the story ends.
-- I want it to be fun and interesting to play with a route that is not obvious on my first try.
-
-
-# Flow Chart
-
-
-The first example of a Flowchart I made during game creation.
-
-![image](https://github.com/user-attachments/assets/fd277389-d1d3-4c1b-afb2-4abd5e4a8fa9)
-
-## Here is an updated example of a flowchart.
-
-
-![image](https://github.com/user-attachments/assets/7cca21e6-233a-4f7d-963b-25f7f6955c3b)
-
-
-### The flowchart represents a decision-based adventure game inspired by "Alice in Wonderland." Here's a brief explanation:
-
 ## Start
 
 
@@ -83,8 +44,32 @@ The first example of a Flowchart I made during game creation.
 
 
 - Players can find the way home, reach the end of the game, or loop back to make choices again.
-- The game allows replayability by giving the player the choice to Play Again or end the game.
-- Overall, it's a branching narrative structure where choices guide the outcome of the adventure.
+- The game allows replayability by allowing the player to Play Again or end the game.
+- It's a branching narrative structure where choices guide the adventure's outcome.
+
+## User Goal
+
+
+- I want the site to be easy and intuitive to use.
+- I want to be able to decide to start the game, and not worry about captalisation or typing 'y' or 'n'.
+- I want to be told if I have entered text incorrectly into the input areas.
+- I want the game to be challenging.
+- I want to be able to have the option of playing again after the story ends.
+- I want it to be fun and interesting to play with a route that is not obvious on my first try.
+
+
+# Flow Chart
+
+
+The first example of a Flowchart I made during game creation.
+
+![image](https://github.com/user-attachments/assets/fd277389-d1d3-4c1b-afb2-4abd5e4a8fa9)
+
+## Here is an updated example of a flowchart.
+
+
+![image](https://github.com/user-attachments/assets/7cca21e6-233a-4f7d-963b-25f7f6955c3b)
+
 
 # Features
 
@@ -230,6 +215,7 @@ The app is deployed from Heroku using the following steps:
 | [CSS Validator](https://jigsaw.w3.org/css-validator/)                                                                | Across website | CSS Validator                |
 | [JavaScript Validator](https://jshint.com/)                                                                          | Across website | JavaScript Validator         |
 | [Python Validator](https://pep8ci.herokuapp.com/)                                                                    | Across website | Python Validator             |
+| [makeusof.com](https://www.makeuseof.com/python-text-adventure-game-create/)                                         | Across website | How to buid game             |
 | [Chat GBT](https://chatgpt.com/)                                                                                     | Across website | For Text Generation          |
 | [Asciiart](https://asciiart.website/)                                                                                | Across website | As ASCII library             |
 | [ASCII](https://www.asciiart.eu/)                                                                                    | Across website | To create pictures for a game|
