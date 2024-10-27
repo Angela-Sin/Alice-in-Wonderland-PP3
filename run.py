@@ -6,11 +6,10 @@ from colorama import Fore, Back, Style
 a = 2
 
 def type(text):
-    words = text
     """
     Print text with a typing effect.
     """
-    for char in words:
+    for char in text:
       time.sleep(0.01)
       sys.stdout.write(char)
       sys.stdout.flush()
