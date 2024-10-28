@@ -94,38 +94,46 @@ The first example of a Flowchart I made during game creation.
 - The description encourages players to join Alice on a whimsical adventure filled with talking animals, mischievous characters like the Cheshire Cat, and the notorious Queen who shouts, "Off with their heads!" It emphasizes that players' choices will shape the journey, uncovering secrets and facing challenges along the way. It asks if they're ready to follow the White Rabbit and dive into the mysterious, unpredictable world of Wonderland, where "nothing is quite what it seems."
 -The invitation to "find out what's behind the mirror" sets a mysterious, exploratory tone, aligning with the theme of curiosity and discovery central to Alice in Wonderland. This text likely serves as a setup for the player's adventure, building excitement for the imaginative experience ahead.
 
-![image](https://github.com/user-attachments/assets/5ca9ffc2-0651-42b2-aafc-37f403334320)
+![image](https://github.com/user-attachments/assets/061412a7-8814-41fa-be22-95c8be1f794d)
+
 
 - Here is a starting screen for a text-based adventure game, inviting the player to begin the story by entering either 'Y' (Yes) to play or 'N' (No) to decline.
 - The use of ASCII art adds a visual element, making the start of the game engaging.
 
-![image](https://github.com/user-attachments/assets/7b15155c-625b-4c34-a6b0-66e56fd3c8be)
+![image](https://github.com/user-attachments/assets/089d2485-6db9-44bc-ba0a-aff9bc491ed7)
+
 
 - If you input anything other than 'Y' or 'N', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again
 
-![image](https://github.com/user-attachments/assets/da2b85cb-4e77-4109-9de1-305647dfb3b0)
+![image](https://github.com/user-attachments/assets/36826102-601a-4745-8aa2-31dc691497ca)
+
 
 - If your decision is negative you will find nice greetings.
   
-![image](https://github.com/user-attachments/assets/a3fb65bb-c7d2-4cb2-9b67-d7a293da588d)
+![image](https://github.com/user-attachments/assets/79ef7cfb-f7e8-48f2-9f9d-f584a6e862dd)
+
 
 - If your decision is positive You'll move into the beginning of the game.
 - Here you find some story and multiple-choice input.
 
-![image](https://github.com/user-attachments/assets/506e1b36-f420-43b4-8194-efcc00a35b2c)
+![image](https://github.com/user-attachments/assets/88e24c44-5471-4c4d-a2b0-f9803ae071c6)
+
 
 - If you input anything other than '1' or '2', the invalid_choice() function is triggered, which notifies them of the error and prompts them to choose again
 
-![image](https://github.com/user-attachments/assets/46349073-eba0-47ac-bd22-1b841038d026)
+![image](https://github.com/user-attachments/assets/4072d39c-ff20-4642-996c-f59164b59162)
+
 
 - When the story will end, you will get a choice to play the game again or not.
-- If you choose to play again, you will start the game from the beginning of the game with an intro story and multiple choice.
+- If you choose to play again, you will start the game from the beginning of the game with an intro play_again() story and multiple choice.
 
-![image](https://github.com/user-attachments/assets/75d0fe1a-d8d3-4130-b643-8583ccfe5ca1)
+![image](https://github.com/user-attachments/assets/a485dd93-3fb0-4e34-9216-4e01f4c4e9df)
+
 
 - If you chose 'No' You will be greeted with warm greetings for goodbye.
 
-![image](https://github.com/user-attachments/assets/a30029fa-6caa-4121-acc6-fed1ad1104a1)
+![image](https://github.com/user-attachments/assets/8446f64b-a983-4c8a-bd0e-e32427b8c405)
+
 
 
 # Future Features
