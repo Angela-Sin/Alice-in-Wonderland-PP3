@@ -214,8 +214,8 @@ plants.{Fore.RESET}
                    |    |
                   /     |       
                 ,'      `.                       
-                 `.    .//{Fore.RESET}              {Fore.LIGHTGREEN_EX})/{Fore.RESET}
-                  {Fore.WHITE} `,-'{Fore.RESET}                {Fore.LIGHTGREEN_EX}(o))))))))<{Fore.RESET}
+                 `.    .//{Fore.RESET}              
+                  {Fore.WHITE} `,-'{Fore.RESET}                
 
 {Fore.YELLOW}Excited, you hurry forward and soon find yourself face-to-face 
 with the White Rabbit. He’s standing by a large mushroom, anxiously checking 
@@ -362,16 +362,6 @@ set for tea in the center of the garden, completely out of place among the wild
 greenery. The table is covered with mismatched cups and saucers, some 
 overturned, others stacked precariously high. There are empty chairs around it, 
 though one at the far end has its back to you.
-
-                    _
-                  _(_)_                          wWWWw   _
-      @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_ 
-     @@()@@ wWWWw  (_)\\   (___)   _(_)_  @@()@@   Y  (_)@(_) 
-      @@@@  (___)     `|/    Y    (_)@(_)   @@@  \\|/   (_)\\  
-        /     Y      \\|   \\|/    /(_)   \\|      |/      |  
-     \\ |    \\ |/       | /\\ | / \\|/       |/   \\|     \\|/  
-      \\|//   \\|///   \\|// \\|///\\|///   \\|//  \\|//   \\|//  
-  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Just as you are about to investigate, a voice calls out from behind you. 
 "You're late, you know!"
@@ -1234,13 +1224,13 @@ you wish.{Fore.RESET}\n""")
 
 # First Page
 print(f"""{Style.BRIGHT}{Fore.LIGHTBLUE_EX}
-                    ____     ____        {Fore.YELLOW}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
-                  {Fore.LIGHTBLUE_EX}/'    |   |    \\{Fore.RESET}      {Fore.YELLOW}☆{Fore.RESET}                    {Fore.YELLOW}☆{Fore.RESET}
-                {Fore.LIGHTBLUE_EX}/    /  |   | \\   \\{Fore.RESET}     {Fore.YELLOW}☆{Fore.RESET} Alice's Adventure  {Fore.YELLOW}☆{Fore.RESET}
-              {Fore.LIGHTBLUE_EX}/    / |  |'''|  \\   \\{Fore.RESET}    {Fore.YELLOW}☆{Fore.RESET}  In Wonderland!    {Fore.YELLOW}☆{Fore.RESET}
-             {Fore.LIGHTBLUE_EX}(   /   |         |\\   \\{Fore.RESET}   {Fore.YELLOW}☆{Fore.RESET}                    {Fore.YELLOW}☆{Fore.RESET}
-             {Fore.LIGHTBLUE_EX}| /   / /^\\    /^\\  \\  _|{Fore.RESET}   {Fore.YELLOW}☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆{Fore.RESET}
-              {Fore.LIGHTBLUE_EX}~   | |   |  |   | | ~        
+                    ____     ____        ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆
+                  /'    |   |    \\      ☆                    ☆
+                /    /  |   | \\   \\     ☆ Alice's Adventure  ☆
+              /    / |  |'''|  \\   \\    ☆  In Wonderland!    ☆
+             (   /   |         |\\   \\   ☆                    ☆
+             | /   / /^\\    /^\\  \\  _|   ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆
+              ~   | |   |  |   | | ~        
                   | |__O|__|O__| |
                 /~~      \\/     ~~\\
                /   (      |      )  \\
@@ -1260,6 +1250,8 @@ print(f"""{Style.BRIGHT}{Fore.LIGHTBLUE_EX}
 print()
 player_name = input("Please enter your name >>> ")
 print()
+type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
+print()
 print(f"Hello {player_name.upper()}, Happy to see you!!! ")
 time.sleep(a)
 print()
@@ -1267,6 +1259,7 @@ print()
 
 # Welcome text    
 type(f"""{Fore.YELLOW}Welcome to the Magical World of Wonderland!{Fore.RESET}
+
 
 {Fore.MAGENTA}Enter a world where the ordinary becomes extraordinary, and every
 turn is a newadventure! In this magical land, the curious and the brave are 
@@ -1282,18 +1275,18 @@ out what's behind the mirror?{Fore.RESET}\n""")
 print()
 print()
 print(f"""{Style.BRIGHT}{Fore.GREEN}
-             /\\
-        _   / /\\
-       | \\\\/_/
-       \\\\| / __{Fore.RESET}             
-         {Fore.GREEN}\\/_/__\\{Fore.RESET}          {Fore.RED}.--='/~\\{Fore.RESET}
-   {Fore.GREEN}____,__/__,_____,______){Fore.RESET}{Fore.RED}/    (~))){Fore.RESET}
-   {Fore.GREEN}-,-----,--\\--,-----,---,{Fore.RESET}{Fore.RED}\'-'  ((~)){Fore.RESET}
-          {Fore.GREEN} __/\\{Fore.RESET}            {Fore.RED}'--=.\\)/{Fore.RESET}
-          {Fore.GREEN}/_/ |\\
-             \\/  {Fore.RESET}\n""")
+       /\\
+   _  / /\\
+  | \\ \\/_/
+  \\\\| / __{Fore.RESET}             
+  {Fore.GREEN}\\/_/__\\{Fore.RESET} {Fore.RED}            .--='/~\\{Fore.RESET}
+{Fore.GREEN}_,__/__,_____,______){Fore.RESET}{Fore.RED}/    (~))){Fore.RESET}
+{Fore.GREEN}----,--\\--,-----,---,{Fore.RESET}{Fore.RED}\'-'  ((~)){Fore.RESET}
+{Fore.GREEN}     __/\\            {Fore.RESET}{Fore.RED}'--=.\\)/{Fore.RESET}
+{Fore.GREEN}    /_/ |\\
+{Fore.GREEN}     \\/{Fore.RESET}\n""") 
 
-#Start game function
+# Start game function
 while True:
     startGame = input('Would You like to play? (Y/N):  ').strip().lower()
     if startGame == 'N' or startGame == "n":
