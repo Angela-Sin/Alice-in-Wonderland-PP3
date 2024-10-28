@@ -40,7 +40,7 @@ Until we meet again, may your imagination always guide you to new adventures!
 Goodbye for now, and remember—Wonderland is never too far away.\n""")
         sys.exit()
     elif startGame == 'Y' or startGame == "y":
-            play_game()
+        play_game()
     else:
         print()
         print(f"{Fore.RED}Please enter from option: Y or N{Fore.RESET}\n")
@@ -73,7 +73,7 @@ your own.{Fore.RESET}
             break
         else:
             print()
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 or 2{Fore.RESET}\n")  
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1  2{Fore.RESET}\n")  
         
 
 def drink_me():
@@ -121,7 +121,7 @@ reach.{Fore.RESET}
             break
         else:
             print()
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 or 2{Fore.RESET}\n")  
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")  
         
 
 def take_key():
@@ -386,7 +386,7 @@ twinkling mischievously.{Fore.RESET}
             avoid_table()
             break
         else:
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 or 2{Fore.RESET}\n")  
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")  
         
 
 def talk_to_cat():
@@ -564,7 +564,7 @@ The doors beckon, each promising a different path ahead.{Fore.RESET}
             green_door()
             break
         else:
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1/2/3{Fore.RESET}\n")
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")
         
  
 def leave_key():
@@ -598,12 +598,9 @@ Over time, the tunnel becomes your entire world — a strange, shifting place
 with no escape. The objects that once seemed curious now feel like permanent 
 companions, and the shadows that dance on the walls never leave you alone.
 {Fore.RESET}\n""")
-
-
     print()
     print() 
     prompt_replay() 
-
 
 
 def explore_tunnel():
@@ -612,8 +609,8 @@ def explore_tunnel():
     Play >>> Explore Tunnel
     """
     print()
-    type(f"""{Fore.YELLOW}A few steps in, and the door behind you slams shut. The 
-tunnel narrows, and you feel the walls pressing in slightly. Your heartbeat 
+    type(f"""{Fore.YELLOW}A few steps in, and the door behind you slams shut.
+The tunnel narrows, and you feel the walls pressing in slightly. Your heartbeat 
 quickens as you search for another exit, but the tunnel stretches forward, 
 twisting in impossible ways.
 
@@ -638,7 +635,7 @@ see.{Fore.RESET}
             call_for_help()
             break
         else:
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 or 2{Fore.RESET}\n")  
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")  
         
 
 def call_for_help():
@@ -697,7 +694,7 @@ assures you. "But remember, Wonderland has a way of calling you back."
             explore_garden()
             break
         else:
-           print(f"\n{Fore.RED}Wrong choice!Please enter 1 or 2{Fore.RESET}\n") 
+           print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n") 
         
 
 def go_home():
@@ -980,7 +977,7 @@ def red_door():
     Avoid Table >> Red Door
     """
     print()
-    (f"""{Fore.YELLOW}You take a deep breath, filled with curiosity and 
+    type(f"""{Fore.YELLOW}You take a deep breath, filled with curiosity and 
 excitement, and push the red door open. As you step through, you feel a rush of
 cool air and a sense of wonder. The door closes softly behind you, and you find
 yourself in a vibrant, surreal landscape unlike anything you have ever seen.
@@ -1092,13 +1089,13 @@ White Rabbit, glancing at his pocket watch with a worried expression.
             print(f"\n{Fore.RED}Wrong choice! Please enter 1 2{Fore.RESET}\n") 
         
 
-def dark_forest_way_home():
+def dark_forest():
     """
     Steps:
     Mad Hatter Party >> Dark forest way home (End)
     """
     print()
-    typetype(f"""{Fore.YELLOW}You, curious and adventurous, decide to delve deeper
+    type(f"""{Fore.YELLOW}You, curious and adventurous, decide to delve deeper
 into the dark forest rather than seek the White Rabbit. The trees loom tall
 above you, their twisted branches casting eerie shadows on the ground. The 
 further you wander, the thicker the underbrush becomes, and the sounds of the 
@@ -1302,8 +1299,7 @@ world of Wonderland!{Fore.RESET}\n""")
         sys.exit()
         break
     elif startGame == 'Y' or startGame == "y":
-        play_game()
-        break
+         play_game()
     else:
          print(f"{Fore.RED}Wrong choice! Enter 'Y' or 'N' !{Fore.RESET}\n") 
     
