@@ -5,14 +5,15 @@ from colorama import Fore, Back, Style  # Initialize colorama for colored text
 
 a = 2
 
+
 def type(text):
     """
     Print text with a typing effect.
     """
     for char in text:
-      time.sleep(0.01)
-      sys.stdout.write(char)
-      sys.stdout.flush()
+        time.sleep(0.01)
+        sys.stdout.write(char)
+        sys.stdout.flush()
 
 
 def prompt_replay():
@@ -32,11 +33,11 @@ def prompt_replay():
         type(f"""{Fore.MAGENTA}Thank you for joining Alice on her magival
 journey through Wonderland!
 
-Your curiosity and choices brought the adventure to life, and we hope you had 
-as much fun exploring as Alice did. Every step you took made Wonderland a 
-little more wondrous.
+Your curiosity and choices brought the adventure to life, and we hope you ,
+had as much fun exploring as Alice did. Every step you took made Wonderland
+a  little more wondrous.
 
-Until we meet again, may your imagination always guide you to new adventures! 
+Until we meet again, may your imagination always guide you to new adventures!
 Goodbye for now, and remember—Wonderland is never too far away.\n""")
         sys.exit()
     elif startGame == 'Y' or startGame == "y":
@@ -46,22 +47,23 @@ Goodbye for now, and remember—Wonderland is never too far away.\n""")
         print(f"{Fore.RED}Please enter from option: Y or N{Fore.RESET}\n")
         time.sleep(a)
 
+
 def play_game():
     """
     Beginning of the game.
     """
     print()
-    type(f"""{Fore.YELLOW} You follow the White Rabbit down a winding path that 
-leads to a small door hidden in the roots of a large tree. Curiosity 
-prompts you to open it, and you find yourself in a dimly lit tunnel. 
-The walls of the tunnel are lined with shelves filled with strange 
-objects: clocks that tick backwards, bottles with the words "Drink Me" 
-written on them, and mirrors that seem to reflect worlds other than 
-your own.{Fore.RESET}            
-    
+    type(f"""{Fore.YELLOW} You follow the White Rabbit down a winding path that
+leads to a small door hidden in the roots of a large tree. Curiosity
+prompts you to open it, and you find yourself in a dimly lit tunnel.
+The walls of the tunnel are lined with shelves filled with strange
+objects: clocks that tick backwards, bottles with the words "Drink Me"
+written on them, and mirrors that seem to reflect worlds other than
+your own.{Fore.RESET}
+
     {Fore.BLUE}What you would like to do?{Fore.RESET}
 
-    1:Try a drink? 
+    1:Try a drink?
     2:Explore the tunnel?\n""")
     while True:
         choice = input(" >>>  ")  # choice function
@@ -73,8 +75,8 @@ your own.{Fore.RESET}
             break
         else:
             print()
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1  2{Fore.RESET}\n")  
-        
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1  2{Fore.RESET}\n")
+
 
 def drink_me():
     """
@@ -82,20 +84,21 @@ def drink_me():
     Play Game >> Drink Me
     """
     print()
-    type(f"""{Fore.YELLOW}You found the tiny bottle with the sign "Drink Me".
-You uncork the bottle and inhale the strange liquid. Feeling bold, 
-you take a sip. Immediately, a warm sensation spreads through your 
-body, and you begin to shrink! The tunnel and everything in it grow 
-larger around you. Shelves full of unusual objects loom like towering 
-buildings, and the once-narrow path stretches out like a vast road. 
-You become so small that even the curious trinkets around you now 
-resemble giant, otherworldly sculptures. The tunnel feels much more 
-intimidating at this size, and the ticking sound grows louder, almost 
+    type(
+        f"""{Fore.YELLOW}You found the tiny bottle with the sign "Drink Me".
+You uncork the bottle and inhale the strange liquid. Feeling bold,
+you take a sip. Immediately, a warm sensation spreads through your
+body, and you begin to shrink! The tunnel and everything in it grow
+larger around you. Shelves full of unusual objects loom like towering
+buildings, and the once-narrow path stretches out like a vast road.
+You become so small that even the curious trinkets around you now
+resemble giant, otherworldly sculptures. The tunnel feels much more
+intimidating at this size, and the ticking sound grows louder, almost
 echoing.
 
-In your new, tiny size, you can now see hidden details in the tunnel's 
-floors and walls - cracks and crevices you couldn't see before. In one 
-of these cracks, you notice a small, shimmering key lying just out of 
+In your new, tiny size, you can now see hidden details in the tunnel's
+floors and walls - cracks and crevices you couldn't see before. In one
+of these cracks, you notice a small, shimmering key lying just out of
 reach.{Fore.RESET}
 
       ooo,    .---.
@@ -103,13 +106,12 @@ reach.{Fore.RESET}
      o`   'oooo()  | ________   _   _)
     `oo   o` \\    |/        | | | |
       `ooo'   `---'         "-" |_|
-   
-      
 
-    {Fore.BLUE}What you would like to do?{Fore.RESET}
+    {Fore.BLUE}What would you like to do?{Fore.RESET}
 
-    1: Take the Key 
-    2: Leave the Key\n""")
+    1: Take the Key
+    2: Leave the Key\n"""
+    )
 
     while True:
         choice = input(" >>>  ")  # choice function
@@ -121,8 +123,8 @@ reach.{Fore.RESET}
             break
         else:
             print()
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")  
-        
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2!{Fore.RESET}\n")
+
 
 def take_key():
     """
@@ -130,48 +132,47 @@ def take_key():
     Drink Me >> Take key
     """
     print()
-    type(f"""{Fore.YELLOW}You decide to pick up the tiny key. Its golden glow 
-beckons you, and though you’re not sure what it unlocks, you sense that it’s 
-important. Holding it tightly in your tiny hand, you continue down the tunnel 
+    type(f"""{Fore.YELLOW}You decide to pick up the tiny key. Its golden glow
+beckons you, and though you’re not sure what it unlocks, you sense that it’s
+important. Holding it tightly in your tiny hand, you continue down the tunnel
 that stretches endlessly before you.
-            
+
               ____
              |  , =, _________
              | ='  (VvvVvV--'
              |____|
 
-After what feels like an eternity of walking, you come to a small door 
-built into the wall. At your current size, the door looks just the right 
-height for you. You try the key, and it fits perfectly! The door creaks 
-open, revealing another room, dimly lit but filled with familiar features: 
-mismatched furniture, crooked picture frames, and—most importantly—a small 
+After what feels like an eternity of walking, you come to a small door
+built into the wall. At your current size, the door looks just the right
+height for you. You try the key, and it fits perfectly! The door creaks
+open, revealing another room, dimly lit but filled with familiar features:
+mismatched furniture, crooked picture frames, and—most importantly—a small
 table with another bottle on it.
 
 This bottle, like the first, has a label, but this one says “Drink Me Again.”
 
-Hesitantly, but eager to return to your normal size, you take a sip of the 
-liquid. The moment it touches your lips, the familiar warm feeling returns 
-and you begin to grow! The world around you shrinks to normal as your body 
+Hesitantly, but eager to return to your normal size, you take a sip of the
+liquid. The moment it touches your lips, the familiar warm feeling returns
+and you begin to grow! The world around you shrinks to normal as your body
 stretches upward, and soon you are back to your normal size.
 
-Looking around, you notice a much larger door in front of you - a real exit, 
+Looking around, you notice a much larger door in front of you - a real exit,
 tall and inviting. You walk through it, leaving the strange tunnel behind.
 
-You find yourself in a vast, wondrous garden, filled with impossibly large 
-mushrooms, flowers that seem to speak in whispers, and paths leading in 
-every direction. The air is sweet with the scent of strange flowers, and 
+You find yourself in a vast, wondrous garden, filled with impossibly large
+mushrooms, flowers that seem to speak in whispers, and paths leading in
+every direction. The air is sweet with the scent of strange flowers, and
 distant, colorful creatures flutter across the sky.
 
-You realize that you have escaped the tunnel, but the strange world you 
-have entered is far from home. It seems both enchanting and dangerous, full 
+You realize that you have escaped the tunnel, but the strange world you
+have entered is far from home. It seems both enchanting and dangerous, full
 of secrets waiting to be explored.{Fore.RESET}
-    
+
       {Fore.BLUE}What will you do next?{Fore.RESET}
-    
+
      1: Explore the garden further?
      2: Look for the White Rabbit?
      3: Rest for a moment and observe?\n""")
-
     while True:
         choice = input(" >>> ")  # choice function
         if choice == "1":
@@ -185,8 +186,8 @@ of secrets waiting to be explored.{Fore.RESET}
             break
         else:
             print()
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n") 
-            
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")
+
 
 def look_for_rabbit():
     """
@@ -197,74 +198,72 @@ def look_for_rabbit():
     print()
     type(f"""{Fore.YELLOW}You wander through the magic garden, enchanted by the
 vibrant colors and strange, talking flowers. The garden seems alive with energy
-every step revealing new wonders. As you move through the towering mushrooms 
-and glowing blossoms, you catch a glimpse of white fur darting between the tall 
+every step revealing new wonders. As you move through the towering mushrooms
+and glowing blossoms, you catch a glimpse of white fur darting between the tall
 plants.{Fore.RESET}
 
-                                        
-                  {Fore.RED} _..._                      
-                 ,' (_) `.                        
-               .'   .-.   `.                       
-              ,'_) :   : .-.\\                      
-              .;-.   `-' (   )\\             
-             (   )    _  `-'  ;             
-              `-;_   (_)   ,-'              
-                  `'------' {Fore.RESET}                
-                   {Fore.WHITE}|    |                   
+                  {Fore.RED} _..._
+                 ,' (_) `.
+               .'   .-.   `.
+              ,'_) :   : .-.\\
+              .;-.   `-' (   )\\
+             (   )    _  `-'  ;
+              `-;_   (_)   ,-'
+                  `'------' {Fore.RESET}
+                   {Fore.WHITE}|    |
                    |    |
-                  /     |       
-                ,'      `.                       
-                 `.    .//{Fore.RESET}              
-                  {Fore.WHITE} `,-'{Fore.RESET}                
+                  /     |
+                ,'      `.
+                 `.    .//{Fore.RESET}
+                  {Fore.WHITE} `,-'{Fore.RESET}
 
-{Fore.YELLOW}Excited, you hurry forward and soon find yourself face-to-face 
-with the White Rabbit. He’s standing by a large mushroom, anxiously checking 
-his pocket watch, as always. The moment he sees you, his eyes widen, though 
+{Fore.YELLOW}Excited, you hurry forward and soon find yourself face-to-face
+with the White Rabbit. He’s standing by a large mushroom, anxiously checking
+his pocket watch, as always. The moment he sees you, his eyes widen, though
 not with surprise this time. Instead, there’s a look of relief.
-
-"Oh, there you are! I've been looking for you everywhere," the Rabbit 
-says in his hurried voice. "This garden can be quite a tricky place, 
+"Oh, there you are! I've been looking for you everywhere," the Rabbit
+says in his hurried voice. "This garden can be quite a tricky place,
 but lucky for you, I know the way out."
 
-You smile, feeling a wave of relief yourself. "Thank you! I’ve been 
+You smile, feeling a wave of relief yourself. "Thank you! I’ve been
 trying to find a way home for what feels like forever."
 
-The Rabbit, always in a rush, nods quickly. “Yes, yes, no time to waste. 
+The Rabbit, always in a rush, nods quickly. “Yes, yes, no time to waste.
 Follow me!”
 
-He hops ahead, and you follow closely as you weave through the garden. 
-The landscape around you shifts strangely, as if the plants are moving 
-out of your way, and the path constantly changes beneath your feet. But 
-the Rabbit seems to know exactly where to go, never hesitating as he 
+He hops ahead, and you follow closely as you weave through the garden.
+The landscape around you shifts strangely, as if the plants are moving
+out of your way, and the path constantly changes beneath your feet. But
+the Rabbit seems to know exactly where to go, never hesitating as he
 turns sharp corners and ducks under arching flowers.
 
-After what feels like just a few minutes of walking, you reach the edge 
-of the garden, where a large gate stands. Beyond it, you can see the 
+After what feels like just a few minutes of walking, you reach the edge
+of the garden, where a large gate stands. Beyond it, you can see the
 familiar sight of your world: a calm meadow leading back to your home.
 
-The Rabbit stops at the gate and gestures toward it. “There’s your 
-way home,” he says. “Once you pass through, you’ll be back in your world. 
-But remember, Wonderland has a way of calling you back, so don’t be 
+The Rabbit stops at the gate and gestures toward it. “There’s your
+way home,” he says. “Once you pass through, you’ll be back in your world.
+But remember, Wonderland has a way of calling you back, so don’t be
 surprised if you return someday.”
 
-You look at the gate, your heart filled with both gratitude and a strange 
-sadness. Wonderland has been strange, confusing, and often challenging, 
+You look at the gate, your heart filled with both gratitude and a strange
+sadness. Wonderland has been strange, confusing, and often challenging,
 but it’s also been magical. Still, you know it’s time to go.
 
 “Thank you, Rabbit,” you say warmly. “For everything.”
 
-The White Rabbit gives you a quick nod, checking his watch once more. 
+The White Rabbit gives you a quick nod, checking his watch once more.
 “Oh dear, I’m late again. Best of luck, Alice! Until we meet again!”
 
-With a final wave, you step through the gate. As you do, the garden fades 
-behind you, replaced by the familiar warmth of your world. The sky is 
-bright, the grass soft beneath your feet, and in the distance, you can 
+With a final wave, you step through the gate. As you do, the garden fades
+behind you, replaced by the familiar warmth of your world. The sky is
+bright, the grass soft beneath your feet, and in the distance, you can
 hear the comforting sounds of home.
 
-You smile, knowing you are safe and sound, but with the memory of 
+You smile, knowing you are safe and sound, but with the memory of
 Wonderland forever in your heart.{Fore.RESET}\n""")
-    print() 
-    prompt_replay()   
+    print()
+    prompt_replay()
 
 
 def rest_in_garden():
@@ -274,47 +273,47 @@ def rest_in_garden():
     Explore Garden >>> Rest in the garden
     """
     print()
-    type(f"""{Fore.YELLOW}You decide to sit and rest for a while on the soft 
-grass of the clearing. The garden seems alive, and you sense that by rushing 
-forward you may miss something important. As you settle in, the whispers fade 
-into the background, leaving only the gentle rustling of leaves and the soft 
+    type(f"""{Fore.YELLOW}You decide to sit and rest for a while on the soft
+grass of the clearing. The garden seems alive, and you sense that by rushing
+forward you may miss something important. As you settle in, the whispers fade
+into the background, leaving only the gentle rustling of leaves and the soft
 hum of the air around you.
 
 
-{Fore.YELLOW}The longer you sit, the more the garden seems to open up. The 
-flowers nearby shift their positions slightly, as if turning towards you, and 
-their glow intensifies, casting an ethereal light over the area. The spiral 
-tree in the center with three doors seems almost to breathe, its bark 
+{Fore.YELLOW}The longer you sit, the more the garden seems to open up. The
+flowers nearby shift their positions slightly, as if turning towards you, and
+their glow intensifies, casting an ethereal light over the area. The spiral
+tree in the center with three doors seems almost to breathe, its bark
 shimmering in soft waves.
 
 As you watch, small details become clear:
 
-{Fore.RED}* * The red door (with the clock symbol) seems to pulse faintly, 
-almost as if in sync with the ticking sound you heard earlier in the 
+{Fore.RED}* * The red door (with the clock symbol) seems to pulse faintly,
+almost as if in sync with the ticking sound you heard earlier in the
 tunnel. * *{Fore.RESET}
 
-{Fore.BLUE}* * The blue door (with the heart symbol) radiates a faint warmth, 
+{Fore.BLUE}* * The blue door (with the heart symbol) radiates a faint warmth,
 and you hear the distant echo of laughter, though you cannot tell whether it is
 joyful or sinister. * *{Fore.RESET}
-    
-{Fore.GREEN}* * Faint shimmers float around the green door (with the crown 
+
+{Fore.GREEN}* * Faint shimmers float around the green door (with the crown
 symbol), like a magical trail, and for a moment you notice something glittering
 in the air near it, like the edge of a golden crown. * *{Fore.RESET}
 
-{Fore.YELLOW}As you look at the doors, the whispers begin to return, but this 
-time they feel different. It is as if the garden is trying to communicate with 
+{Fore.YELLOW}As you look at the doors, the whispers begin to return, but this
+time they feel different. It is as if the garden is trying to communicate with
 you - not in words, but in feelings. The red door evokes a sense of urgency, as
-if time is of the essence. The blue door evokes a sense of curiosity mixed with
-caution as if it holds deep and complex emotions. The green door hints at power 
-authority, and something grandiose, but also unknown.
+if time is of the essence. The blue door evokes a sense of curiosity mixed
+with caution as if it holds deep and complex emotions. The green door hints
+at power authority, and something grandiose, but also unknown.
 
-The garden seems to be giving you a choice, but not in a hurry - it is waiting 
+The garden seems to be giving you a choice, but not in a hurry - it is waiting
 for you to decide.{Fore.RESET}
-    
+
     {Fore.BLUE}What will You do next?{Fore.RESET}
-    
-    1: Open the red door?         
-    2: Open the blue door? 
+
+    1: Open the red door?
+    2: Open the blue door?
     3: Open the green door?\n""")
 
     while True:
@@ -330,50 +329,50 @@ for you to decide.{Fore.RESET}
             break
         else:
             print()
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")  
-        
-    
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")
+
+
 def explore_garden():
     """
     Steps:
     Take Key >>> Rest in the garden
     Drink Me >>> Explore Garden
-    Call For Help >>> Explore Garden 
+    Call For Help >>> Explore Garden
     """
     print()
-    type(f"""{Fore.YELLOW}You reached into the garden, your curiosity drawing 
+    type(f"""{Fore.YELLOW}You reached into the garden, your curiosity drawing
 you deeper into this strange, beautiful world. The vibrant colors and strange
-shapes of the plants around you make everything seem surreal. Flowers with 
+shapes of the plants around you make everything seem surreal. Flowers with
 faces whisper to each other, and huge mushrooms tower over you like trees.
 
-As you walk down the winding path, you notice something strange - the deeper 
-you go, the more the garden seems to shift and change. The sky above shimmers 
-between bright daylight and dark twilight, as if time is out of whack. The air 
-hums with a strange energy, and the plants seem to move slightly when you're 
+As you walk down the winding path, you notice something strange - the deeper
+you go, the more the garden seems to shift and change. The sky above shimmers
+between bright daylight and dark twilight, as if time is out of whack. The air
+hums with a strange energy, and the plants seem to move slightly when you're
 not looking.
 
 A rustling sound suddenly catches your attention. Peering ahead, you notice
-something flickering between the huge leaves. It's fast, too fast for you to 
-see clearly, but you catch a flash of white. Could it be the White Rabbit? 
+something flickering between the huge leaves. It's fast, too fast for you to
+see clearly, but you catch a flash of white. Could it be the White Rabbit?
 Or something else entirely?
 
-As you move cautiously forward, you come upon a strange sight: a large table 
+As you move cautiously forward, you come upon a strange sight: a large table
 set for tea in the center of the garden, completely out of place among the wild
-greenery. The table is covered with mismatched cups and saucers, some 
-overturned, others stacked precariously high. There are empty chairs around it, 
+greenery. The table is covered with mismatched cups and saucers, some
+overturned, others stacked precariously high. There are empty chairs around it,
 though one at the far end has its back to you.
 
-Just as you are about to investigate, a voice calls out from behind you. 
+Just as you are about to investigate, a voice calls out from behind you.
 "You're late, you know!"
 
-You turn to see a familiar face - the Cheshire Cat. He is lounging lazily on 
+You turn to see a familiar face - the Cheshire Cat. He is lounging lazily on
 the branch of a nearby tree, his wide grin glittering in the changing light.
 
-"Well, well, what a curious traveler we have here," the Cat purrs, his eyes 
+"Well, well, what a curious traveler we have here," the Cat purrs, his eyes
 twinkling mischievously.{Fore.RESET}
-    
+
     {Fore.BLUE}What You will do next?{Fore.RESET}
-    
+
     1: Talk to the Cheshire Cat
     2: Look for a way out of the garden\n""")
 
@@ -386,8 +385,8 @@ twinkling mischievously.{Fore.RESET}
             avoid_table()
             break
         else:
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")  
-        
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")
+
 
 def talk_to_cat():
     """
@@ -396,11 +395,11 @@ def talk_to_cat():
     """
     print()
     type(f"""{Fore.YELLOW}Lost again, are we?" the Cheshire Cat purrs, his grin
-widening. "You do have a habit of getting yourself into the most curious of 
+widening. "You do have a habit of getting yourself into the most curious of
 predicaments, don't you?"
 
-You, frustrated but trying to stay calm, look up at him. “Yes, I am lost,” you 
-admit. “I’ve been wandering this strange place for too long. Can you show me 
+You, frustrated but trying to stay calm, look up at him. “Yes, I am lost,” you
+admit. “I’ve been wandering this strange place for too long. Can you show me
 the way home?”{Fore.LIGHTBLUE_EX}
           .'\\   /`.
          .'.-.`-'.-.`.
@@ -415,34 +414,34 @@ the way home?”{Fore.LIGHTBLUE_EX}
       `-._   ````    _.-'
           ``-------''{Fore.RESET}
 {Fore.YELLOW}The Cheshire Cat tilts his head, his grin never fading. “Home?
-Hmm, now that’s a tricky thing to define here in Wonderland, isn’t it? What 
+Hmm, now that’s a tricky thing to define here in Wonderland, isn’t it? What
 exactly is home? But... if you insist on leaving this delightful place, I might
 be persuaded to help.”
 
-You watch him carefully, knowing the Cheshire Cat loves to toy with words and 
-play tricks. “I just want to go back to where I came from,” you say firmly. 
+You watch him carefully, knowing the Cheshire Cat loves to toy with words and
+play tricks. “I just want to go back to where I came from,” you say firmly.
 “My world. Can you show me the way?”
 
 The Cheshire Cat’s eyes twinkle with amusement. “Well, if that’s what you truly
-want, I can certainly point you in the right direction. But you must be 
-careful. Wonderland has a way of holding onto its visitors, especially those 
+want, I can certainly point you in the right direction. But you must be
+careful. Wonderland has a way of holding onto its visitors, especially those
 with a curious mind like yours.”
 
-With a slow stretch, the Cheshire Cat points his paw down one of the twisting 
-paths behind him. “Follow that way, and you’ll come to a crossroads. Take the 
-left path, and you’ll find a gate. Once you pass through it, you’ll be back in 
+With a slow stretch, the Cheshire Cat points his paw down one of the twisting
+paths behind him. “Follow that way, and you’ll come to a crossroads. Take the
+left path, and you’ll find a gate. Once you pass through it, you’ll be back in
 your world.”
 
-He begins to fade away again, starting with his tail and ending with that 
-ever-present grin. “But remember,” his voice lingers as he disappears 
+He begins to fade away again, starting with his tail and ending with that
+ever-present grin. “But remember,” his voice lingers as he disappears
 completely, “the path you take may not always be the one you expect.”
 
-You watch the Cheshire Cat vanish, a sense of both relief and uncertainty 
-washing over you. Though his directions were vague, you had a way to go 
+You watch the Cheshire Cat vanish, a sense of both relief and uncertainty
+washing over you. Though his directions were vague, you had a way to go
 now.{Fore.RESET}
-    
+
     {Fore.BLUE}What You will do next?{Fore.RESET}
-    
+
     1: Follow the path Cat shows You?
     2: You tired and want to take a rest?
     3: Call Rabbit to find way home?\n""")
@@ -459,8 +458,8 @@ now.{Fore.RESET}
             look_for_rabbit()
             break
         else:
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")  
-        
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")
+
 
 def follow_cat():
     """
@@ -468,16 +467,16 @@ def follow_cat():
     Explore Garden >>> Follow cat (End)
     """
     print()
-    type(f"""{Fore.YELLOW}You decide to trust the Cheshire Cat’s directions, 
-even with the lingeringsense of mystery. You take a deep breath and head down 
-the winding path hepointed out, your heart beating a little faster with every 
+    type(f"""{Fore.YELLOW}You decide to trust the Cheshire Cat’s directions,
+even with the lingeringsense of mystery. You take a deep breath and head down
+the winding path hepointed out, your heart beating a little faster with every
 step. The flowersand plants around you seem to sway as if watching you, but you
 keep movingforward, determined to find a way home.
 
-After walking for a while, you come to a crossroads, just as the Cheshire Cat 
-had said. The left path looks slightly darker, shaded by towering trees, but 
+After walking for a while, you come to a crossroads, just as the Cheshire Cat
+had said. The left path looks slightly darker, shaded by towering trees, but
 there’s a faint glow in the distance as if something important lies at the end.
-Without hesitation, you turn left, your steps quicker now as youfeel you’re 
+Without hesitation, you turn left, your steps quicker now as youfeel you’re
 getting closer to the goal.
 
 As you follow the path, the air grows warmer, and you can hear the sound of
@@ -514,8 +513,9 @@ the time is right, you’ll find yourself back there again.
 
 ~~~~~~~~~~~~~~~~But for now, your home!~~~~~~~~~~~~~~~~~~~~{Fore.RESET}\n""")
     print()
-    print() 
-    prompt_replay() 
+    print()
+    prompt_replay()
+
 
 def avoid_table():
     """
@@ -523,31 +523,31 @@ def avoid_table():
     Explore Garden >>> Avoid Table (End)
     """
     print()
-    type(f"""{Fore.YELLOW}You turn away from the tea table and the Cheshire 
-Cat, deciding to follow one of the many twisting paths ahead. The garden seems 
-to be full of possibilities, and your curiosity pulls you forward. You choose 
-the nearest path, a narrow trail lined with glowing, luminescent flowers that 
+    type(f"""{Fore.YELLOW}You turn away from the tea table and the Cheshire
+Cat, deciding to follow one of the many twisting paths ahead. The garden seems
+to be full of possibilities, and your curiosity pulls you forward. You choose
+the nearest path, a narrow trail lined with glowing, luminescent flowers that
 seem to sway with you every step.
 
-The path twists and turns, the garden growing wilder and stranger with every 
-turn. The leaves overhead grow so thick that they almost block out the sky, 
-creating a canopy that bathes the trail in dappled shadows. As you venture 
-further, you hear faint whispers carried on the breeze. The voices seem to be 
+The path twists and turns, the garden growing wilder and stranger with every
+turn. The leaves overhead grow so thick that they almost block out the sky,
+creating a canopy that bathes the trail in dappled shadows. As you venture
+further, you hear faint whispers carried on the breeze. The voices seem to be
 coming from everywhere and nowhere all at once, but you can't quite make out
 what they're saying.
 
-Soon, the path opens into a small, circular clearing. In the middle of the 
-clearing stands a tall, spiraling tree with bark that shimmers in different 
+Soon, the path opens into a small, circular clearing. In the middle of the
+clearing stands a tall, spiraling tree with bark that shimmers in different
 colors as the light touches it. Its branches seem to reach out like arms, and
-at the base of the tree, there are three distinct doors carved into its trunk, 
-each a different color: one red, one blue, and one green. Above each door, a 
+at the base of the tree, there are three distinct doors carved into its trunk,
+each a different color: one red, one blue, and one green. Above each door, a
 symbol is etched: a clock, a heart, and a crown.
 
-The whispers grow louder now as if the tree itself is speaking to you. 
+The whispers grow louder now as if the tree itself is speaking to you.
 The doors beckon, each promising a different path ahead.{Fore.RESET}
 
     {Fore.BLUE}What will You do next?{Fore.RESET}
-    
+
     1: Open the red door?
     2: Open the blue door?
     3: Open the green door?\n""")
@@ -558,49 +558,49 @@ The doors beckon, each promising a different path ahead.{Fore.RESET}
             red_door()
             break
         elif choice == "2":
-             blue_door()
-             break
+            blue_door()
+            break
         elif choice == "3":
             green_door()
             break
         else:
             print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")
-        
- 
+
+
 def leave_key():
     """
     Steps:
     Drink Me >>> Leave the Key (End)
     """
     print()
-    type(f"""{Fore.YELLOW}You stare at the small, glimmering key in the crack 
-of the tunnel floor, but for reasons you can’t quite explain, you decide to 
-leave it behind. Perhaps it’s your curiosity leading you onward, or maybe you 
+    type(f"""{Fore.YELLOW}You stare at the small, glimmering key in the crack
+of the tunnel floor, but for reasons you can’t quite explain, you decide to
+leave it behind. Perhaps it’s your curiosity leading you onward, or maybe you
 simply don’t realize the key’s significance. You continue down the tunnel, your
 small size making everything feel much more intimidating and vast.
 
-As you venture deeper, the tunnel twists and turns, never offering a way out. 
-The ticking grows louder, and the air feels heavier like it’s closing in on 
-you. Every corner you turn looks the same as the last, and the once curious 
+As you venture deeper, the tunnel twists and turns, never offering a way out.
+The ticking grows louder, and the air feels heavier like it’s closing in on
+you. Every corner you turn looks the same as the last, and the once curious
 objects on the shelves now seem menacing, like they’re watching you.
 
 Time passes, but you can’t tell how long. It feels like hours, days, maybe even
-longer. The walls feel tighter, the shadows longer. 
+longer. The walls feel tighter, the shadows longer.
 
 You try calling out again, but your voice is lost in the endless echo.
 
-Without the key, you are stuck in the tunnel, unable to find a way out. The 
-door behind you has disappeared, and no other exits reveal themselves. The 
-ticking clock is the only constant, marking time in a world that feels like 
+Without the key, you are stuck in the tunnel, unable to find a way out. The
+door behind you has disappeared, and no other exits reveal themselves. The
+ticking clock is the only constant, marking time in a world that feels like
 it's stopped.
 
-Over time, the tunnel becomes your entire world — a strange, shifting place 
-with no escape. The objects that once seemed curious now feel like permanent 
+Over time, the tunnel becomes your entire world — a strange, shifting place
+with no escape. The objects that once seemed curious now feel like permanent
 companions, and the shadows that dance on the walls never leave you alone.
 {Fore.RESET}\n""")
     print()
-    print() 
-    prompt_replay() 
+    print()
+    prompt_replay()
 
 
 def explore_tunnel():
@@ -610,19 +610,19 @@ def explore_tunnel():
     """
     print()
     type(f"""{Fore.YELLOW}A few steps in, and the door behind you slams shut.
-The tunnel narrows, and you feel the walls pressing in slightly. Your heartbeat 
-quickens as you search for another exit, but the tunnel stretches forward, 
+The tunnel narrows, and you feel the walls pressing in slightly. Your heartbeat
+quickens as you search for another exit, but the tunnel stretches forward,
 twisting in impossible ways.
 
 You attempt to retrace your steps, but the door behind you has vanished. You
-realize you are trapped in a room where the air is thick with the unsettling 
-feeling that you are not alone. Shadows move in the dim light, and somewhere 
-deep within the tunnel, you hear the faint ticking of a clock that you cannot 
+realize you are trapped in a room where the air is thick with the unsettling
+feeling that you are not alone. Shadows move in the dim light, and somewhere
+deep within the tunnel, you hear the faint ticking of a clock that you cannot
 see.{Fore.RESET}
 
     {Fore.BLUE}What will you do next?{Fore.RESET}
 
-    1: Explore the tunnel further, searching for hidden mechanisms 
+    1: Explore the tunnel further, searching for hidden mechanisms
     in the objects around you?
     2: Or do you call for help?\n""")
 
@@ -635,8 +635,8 @@ see.{Fore.RESET}
             call_for_help()
             break
         else:
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")  
-        
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")
+
 
 def call_for_help():
     """
@@ -645,43 +645,43 @@ def call_for_help():
     """
     print()
     type(f"""{Fore.YELLOW}Feeling a mixture of frustration and determination,
-you decide to call for help again. Your voice echoes through the dim tunnel, 
+you decide to call for help again. Your voice echoes through the dim tunnel,
 bouncing off the walls as you shout, “Help! Is anyone there?”
 
-For a moment, everything is silent. Just when you’re starting to lose hope, you 
-hear the familiar patter of little feet approaching you. The White Rabbit 
+For a moment, everything is silent. Just when you’re starting to lose hope, you
+hear the familiar patter of little feet approaching you. The White Rabbit
 appears, his eyes wide with worry.
 
-“Oh my god! Oh my god! What have you gotten yourself into?” he exclaims, 
-slightly out of breath. “You really shouldn’t be wandering around here. Follow 
+“Oh my god! Oh my god! What have you gotten yourself into?” he exclaims,
+slightly out of breath. “You really shouldn’t be wandering around here. Follow
 me, I’ll show you the way home!”
 
-Reassured, you quickly follow the Rabbit as he hops nimbly through the twisting 
-paths of the tunnel. He looks back at you, a mixture of urgency and excitement 
+Reassured, you quickly follow the Rabbit as he hops nimbly through the twisting
+paths of the tunnel. He looks back at you, a mixture of urgency and excitement
 on his face.
 
-“Stay close! This tunnel can be quite tricky if you don't know your way 
-around," he calls, leading you through narrow passages and around sharp 
+“Stay close! This tunnel can be quite tricky if you don't know your way
+around," he calls, leading you through narrow passages and around sharp
 corners. The ticking of the invisible clock seems to grow quieter as you move
 deeper into the tunnel, and the air feels lighter.
 
-After a few minutes of hurried travel, you reach a door that glows faintly at 
+After a few minutes of hurried travel, you reach a door that glows faintly at
 the end of a long, winding corridor. The White Rabbit stops, pushing it open
 with a flourish.
 
 "There! You're almost home!" he says, his voice full of encouragement.
 
-Beyond the door is a vibrant garden, similar to the one you saw earlier, but 
-this one is bursting with color and life. Flowers bloom in every hue, and the 
-air is filled with sweet scents. In the distance, you see a familiar path 
+Beyond the door is a vibrant garden, similar to the one you saw earlier, but
+this one is bursting with color and life. Flowers bloom in every hue, and the
+air is filled with sweet scents. In the distance, you see a familiar path
 leading back to the entrance to your world.
 
-"Just follow this path, and you'll be back where you belong," the White Rabbit 
+"Just follow this path, and you'll be back where you belong," the White Rabbit
 assures you. "But remember, Wonderland has a way of calling you back."
 {Fore.RESET}
-    
+
     {Fore.BLUE}What will you do next?{Fore.RESET}
-    
+
     1: Thank the White Rabbit and head home?
     2: Explore the garden a bit more?\n""")
 
@@ -694,8 +694,8 @@ assures you. "But remember, Wonderland has a way of calling you back."
             explore_garden()
             break
         else:
-           print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n") 
-        
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2{Fore.RESET}\n")
+
 
 def go_home():
     """
@@ -703,48 +703,48 @@ def go_home():
     Explore Garden >>> Call for Rabbit (End)
     """
     print()
-    type(f"""{Fore.YELLOW}You turn to the White Rabbit, gratitude shining in 
-your eyes. “Thank you so much for your help!” you exclaim. “I wouldn’t have 
+    type(f"""{Fore.YELLOW}You turn to the White Rabbit, gratitude shining in
+your eyes. “Thank you so much for your help!” you exclaim. “I wouldn’t have
 found my way without you!”
 
-The White Rabbit nods, adjusting his tiny vest. “Oh, nothing! Just doing my 
-job,” he replies, looking back at the tunnel with a hint of worry. “But be 
+The White Rabbit nods, adjusting his tiny vest. “Oh, nothing! Just doing my
+job,” he replies, looking back at the tunnel with a hint of worry. “But be
 careful out there. Wonderland can be quite unpredictable!”
 
 With one last wave, you walk through the door and onto the busy path that leads
 back to your world. The sun shines brightly overhead, illuminating the colorful
-flowers that seem to dance in the gentle breeze. You feel the warmth of the 
+flowers that seem to dance in the gentle breeze. You feel the warmth of the
 sunlight on your face, a calming reminder of home.
 
-As you walk, you pause for a moment to appreciate the beauty of the garden. 
-Each flower is a riot of color, and a sweet scent fills the air. You notice 
-butterflies fluttering about, their delicate wings sparkling like jewels in 
-thesun. For a moment, you want to linger, to explore this magical place a 
+As you walk, you pause for a moment to appreciate the beauty of the garden.
+Each flower is a riot of color, and a sweet scent fills the air. You notice
+butterflies fluttering about, their delicate wings sparkling like jewels in
+thesun. For a moment, you want to linger, to explore this magical place a
 little longer.
 
 But your heart pulls you forward. You know you need to return to your world, to
 the familiar comfort of your home.
 
-As you walk along the path, you hear the soft sound of running water nearby. 
+As you walk along the path, you hear the soft sound of running water nearby.
 Curiosity piqued, you wander a little off the main path to see a small stream
-running through the garden, its waters sparkling like diamonds. It flows 
+running through the garden, its waters sparkling like diamonds. It flows
 peacefully, meandering through the flowers and leading to the distant horizon.
 
 Suddenly, you realize you can’t stay. With one last look around, you return to
 the main path and continue on your way. Soon you reach the edge of the garden,
 where the flowers give way to a familiar landscape. The soft rolling hills,
-the bright green grass, and the distant sound of your family calling your name 
+the bright green grass, and the distant sound of your family calling your name
 fill you with joy.
 
-As you step through the door back into your world, you feel a sense of 
-completion. You look back one last time at Wonderland, the magical place that 
+As you step through the door back into your world, you feel a sense of
+completion. You look back one last time at Wonderland, the magical place that
 took you on an incredible adventure.
 
 “I will never forget you,” you whisper to the garden.
 
 With a deep breath, you step forward into your reality.
 
-Back in your garden, you hear the sounds of your family enjoying a lovely 
+Back in your garden, you hear the sounds of your family enjoying a lovely
 picnic. The aroma of freshly baked treats wafts through the air, and laughter
 echoes around you.
 
@@ -752,8 +752,8 @@ You smile, knowing that even though your adventure in Wonderland has come to an
 end, the memories will forever remain in your heart. And who knows? Perhaps one
 day you will return.{Fore.RESET}""")
     print()
-    print() 
-    prompt_replay() 
+    print()
+    prompt_replay()
 
 
 def blue_door():
@@ -763,19 +763,19 @@ def blue_door():
     Avoid Table >> Blue Door
     """
     print()
-    type(f"""{Fore.YELLOW}You, drawn by curiosity, approach the blue door with 
-the heart symbol etched above it. You hesitate for just a moment, then take a 
-deep breath and open the door. A soft glow spills out, and without another 
+    type(f"""{Fore.YELLOW}You, drawn by curiosity, approach the blue door with
+the heart symbol etched above it. You hesitate for just a moment, then take a
+deep breath and open the door. A soft glow spills out, and without another
 thought, you step through.
 
 As soon as you pass the threshold, the world around changes. You find yourself
-in a large, beautiful room with high ceilings, draped in rich blue and purple 
+in a large, beautiful room with high ceilings, draped in rich blue and purple
 silks. The floor is a black-and-white checkerboard, and the air is filled with
-the scent of roses. In the distance, you can hear the soft tinkling of music, 
+the scent of roses. In the distance, you can hear the soft tinkling of music,
 as if a grand ball is taking place somewhere nearby.
 
 At the center of the room, a massive, ornate throne stands, with a heart-shaped
-crest at the top. And sitting on the throne is a figure that you immediately 
+crest at the top. And sitting on the throne is a figure that you immediately
 recognize — the Queen of Hearts.
 
 The Queen’s sharp eyes fixed on you the moment you entered the room. "Ah, there
@@ -786,18 +786,17 @@ want something. Speak up, please!"
 You take a cautious step forward. “I… I didn’t mean to intrude. I just followed
 the path and found this door.”
 
-The Queen of Hearts raises an eyebrow, clearly unimpressed. "Didn’t mean to 
-intrude? In Wonderland, everything has meaning, whether you know it or not. 
-Now, what do you seek, here? Adventure? Answers? Or perhaps you’re here to 
+The Queen of Hearts raises an eyebrow, clearly unimpressed. "Didn’t mean to
+intrude? In Wonderland, everything has meaning, whether you know it or not.
+Now, what do you seek, here? Adventure? Answers? Or perhaps you’re here to
 challenge me?"
 
 Your heart races. You remember the stories of the Queen’s temper, but also know
 that this might be your chance to learn something important — or perhaps even
 find a way home.{Fore.RESET}
 
-    
     {Fore.BLUE}What will You do next?{Fore.RESET}
-    
+
     1: Ask the Queen for help finding her way home?
     2: Challenge the Queen?
     3: Explore the room quietly, to look for an exit?\n""")
@@ -814,18 +813,18 @@ find a way home.{Fore.RESET}
             explore_garden()
             break
         else:
-            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")   
-        
-    
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1 2 3{Fore.RESET}\n")
+
+
 def ask_queen():
     """
     Steps:
     Blue Door >> Ask Queen
     """
     print()
-    type(f"""{Fore.YELLOW}You, feeling both nervous and hopeful, decide to 
+    type(f"""{Fore.YELLOW}You, feeling both nervous and hopeful, decide to
 speak to the Queen of Hearts directly. You know the Queen is a powerful figure
-in Wonderland, but you hope that by being polite, you might get the help you 
+in Wonderland, but you hope that by being polite, you might get the help you
 need to find your way home.
 
 “Your Majesty,” you begin, bowing slightly, “I didn’t mean to disturb you, but
@@ -840,12 +839,12 @@ smile.
 throne. “Most who come to Wonderland rarely wish to leave. But I suppose you
 are not most, are you?”
 
-The Queen rises from her throne with a flourish of her red and gold robes. She 
+The Queen rises from her throne with a flourish of her red and gold robes. She
 steps down gracefully, her eyes still locked on you. “Very well. You’ve amused
-me, and I do so appreciate those with manners. I will help you — but only 
+me, and I do so appreciate those with manners. I will help you — but only
 because it pleases me to do so.”
 
-You feel a wave of relief, though you remain cautious, knowing the Queen’s 
+You feel a wave of relief, though you remain cautious, knowing the Queen’s
 temper could turn at any moment.
 
 The Queen waves her hand, and suddenly, a small, ornate mirror appears floating
@@ -863,8 +862,8 @@ The Queen smirks. “Very well. Step through, and you shall find yourself where
 you belong.”
 
 You take a deep breath, then reach out and touch the surface of the mirror. As
-soon as your fingers make contact, the glass ripples like water. You feel a 
-strange pull, and before you know it, you are being gently drawn into the 
+soon as your fingers make contact, the glass ripples like water. You feel a
+strange pull, and before you know it, you are being gently drawn into the
 mirror.
 
 The world around you swirls in a kaleidoscope of colors and lights, and for a
@@ -880,11 +879,12 @@ Wonderland had been full of strange and dangerous adventures, you weregrateful
 for the experience. And though you are home now, you know that the magic of
 Wonderland will stay with you always.
 
-With one last look at the horizon, you head home, your heart lighter and mind 
+With one last look at the horizon, you head home, your heart lighter and mind
 filled with memories of the incredible journey.{Fore.RESET}""")
 
-    print() 
-    prompt_replay() 
+    print()
+    prompt_replay()
+
 
 def challenge_queen():
     """
@@ -893,9 +893,9 @@ def challenge_queen():
     """
     print()
     type(f"""{Fore.YELLOW}You, feeling bold and defiant, straighten your back
-and look the Queen of Hearts in the eyes. You know the Queen can be dangerous, 
+and look the Queen of Hearts in the eyes. You know the Queen can be dangerous,
 but you are no longer the same timid person who first stumbled into Wonderland.
-Your adventures have made you stronger, and if you have to stand up for 
+Your adventures have made you stronger, and if you have to stand up for
 yourself to get home, you are ready to do it.
 
 “Your Majesty,” you begin, your voice steady, “I didn’t come here to beg for
@@ -903,27 +903,27 @@ help. I’ve faced many challenges in Wonderland, and I’m not afraid of one mo
 If you want me to earn my way home, then I challenge you.”
 
 The Queen of Hearts raises an eyebrow, clearly surprised by your boldness. For
-a moment, there’s silence in the grand throne room. Then, a slow smile spreads 
+a moment, there’s silence in the grand throne room. Then, a slow smile spreads
 across the Queen’s face.
 
-“A challenge, you say?” the Queen purrs, amused. “How delightful. I do love a 
+“A challenge, you say?” the Queen purrs, amused. “How delightful. I do love a
 good contest, especially when I’m confident I’ll win. But be warned, child — no
 one has ever beaten me in a challenge before.”
 
 You hold your ground, determined. “I’ll take that risk.”
 
 The Queen claps her hands and the room around them shifts. The walls seem to
-melt away, replaced by a vast arena with towering hedges and flickering 
-lanterns. In the center stands a tall chessboard, its squares gleaming under 
+melt away, replaced by a vast arena with towering hedges and flickering
+lanterns. In the center stands a tall chessboard, its squares gleaming under
 the lights.
 
-“We shall play a game,” the Queen declares. “A game of wits and strategy. If 
+“We shall play a game,” the Queen declares. “A game of wits and strategy. If
 you win, I will grant you passage home. If you lose… well, I’m sure you can
 guess the consequences.”
 
 The game begins and you quickly realize that the Queen is as clever as she is
-ruthless. The pieces move almost on their own, following subtle commands from 
-the players. The Queen plays with precision, her knights and queens sweeping 
+ruthless. The pieces move almost on their own, following subtle commands from
+the players. The Queen plays with precision, her knights and queens sweeping
 across the board with fierce intent.
 
 But you, having learned to think quickly and cleverly in Wonderland, anticipate
@@ -935,40 +935,41 @@ Finally, after a tense series of moves, you see an opening. With a triumphant
 smile, you move your final piece into place and declare, “Checkmate.”
 
 The Queen of Hearts freezes, staring at the board in disbelief. For the first
-time, someone has bested her. Her face flushes with anger, but instead of 
+time, someone has bested her. Her face flushes with anger, but instead of
 lashing out, she lets out a slow, controlled breath.
 
 “Well, well,” the Queen says, her voice tight but controlled. “It seems you’ve
 won. I suppose I must honor my word.”
 
 The chessboard vanishes, and the grand arena melts away, leaving you back in
-the throne room. The Queen waves her hand, and once again, the magical mirror 
+the throne room. The Queen waves her hand, and once again, the magical mirror
 appears, shimmering in the air beside her.
 
-“This mirror will take you home,” the Queen says, though her tone is far less 
+“This mirror will take you home,” the Queen says, though her tone is far less
 amused than before. “I suggest you take it before I change my mind.”
 
-Your heart racing from the intensity of the game, you step toward the mirror. 
-You look back at the Queen one last time, offering a polite but firm nod. 
+Your heart racing from the intensity of the game, you step toward the mirror.
+You look back at the Queen one last time, offering a polite but firm nod.
 
 “Thank you, Your Majesty.”
 
 The Queen simply waves her off, her eyes smoldering but silent. Without wasting
 another second, you touch the surface of the mirror and feel the familiar pull.
 
-In an instant, you are back in your world, standing in the same meadow where 
-your adventure began. The sky is blue, the air fresh, and the sounds of 
+In an instant, you are back in your world, standing in the same meadow where
+your adventure began. The sky is blue, the air fresh, and the sounds of
 Wonderland fade into distant memories. You are home at last.
 
 You look around, your heart light and full of pride. You had stood up to the
-Queen of Hearts and won. Wonderland may have been strange, but it taught you 
+Queen of Hearts and won. Wonderland may have been strange, but it taught you
 that you were stronger and braver than you ever knew.
 
 With a smile, you turn and begin to walk back home, knowing that you carry the
 lessons of Wonderland with you forever.{Fore.RESET}""")
     print()
     print()
-    prompt_replay() 
+    prompt_replay()
+
 
 def red_door():
     """
@@ -977,31 +978,31 @@ def red_door():
     Avoid Table >> Red Door
     """
     print()
-    type(f"""{Fore.YELLOW}You take a deep breath, filled with curiosity and 
+    type(f"""{Fore.YELLOW}You take a deep breath, filled with curiosity and
 excitement, and push the red door open. As you step through, you feel a rush of
 cool air and a sense of wonder. The door closes softly behind you, and you find
 yourself in a vibrant, surreal landscape unlike anything you have ever seen.
 
 The ground is covered in lush, colorful grass that seems to shimmer under a
-radiant sun. Giant mushrooms tower above you, their caps decorated with 
-whimsical patterns. In the distance, you hear the sound of laughter and see a 
-group of peculiar characters gathered around a large, crooked table, set for 
+radiant sun. Giant mushrooms tower above you, their caps decorated with
+whimsical patterns. In the distance, you hear the sound of laughter and see a
+group of peculiar characters gathered around a large, crooked table, set for
 tea.
 
 As you survey your surroundings, you notice:
 
-A paved path leads to the tea party where the Mad Hatter and March Hare are 
-celebrating with a peculiar assortment of teapots and pastries. A dark forest 
-to your left, where strange, glowing creatures flit among the trees, inviting 
-you to explore. A sparkling stream nearby, with a clear surface that reflects 
+A paved path leads to the tea party where the Mad Hatter and March Hare are
+celebrating with a peculiar assortment of teapots and pastries. A dark forest
+to your left, where strange, glowing creatures flit among the trees, inviting
+you to explore. A sparkling stream nearby, with a clear surface that reflects
 the colorful skies above.{Fore.RESET}
 
     {Fore.BLUE}What You will do next?{Fore.RESET}
-    
+
     1: Join Mad Hatters Party?
     2: Go to Dark Forest?\n""")
 
-    while True: 
+    while True:
         choice = input(" >>> ")  # choice function
         if choice == "1":
             mad_hatter()
@@ -1010,8 +1011,8 @@ the colorful skies above.{Fore.RESET}
             dark_forest()
             break
         else:
-           print(f"\n{Fore.RED}Wrong choice!Please enter 1  2{Fore.RESET}\n") 
-        
+            print(f"\n{Fore.RED}Wrong choice!Please enter 1  2{Fore.RESET}\n")
+
 
 def mad_hatter():
     """
@@ -1019,33 +1020,33 @@ def mad_hatter():
     Red Door >> Mad Hatter
     """
     print()
-    type(f"""{Fore.YELLOW}You, feeling a mix of excitement and nervousness, 
-approach the Mad Hatter's tea party. The table is set with an array of colorful 
-teapots, mismatched cups, and delectable pastries that seem to beckon you to 
+    type(f"""{Fore.YELLOW}You, feeling a mix of excitement and nervousness,
+approach the Mad Hatter's tea party. The table is set with an array of colorful
+teapots, mismatched cups, and delectable pastries that seem to beckon you to
 join.
 
-"Welcome, welcome!" the Mad Hatter exclaims, his eyes wide with enthusiasm. 
+"Welcome, welcome!" the Mad Hatter exclaims, his eyes wide with enthusiasm.
 "Would you like some tea? We have every flavor imaginable, even ones you can't
 taste!"
 
 You take a seat at the table, your curiosity piqued by the whimsical setup. The
-March Hare grins at you while nibbling on a scone, and the Dormouse stirs 
+March Hare grins at you while nibbling on a scone, and the Dormouse stirs
 lazily in a teapot.
 
-After a moment of enjoying the strange assortment of foods, you speak up. 
-"Excuse me, Mr. Hatter, but I need your help. I’m trying to find my way home. 
+After a moment of enjoying the strange assortment of foods, you speak up.
+"Excuse me, Mr. Hatter, but I need your help. I’m trying to find my way home.
 Can you help me?"
 
-The Mad Hatter pauses, his expression shifting to one of understanding. 
-"Ah, home! A curious place indeed. But it seems you must first have a proper 
+The Mad Hatter pauses, his expression shifting to one of understanding.
+"Ah, home! A curious place indeed. But it seems you must first have a proper
 tea party with us!"
 
-You nod eagerly, and they dive into a delightful and chaotic tea party filled 
-with nonsensical conversations, laughter, and delightful treats. Time flies by 
+You nod eagerly, and they dive into a delightful and chaotic tea party filled
+with nonsensical conversations, laughter, and delightful treats. Time flies by
 as they share stories and riddles, and you momentarily forget your worries.
 
-As the tea party comes to an end, you feel grateful for the laughter and joy 
-but remember your goal. You turn to the Mad Hatter, who is tidying up the 
+As the tea party comes to an end, you feel grateful for the laughter and joy
+but remember your goal. You turn to the Mad Hatter, who is tidying up the
 table.
 
 "Thank you for the wonderful tea party! But now, could you please help me find
@@ -1058,7 +1059,7 @@ He knows the way better than anyone else in Wonderland."
 The March Hare adds with a wink, "Just look for him at the next intersection.
 He’ll be the one with the watch, of course—always running late!"
 
-Your heart lifts at the thought of finally getting home. "Thank you so much! 
+Your heart lifts at the thought of finally getting home. "Thank you so much!
 I’ll look for the White Rabbit!"
 
 With a wave of your hand and a final farewell to your new friends, you set off
@@ -1066,14 +1067,14 @@ from the tea party, following the winding path that the Mad Hatter pointed out.
 The landscape around you is filled with vibrant colors and peculiar sounds,
 but you stay focused on your mission.
 
-As you walk, you begin to notice familiar landmarks—the large mushroom, the 
+As you walk, you begin to notice familiar landmarks—the large mushroom, the
 crooked tree, and finally, a little figure hopping in the distance. It’s the
 White Rabbit, glancing at his pocket watch with a worried expression.
 {Fore.RESET}
 
 
     {Fore.BLUE} What You will do next?{Fore.RESET}
-     
+
      1: Call For the rabbit?
      2: Ask Mad Hatter for help?\n""")
 
@@ -1086,8 +1087,8 @@ White Rabbit, glancing at his pocket watch with a worried expression.
             dark_forest_way_home()
             break
         else:
-            print(f"\n{Fore.RED}Wrong choice! Please enter 1 2{Fore.RESET}\n") 
-        
+            print(f"\n{Fore.RED}Wrong choice! Please enter 1 2{Fore.RESET}\n")
+
 
 def dark_forest_way_home():
     """
@@ -1101,14 +1102,14 @@ Mad Hatter, a bitdizzy from all the riddles and laughter.
 “Excuse me, but could you show me the way home?” she asked.
 
 The Mad Hatter, adjusting his oversized hat and flashing a mischievous smile,
-leaned closer. “Why, of course, my dear Alice! Just follow that path there,” 
-he said, gesturing to a winding trail that led into the shadowy depths of a 
+leaned closer. “Why, of course, my dear Alice! Just follow that path there,”
+he said, gesturing to a winding trail that led into the shadowy depths of a
 dark forest.
 
-With some hesitation, Alice stepped onto the path, glancing back as the 
-Mad Hatter gave her an enthusiastic wave before disappearing back into his 
-chaotic tea party. The forest grew darker as she walked, the air cool and 
-filled with the soft rustling of leaves. She was just starting to worry when 
+With some hesitation, Alice stepped onto the path, glancing back as the
+Mad Hatter gave her an enthusiastic wave before disappearing back into his
+chaotic tea party. The forest grew darker as she walked, the air cool and
+filled with the soft rustling of leaves. She was just starting to worry when
 she caught sight of a familiar figure up ahead — the White Rabbit, who was
 anxiously checking his pocket watch.
 
@@ -1116,20 +1117,32 @@ anxiously checking his pocket watch.
 way home?”
 
 The White Rabbit, looking up and nodding with a twitch of his ears, beckoned
-her to follow. Together, they weaved through the forest’s winding paths, the 
-rabbit darting forward and then pausing to wait for her to catch up. After a 
-while, they emerged at the edge of the forest, where the landscape was bright 
+her to follow. Together, they weaved through the forest’s winding paths, the
+rabbit darting forward and then pausing to wait for her to catch up. After a
+while, they emerged at the edge of the forest, where the landscape was bright
 and open.
 
-“There you are, Alice,” the White Rabbit said with a satisfied nod, pointing 
+“There you are, Alice,” the White Rabbit said with a satisfied nod, pointing
 toward the familiar sight of her world.
 
-“Thank you, dear Rabbit!” Alice called as he scurried back into the forest. 
+“Thank you, dear Rabbit!” Alice called as he scurried back into the forest.
 With a final look back, she stepped forward and began her journey home.
 {Fore.RESET}\n""")
     print()
     print()
-    prompt_replay() 
+    prompt_replay()
+
+    while True:
+        choice = input(" >>> ")  # choice function
+        if choice == "1":
+            look_for_rabbit()
+            break
+        elif choice == "2":
+            dark_forest_way_home()
+            break
+        else:
+            print(f"\n{Fore.RED}Wrong choice! Please enter 1 2{Fore.RESET}\n")
+
 
 def dark_forest():
     """
@@ -1139,16 +1152,16 @@ def dark_forest():
     print()
     type(f"""{Fore.YELLOW}You, curious and adventurous, decide to delve deeper
 into the dark forest rather than seek the White Rabbit. The trees loom tall
-above you, their twisted branches casting eerie shadows on the ground. The 
-further you wander, the thicker the underbrush becomes, and the sounds of the 
+above you, their twisted branches casting eerie shadows on the ground. The
+further you wander, the thicker the underbrush becomes, and the sounds of the
 outside world begin to fade away.
 
 As you walk, the path becomes less defined, and you start to feel a sense of
-unease creeping in. The forest seems alive with whispers, rustling leaves, and 
+unease creeping in. The forest seems alive with whispers, rustling leaves, and
 distant echoes that make your heart race.
 
 After what feels like hours of wandering, you realize you have strayed farfrom
-where you entered the forest. The tall trees block out the sunlight, and the 
+where you entered the forest. The tall trees block out the sunlight, and the
 air grows heavy with an unsettling silence.
 
 “Oh no,” you mutter to yourself, “I should have followed the Rabbit.” You look
@@ -1159,24 +1172,24 @@ Just then, you spot a flickering light in the distance, a soft glow that seems
 inviting. Feeling a glimmer of hope, you move towards it, thinking it might
 lead you back to safety.
 
-As you approach the light, you discover it comes from a cluster of glowing 
-mushrooms surrounded by swirling fog. They emit a soft, enchanting glow that 
-dances in the dimness of the forest. Intrigued, you kneel to inspect them, 
+As you approach the light, you discover it comes from a cluster of glowing
+mushrooms surrounded by swirling fog. They emit a soft, enchanting glow that
+dances in the dimness of the forest. Intrigued, you kneel to inspect them,
 wondering if they might be the key to finding your way back.
 
-Suddenly, the fog thickens around you, and you feel a strange pull as if the 
+Suddenly, the fog thickens around you, and you feel a strange pull as if the
 forest is trying to envelop you. The enchanting glow becomes hypnotic, and you
 feel your resolve start to waver.
 
-“What if I stay here for a while?” you muse, mesmerized by the mushrooms' 
+“What if I stay here for a while?” you muse, mesmerized by the mushrooms'
 light. “It could be fun to explore this magical place.”
 
-As the fog wraps around you, your sense of time begins to dissolve. Hours 
-blend into minutes and the concept of home slips from your mind. You wander 
-deeper into the forest, captivated by its mysteries. You encounter strange 
+As the fog wraps around you, your sense of time begins to dissolve. Hours
+blend into minutes and the concept of home slips from your mind. You wander
+deeper into the forest, captivated by its mysteries. You encounter strange
 creatures, hear melodies from hidden places, and dance with shadows.
 
-But as days turn into weeks, you start to realize that you are not just 
+But as days turn into weeks, you start to realize that you are not just
 exploring; you are lost. The forest has a life of its own, and its enchanting
 beauty has trapped you in a never-ending cycle of wonder.
 
@@ -1184,16 +1197,17 @@ Eventually, you sit beneath a great, ancient tree, feeling the weight of your
 decision. The reality of being lost sinks in, but you have grown fond of this
 magical world.
 
-“This forest is my home now,” you whisper, a bittersweet smile gracing your 
-lips. “I may never see my old life again, but this place is filled with 
+“This forest is my home now,” you whisper, a bittersweet smile gracing your
+lips. “I may never see my old life again, but this place is filled with
 wonders.”
 
-And so, you become a part of the dark forest, a curious spirit wandering among 
+And so, you become a part of the dark forest, a curious spirit wandering among
 the trees, forever enchanted by the magic that keeps you lost.
 {Fore.RESET}\n""")
     print()
     print()
-    prompt_replay() 
+    prompt_replay()
+
 
 def green_door():
     """
@@ -1204,34 +1218,34 @@ def green_door():
     print()
     type(f"""{Fore.YELLOW}With a spark of curiosity, you push open the vibrant
 green door and step inside. The door leads you into a lush, vibrant garden that
-feels alive with magic. The air is filled with the sweet scent of blooming 
+feels alive with magic. The air is filled with the sweet scent of blooming
 flowers, and the gentle sound of rustling leaves creates a soothing melody.
 
 As you wander further into the garden, you notice the enchanting scenery—
-flowers of every color sway gracefully, and butterflies flit about, painting 
+flowers of every color sway gracefully, and butterflies flit about, painting
 the air with their colorful wings. In the distance, you spot a familiar figure:
 it's the White Rabbit, looking just as hurried as ever.
 
-"Ah, Alice!" the White Rabbit exclaims, his eyes wide with relief. "I was 
+"Ah, Alice!" the White Rabbit exclaims, his eyes wide with relief. "I was
 hoping to find you here! You seem to have quite a knack for getting lost."
 
 You giggle, feeling a sense of warmth in seeing your friend again. “I’m glad to
 see you! I thought I’d never find you. I need help getting home."
 
-The Rabbit adjusts his tiny waistcoat and peers around, his long ears 
+The Rabbit adjusts his tiny waistcoat and peers around, his long ears
 twitching. "Follow me! There’s a secret path that leads right to your home, but
 you must be quick! The garden is enchanted, and time moves differently here."
 
-Without another word, you follow the White Rabbit as he hops along a winding 
-path through the garden. You pass by shimmering flowers and glowing streams, 
+Without another word, you follow the White Rabbit as he hops along a winding
+path through the garden. You pass by shimmering flowers and glowing streams,
 each step bringing you closer to the exit. The Rabbit glances back frequently,
 urging you to keep up.
 
 “Just around this corner,” he says breathlessly, pointing to a cluster of trees
-that seem to shimmer in the sunlight. “There’s a doorway that will take you 
+that seem to shimmer in the sunlight. “There’s a doorway that will take you
 back.”
 
-You reach a small archway covered in delicate vines, which leads to another 
+You reach a small archway covered in delicate vines, which leads to another
 door—this one painted a soft shade of blue. The Rabbit stops, catching his
 breath, and looks at you with a smile.
 
@@ -1239,26 +1253,27 @@ breath, and looks at you with a smile.
 your adventures in Wonderland will always be here if you choose to return. Just
 keep your heart open to the magic around you.”
 
-You nod, your heart racing with excitement and gratitude. “Thank you, 
+You nod, your heart racing with excitement and gratitude. “Thank you,
 Mr. Rabbit! I’ll always cherish my time here.”
 
 With one last wave, you push open the blue door. You feel a rush of warmth and
 light engulf you as you step through.
 
-Suddenly, you find yourself back in your familiar garden, the sun shining 
-brightly overhead. The sounds of birds chirping and leaves rustling fill your 
+Suddenly, you find yourself back in your familiar garden, the sun shining
+brightly overhead. The sounds of birds chirping and leaves rustling fill your
 ears, grounding you in the reality of your own world.
 
-“I’m home!” you exclaim, your heart swelling with joy. The adventure in 
+“I’m home!” you exclaim, your heart swelling with joy. The adventure in
 Wonderland has come to a close, but the memories of your whimsical journey and
 the friends you made will stay with you forever.
 
 As you wander through your garden, you can’t help but smile, knowing that the
-magic of Wonderland is just a heartbeat away, ready for you to return whenever 
+magic of Wonderland is just a heartbeat away, ready for you to return whenever
 you wish.{Fore.RESET}\n""")
     print()
-    print() 
-    prompt_replay() 
+    print()
+    prompt_replay()
+
 
 # First Page
 print(f"""{Style.BRIGHT}{Fore.LIGHTBLUE_EX}
@@ -1268,7 +1283,7 @@ print(f"""{Style.BRIGHT}{Fore.LIGHTBLUE_EX}
               /    / |  |'''|  \\   \\    ☆  In Wonderland!    ☆
              (   /   |         |\\   \\   ☆                    ☆
              | /   / /^\\    /^\\  \\  _|   ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆
-              ~   | |   |  |   | | ~        
+              ~   | |   |  |   | | ~
                   | |__O|__|O__| |
                 /~~      \\/     ~~\\
                /   (      |      )  \\
@@ -1295,20 +1310,20 @@ time.sleep(a)
 print()
 print()
 
-# Welcome text    
+# Welcome text
 type(f"""{Fore.YELLOW}Welcome to the Magical World of Wonderland!{Fore.RESET}
 
 
 {Fore.MAGENTA}Enter a world where the ordinary becomes extraordinary, and every
-turn is a newadventure! In this magical land, the curious and the brave are 
-invited to join Alice on herwhimsical journey through enchanted gardens, tea 
-parties with unusual characters, and mind-bending mysteries.Get ready to meet 
-talking animals, mischievous Cheshire Cats, and a Queen who isn't afraid to 
-shout, "Off with their heads!"As you navigate this fantastical world, your 
-decisions will shape the story, revealing secrets and challenges around every 
-corner. Are you brave enough to follow the White Rabbit down the rabbit hole? 
-Embrace the madness,let your imagination run wild, and let the adventure begin! 
-Remember: in Wonderland, nothing is quite what it seems. Are you ready to find 
+turn is a newadventure! In this magical land, the curious and the brave are
+invited to join Alice on herwhimsical journey through enchanted gardens, tea
+parties with unusual characters, and mind-bending mysteries.Get ready to meet
+talking animals, mischievous Cheshire Cats, and a Queen who isn't afraid to
+shout, "Off with their heads!"As you navigate this fantastical world, your
+decisions will shape the story, revealing secrets and challenges around every
+corner. Are you brave enough to follow the White Rabbit down the rabbit hole?
+Embrace the madness,let your imagination run wild, and let the adventure begin!
+Remember: in Wonderland, nothing is quite what it seems. Are you ready to find
 out what's behind the mirror?{Fore.RESET}\n""")
 print()
 print()
@@ -1316,13 +1331,13 @@ print(f"""{Style.BRIGHT}{Fore.GREEN}
        /\\
    _  / /\\
   | \\ \\/_/
-  \\\\| / __{Fore.RESET}             
+  \\\\| / __{Fore.RESET}
   {Fore.GREEN}\\/_/__\\{Fore.RESET} {Fore.RED}            .--='/~\\{Fore.RESET}
 {Fore.GREEN}_,__/__,_____,______){Fore.RESET}{Fore.RED}/    (~))){Fore.RESET}
 {Fore.GREEN}----,--\\--,-----,---,{Fore.RESET}{Fore.RED}\'-'  ((~)){Fore.RESET}
 {Fore.GREEN}     __/\\            {Fore.RESET}{Fore.RED}'--=.\\)/{Fore.RESET}
 {Fore.GREEN}    /_/ |\\
-{Fore.GREEN}     \\/{Fore.RESET}\n""") 
+{Fore.GREEN}     \\/{Fore.RESET}\n""")
 
 # Start game function
 while True:
@@ -1334,13 +1349,14 @@ while True:
         print()
         print(f"{Fore.YELLOW}That's totally okay!{Fore.RESET}\n")
         print()
-        type(f"""{Fore.MAGENTA}Adventure games can be a real journey. If you 
-change your mind, just let me know and we can dive back into the whimsical 
+        type(f"""{Fore.MAGENTA}Adventure games can be a real journey. If you
+change your mind, just let me know and we can dive back into the whimsical
 world of Wonderland!{Fore.RESET}\n""")
         sys.exit()
         break
     elif startGame == 'Y' or startGame == "y":
-         play_game()
+        play_game()
     else:
-         print(f"{Fore.RED}Wrong choice! Enter 'Y' or 'N' !{Fore.RESET}\n") 
+        print(f"{Fore.RED}Wrong choice! Enter 'Y' or 'N' !{Fore.RESET}\n")
+ 
     
