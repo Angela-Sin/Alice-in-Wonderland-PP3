@@ -6,7 +6,7 @@
 
 The Alice in Wonderland text-based adventure game is an interactive fiction game where players navigate the world of Lewis Carroll's Alice's Adventures in Wonderland through text commands. The game presents descriptive scenarios, and players type commands like "go north," "take the key," or "talk to the rabbit" to explore the story. The gameplay relies on imagination and problem-solving, staying true to Wonderland's whimsical and surreal nature. Each decision influences the narrative, making it an immersive storytelling experience. [Wikipedia](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)
 
-The Alice in Wonderland text-based adventure game you're referring to is a Python-based project that runs in a mock terminal environment provided by Code Institute and is deployed using the Heroku platform. In this setup, Python creates the game's logic, manages user input, and handles the narrative's flow. Players interact with the game via a command-line interface, where they input text commands to control the protagonist, typically Alice, as she explores Wonderland.
+The Alice in Wonderland text-based adventure game you're referring to is a Python-based project that runs in a mock terminal environment provided by Code Institute and is deployed using the Heroku platform. Python creates the game's logic, manages user input, and handles the narrative's flow in this setup. Players interact with the game via a command-line interface, where they input text commands to control the protagonist, typically Alice, as she explores Wonderland.
 
 The game likely uses Python libraries for handling input/output and basic control flow (like if-else statements for decisions). It might include data structures (like dictionaries or lists) to manage the game's state, inventory, or rooms. It runs on Heroku, a cloud platform that allows developers to deploy, manage, and scale applications easily, ensuring the game is accessible online without needing a local Python setup.
 
@@ -182,7 +182,7 @@ The app is deployed from Heroku using the following steps:
 5. Give your app a name and select your region from drop-down.
 6. Click 'Create new app'.
 7. Go to the 'settings' tab, you must do it before deployment.
-8. Scroll down to the 'config vars' section and key: PORT and value: 8000.
+8. Scroll down to the 'config vars' section, and the key is PORT, and the value is 8000.
 9. Scroll down to the 'Buildpacks' section.
 10. Click 'Add buildpack'.
 11. Add Python as the first dependency and select 'Save changes'.
@@ -198,8 +198,16 @@ The app is deployed from Heroku using the following steps:
 
 -- For this project I used the Manual deployment method to deploy the current state of the branch, every time I pushed the code from Gitpod.
 
+## Validation
+
+Run the code several times through the Code Institute Validator. No Error.
+
+![image](https://github.com/user-attachments/assets/cbb599ce-4336-4b55-9f3d-84e9caa13b4a)
+
+
 ## Bug
 - ASCII art causes a bug in one of the loops. def rest_in_garden, got '/app/run.py:335: SyntaxWarning: invalid escape sequence '\)'' as in ASCII was to many '\'.
+- Code contains a Whitespace.
 
 ## Resources Used
 
