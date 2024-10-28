@@ -16,7 +16,7 @@ The Alice in Wonderland text-based adventure game you're referring to is a Pytho
 
 The game likely uses Python libraries for handling input/output and basic control flow (like if-else statements for decisions). It might include data structures (like dictionaries or lists) to manage the game's state, inventory, or rooms. It runs on Heroku, a cloud platform that allows developers to deploy, manage, and scale applications easily, ensuring the game is accessible online without needing a local Python setup.
 
-## Rules
+# Rules
 
 ## Start
 
@@ -88,7 +88,8 @@ The first example of a Flowchart I made during game creation.
 - The prompt "Please enter your name >>>" at the bottom indicates this is the starting point of the game, where the player can input their name to begin.
 - The ASCII art and interactive prompt suggest a retro, nostalgic design, fitting for classic text-based or adventure games.
 - 
-![Image](https://github.com/user-attachments/assets/5e6c366d-5ba6-450f-a795-fb73b0e624f4)
+![image](https://github.com/user-attachments/assets/c34a4f70-36d4-4066-9029-0458a63e12b6)
+
 
 - After a valid name the second step greets the player by 'Name' and invites him into the "Magical World of Wonderland."
 - The description encourages players to join Alice on a whimsical adventure filled with talking animals, mischievous characters like the Cheshire Cat, and the notorious Queen who shouts, "Off with their heads!" It emphasizes that players' choices will shape the journey, uncovering secrets and facing challenges along the way. It asks if they're ready to follow the White Rabbit and dive into the mysterious, unpredictable world of Wonderland, where "nothing is quite what it seems."
@@ -216,12 +217,13 @@ The app is deployed from Heroku using the following steps:
 
 Run the code several times through the Code Institute Validator. No Error.
 
-![image](https://github.com/user-attachments/assets/cbb599ce-4336-4b55-9f3d-84e9caa13b4a)
+![image](https://github.com/user-attachments/assets/42df0fe7-ebc1-43c4-80e7-36e7e3bc7668)
+
 
 
 ## Bug
 - ASCII art causes a bug in one of the loops. def rest_in_garden, got '/app/run.py:335: SyntaxWarning: invalid escape sequence '\)'' as in ASCII was to many '\'.
-- Code contains a Whitespace.
+
 
 ## Resources Used
 
