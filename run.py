@@ -1,7 +1,7 @@
 import sys
 import time
 import colorama
-from colorama import Fore, Back, Style # Initialize colorama for colored text
+from colorama import Fore, Back, Style  # Initialize colorama for colored text
 
 a = 2
 
@@ -19,37 +19,32 @@ def prompt_replay():
     """
     Function to restart the game
     """
-    while True:
+    type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆ {Fore.RESET}\n")
+    print()
+    print()
+    startGame = input('Would you like to Play Again (Y/N): ')
+    if startGame == 'N' or startGame == "n":
         print()
-        type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆ {Fore.RESET}\n")
+        print()
+        type(f"{Fore.YELLOW} ☆  ☆  ☆  ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
         print()
         print()
-        startGame = input('Would you like to dive back into the whimsical world of Wonderland? (Y/N): ').strip().lower()
-        if startGame == 'n':
-            print()
-            print()
-            type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
-            print()
-            print()
-            type(f"""{Fore.MAGENTA}Thank you for joining Alice on her magical
+        type(f"""{Fore.MAGENTA}Thank you for joining Alice on her magival
 journey through Wonderland!
 
-Your curiosity and choices brought the adventure to life, and we hope 
-you had as much fun exploring as Alice did. Every step you took made 
-Wonderland a little more wondrous.
+Your curiosity and choices brought the adventure to life, and we hope you had 
+as much fun exploring as Alice did. Every step you took made Wonderland a 
+little more wondrous.
 
-Until we meet again, may your imagination always guide you to new 
-adventures! Goodbye for now, and remember—Wonderland is never too 
-far away.\n""")
-            sys.exit()
-            break
-        elif startGame == "y":
+Until we meet again, may your imagination always guide you to new adventures! 
+Goodbye for now, and remember—Wonderland is never too far away.\n""")
+        sys.exit()
+    elif startGame == 'Y' or startGame == "y":
             play_game()
-            break
-        else:
-            print()
-            print(f"{Fore.RED}Please enter a valid option: 'Y' or 'N'.{Fore.RESET}\n")
-            time.sleep(a)
+    else:
+        print()
+        print(f"{Fore.RED}Please enter from option: Y or N{Fore.RESET}\n")
+        time.sleep(a)
 
 def play_game():
     """
@@ -1179,7 +1174,7 @@ def green_door():
     Avoid Table >> Green Door (End)
     """
     print()
-        type(f"""{Fore.YELLOW}With a spark of curiosity, you push open the vibrant
+    type(f"""{Fore.YELLOW}With a spark of curiosity, you push open the vibrant
 green door and step inside. The door leads you into a lush, vibrant garden that
 feels alive with magic. The air is filled with the sweet scent of blooming 
 flowers, and the gentle sound of rustling leaves creates a soothing melody.
@@ -1270,34 +1265,32 @@ time.sleep(a)
 print()
 print()
 
-#Welcome text    
-type("""Welcome to the Magical World of Wonderland!
-Enter a world where the ordinary becomes extraordinary, 
-and every turn is a new adventure! In this magical land, 
-the curious and the brave are invited to join Alice on her
-whimsical journey through enchanted gardens, tea parties with 
-unusual characters, and mind-bending mysteries.
-Get ready to meet talking animals, mischievous Cheshire Cats, 
-and a Queen who isn't afraid to shout, "Off with their heads!"
-As you navigate this fantastical world, your decisions 
-will shape the story, revealing secrets and challenges around 
-every corner. Are you brave enough to follow the White Rabbit 
-down the rabbit hole? Embrace the madness,
-let your imagination run wild, and let the adventure begin! 
-Remember: in Wonderland, nothing is quite what it seems. 
-Are you ready to find out what's behind the mirror?""")
+# Welcome text    
+type(f"""{Fore.YELLOW}Welcome to the Magical World of Wonderland!{Fore.RESET}
+
+{Fore.MAGENTA}Enter a world where the ordinary becomes extraordinary, and every
+turn is a newadventure! In this magical land, the curious and the brave are 
+invited to join Alice on herwhimsical journey through enchanted gardens, tea 
+parties with unusual characters, and mind-bending mysteries.Get ready to meet 
+talking animals, mischievous Cheshire Cats, and a Queen who isn't afraid to 
+shout, "Off with their heads!"As you navigate this fantastical world, your 
+decisions will shape the story, revealing secrets and challenges around every 
+corner. Are you brave enough to follow the White Rabbit down the rabbit hole? 
+Embrace the madness,let your imagination run wild, and let the adventure begin! 
+Remember: in Wonderland, nothing is quite what it seems. Are you ready to find 
+out what's behind the mirror?{Fore.RESET}\n""")
 print()
 print()
-print(f"""{Style.BRIGHT}{Fore.LIGHTGREEN_EX}
+print(f"""{Style.BRIGHT}{Fore.GREEN}
              /\\
         _   / /\\
        | \\\\/_/
        \\\\| / __{Fore.RESET}             
-         {Fore.LIGHTGREEN_EX}\\/_/__\\{Fore.RESET}          {Fore.LIGHTRED_EX}.--='/~\\{Fore.RESET}
-   {Fore.LIGHTGREEN_EX}____,__/__,_____,______){Fore.RESET}{Fore.LIGHTRED_EX}/    (~))){Fore.RESET}
-   {Fore.LIGHTGREEN_EX}-,-----,--\\--,-----,---,{Fore.RESET}{Fore.LIGHTRED_EX}\'-'  ((~)){Fore.RESET}
-          {Fore.LIGHTGREEN_EX} __/\\{Fore.RESET}            {Fore.LIGHTRED_EX}'--=.\\)/{Fore.RESET}
-          {Fore.LIGHTGREEN_EX}/_/ |\\
+         {Fore.GREEN}\\/_/__\\{Fore.RESET}          {Fore.RED}.--='/~\\{Fore.RESET}
+   {Fore.GREEN}____,__/__,_____,______){Fore.RESET}{Fore.RED}/    (~))){Fore.RESET}
+   {Fore.GREEN}-,-----,--\\--,-----,---,{Fore.RESET}{Fore.RED}\'-'  ((~)){Fore.RESET}
+          {Fore.GREEN} __/\\{Fore.RESET}            {Fore.RED}'--=.\\)/{Fore.RESET}
+          {Fore.GREEN}/_/ |\\
              \\/  {Fore.RESET}\n""")
 
 #Start game function
@@ -1305,19 +1298,19 @@ while True:
     startGame = input('Would You like to play? (Y/N):  ').strip().lower()
     if startGame == 'N' or startGame == "n":
         print()
-        type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
+        type(f"{Fore.YELLOW} ☆   ☆   ☆   ☆   ☆   ☆   ☆   ☆{Fore.RESET}\n")
         print()
         print()
-        print("That's totally okay!")
+        print(f"{Fore.YELLOW}That's totally okay!{Fore.RESET}\n")
         print()
-        type("""Adventure games can be a real journey. If you change your mind, 
-just let me know and we can dive back into the whimsical world 
-of Wonderland!""")
+        type(f"""{Fore.MAGENTA}Adventure games can be a real journey. If you 
+change your mind, just let me know and we can dive back into the whimsical 
+world of Wonderland!{Fore.RESET}\n""")
         sys.exit()
         break
     elif startGame == 'Y' or startGame == "y":
         play_game()
         break
     else:
-        print(f"{Fore.RED}Invalid choice! Please enter 'Y' for Yes or 'N' for No.{Fore.RESET}\n") 
+         print(f"{Fore.RED}Wrong choice! Enter 'Y' or 'N' !{Fore.RESET}\n") 
     
