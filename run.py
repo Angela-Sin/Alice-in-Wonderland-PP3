@@ -1075,7 +1075,7 @@ White Rabbit, glancing at his pocket watch with a worried expression.
     {Fore.BLUE} What You will do next?{Fore.RESET}
      
      1: Call For the rabbit?
-     2: Explore dark forest?\n""")
+     2: Ask Mad Hatter for help?\n""")
 
     while True:
         choice = input(" >>> ")  # choice function
@@ -1089,10 +1089,52 @@ White Rabbit, glancing at his pocket watch with a worried expression.
             print(f"\n{Fore.RED}Wrong choice! Please enter 1 2{Fore.RESET}\n") 
         
 
+def dark_forest_way_home():
+    """
+    Steps:
+    Mad Hatter tea party >>> Ask help
+    """
+    print()
+    type(f"""{Fore.YELLOW}After the lively tea party, Alice turned to the
+Mad Hatter, a bitdizzy from all the riddles and laughter.
+
+“Excuse me, but could you show me the way home?” she asked.
+
+The Mad Hatter, adjusting his oversized hat and flashing a mischievous smile,
+leaned closer. “Why, of course, my dear Alice! Just follow that path there,” 
+he said, gesturing to a winding trail that led into the shadowy depths of a 
+dark forest.
+
+With some hesitation, Alice stepped onto the path, glancing back as the 
+Mad Hatter gave her an enthusiastic wave before disappearing back into his 
+chaotic tea party. The forest grew darker as she walked, the air cool and 
+filled with the soft rustling of leaves. She was just starting to worry when 
+she caught sight of a familiar figure up ahead — the White Rabbit, who was
+anxiously checking his pocket watch.
+
+“Oh, you again!” Alice said, relief flooding her voice. “Can you show me the
+way home?”
+
+The White Rabbit, looking up and nodding with a twitch of his ears, beckoned
+her to follow. Together, they weaved through the forest’s winding paths, the 
+rabbit darting forward and then pausing to wait for her to catch up. After a 
+while, they emerged at the edge of the forest, where the landscape was bright 
+and open.
+
+“There you are, Alice,” the White Rabbit said with a satisfied nod, pointing 
+toward the familiar sight of her world.
+
+“Thank you, dear Rabbit!” Alice called as he scurried back into the forest. 
+With a final look back, she stepped forward and began her journey home.
+{Fore.RESET}\n""")
+    print()
+    print()
+    prompt_replay() 
+
 def dark_forest():
     """
     Steps:
-    Mad Hatter Party >> Dark forest way home (End)
+    Red Door >> Dark forest way home (End)
     """
     print()
     type(f"""{Fore.YELLOW}You, curious and adventurous, decide to delve deeper
@@ -1149,7 +1191,6 @@ wonders.”
 And so, you become a part of the dark forest, a curious spirit wandering among 
 the trees, forever enchanted by the magic that keeps you lost.
 {Fore.RESET}\n""")
-
     print()
     print()
     prompt_replay() 
