@@ -21,7 +21,7 @@ The game likely uses Python libraries for handling input/output and basic contro
 ## Start
 
 
--The game begins with the player starting and entering their name.
+- The game begins with the player starting and entering their name.
 
 ## Welcome Section
 
